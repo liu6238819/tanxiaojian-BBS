@@ -3,30 +3,45 @@ branches: {
   }
 fileChange:
   /front:
-    newFile: !uuid '9f3cad4d503155e5d4e0f4739ccacc83a374d597'
-    oldFile: !uuid '626e087b1d08dabc4fa6ba0b69a83f997ace32f2'
-  /front/js_sdk:
-    newFile: !uuid '077002836c098ca56b773b4a7ec1449d9fef1425'
-    oldFile: !uuid '4da206a39f918d9b50da4ebebd8ff5b2d70ffe17'
-  /front/js_sdk/yushijie-ossutil:
-    newFile: !uuid '1a26d3b93a9a7fdfc89654f42e9caa8e65414f6b'
-    oldFile: !uuid 'bcb00ae74ea6906171df7e165986f5e0e49faea1'
-  /front/js_sdk/yushijie-ossutil/ossutil:
-    newFile: !uuid '61e2ff8a38205305cc6fa8daaf24819e1084b445'
-    oldFile: !uuid '3914e31ac6b0e55c9907c38908482aae88330a0c'
-  /front/js_sdk/yushijie-ossutil/ossutil/config.js:
-    newFile: !uuid '0b9f92fa937e16e598e64c254312bbbe9e885b6e'
-    oldFile: !uuid '239515e913cf19ef871c84302d3b87d56868575d'
-  /front/manifest.json:
-    newFile: !uuid '7a62b80cd6d7ee6da82effd790930ff4badbeb5a'
-    oldFile: !uuid '39d1087d765606b14c0e1c90b1f13b1e11b246c6'
+    newFile: !uuid '34a371bb83b9ba6ff944917149f80ac5f01508aa'
+    oldFile: !uuid '9f3cad4d503155e5d4e0f4739ccacc83a374d597'
+  /front/App.vue:
+    newFile: !uuid '88a310e4181def0977196f6159bdf68face15608'
+    oldFile: !uuid '6c0879ac7e6412c50f82d0cd807765d7f881d258'
+  /front/components:
+    newFile: !uuid 'd2b73badddd1201e468825ceab3012c3c2aef474'
+    oldFile: !uuid '26e8ec4ae47b046e41e6e1e52363821bc7030641'
+  /front/components/examine-popup:
+    newFile: !uuid '4671a1cea38ee44c3a33afb5d12bd9e7b66f4a57'
+    oldFile: !uuid 'dd638cc5758e56b8121f72b94cad044fba81fd35'
+  /front/components/examine-popup/examine-popup.vue:
+    newFile: !uuid '722362c3d6d855b70f039548f00f637ce6aa700b'
+    oldFile: !uuid '0e411e7762e2d0b5ccd1efaeeacc5bb8c35b1a92'
+  /front/main.js:
+    newFile: !uuid '60444fc8f340865b1f1fa0b192c211472554ef51'
+    oldFile: !uuid '1ff7433af186736868d4fb793dfae006fded7b6f'
+  /front/package_task:
+    newFile: !uuid '4800fed6da359b80138e3ed913663a944f4e017a'
+    oldFile: !uuid 'e3c22cb70542cb8c676257c76ca5cf2e513b46c2'
+  /front/package_task/pages:
+    newFile: !uuid 'd10673be31bb64631c9655df7d81895c12bf2cc8'
+    oldFile: !uuid 'badeb5e8d3ee88d7c58b98c0c1890c51069b5b7c'
+  /front/package_task/pages/bbs:
+    newFile: !uuid '72fdfb82a2e91b761fa0d646b8f88b059e371b9b'
+    oldFile: !uuid '0c689ac7c91f4261a0d621070215f1a12d388cc9'
+  /front/package_task/pages/bbs/user:
+    newFile: !uuid '57ba953a34af057f3ebe1b94ec07f758bfda6f39'
+    oldFile: !uuid '81994a0afdae8ee731a5f90d5afecf484115eab0'
+  /front/package_task/pages/bbs/user/answer-examine.vue:
+    newFile: !uuid '94c44e92d8d0cf66af4584e63d2822ead2bc0f3d'
+    oldFile: !uuid 'f2ec74c8779e806f6dbe38eb774e8f40a6dabf83'
   /front/utils:
-    newFile: !uuid '83046a229b5e82ee3ec89b9a740cfa3038aef03b'
-    oldFile: !uuid 'a43dd7de30f43ede01bffc8cecbd952b8e3abbd0'
+    newFile: !uuid '3b569be1366ec9c5149e36bfc38a9ba1799c59b5'
+    oldFile: !uuid '83046a229b5e82ee3ec89b9a740cfa3038aef03b'
   /front/utils/data.js:
-    newFile: !uuid '6f2619844011bc13d475ba8e37ead6ff88e47fc4'
-    oldFile: !uuid '1f3174088b0b003e653f46f944efe062f3a16848'
-gitCommitId: !uuid '17d190526a28712c39a108891c06fb4374bff56e'
+    newFile: !uuid 'fc6bfc9f4be7d00d6f2079447401bd2d83228445'
+    oldFile: !uuid '6f2619844011bc13d475ba8e37ead6ff88e47fc4'
+gitCommitId: !uuid '87ccca95e8cebcedd91b998b4b3c601c664747ac'
 renames: {
   }
-revisionId: 5
+revisionId: 6

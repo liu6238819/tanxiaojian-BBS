@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bbs.mapper.CommentMapper">
+    <select id="getHomeCommentsPage" resultType="com.example.bbs.pojo.vo.HomeCommentVO">
+        select c.commentId   commentId,
+               c.contentId   contentId,
+               c.commentText commentText,
+               c.commentUrl  commentUrl,
+               c.upNum       upNum,
+               c.downNum     downNum,
+               c.createTime  createTime,
+               u.userId      userId,
+               u.headimgUrl  headimgUrl,
+               u.nickName    nickName,
+               u.openId      openId,
+               u.userState   userIdentify
+        from `bbs_comment` c
+                 join `bbs_user` u on c.userId = u.userId
+        where c.contentId = #{contentId}
+          and c.isMain = 1
+          and (c.commentState = 0 or c.commentState = 1 or c.commentState = 3)
+        order by c.createTime asc
+            limit #{pageNum}, #{pageSize}
+    </select>
+    <select id="getChildrenCommentsVO" resultType="com.example.bbs.pojo.vo.ChildrenCommentVO">
+        select c.commentId      commentId,
+               c.contentId      contentId,
+               c.replyCommentId replyCommentId,
+               c.isReply        isReply,
+               c.replyNickName  replyNickName,
+               c.replyUserId    replyUserId,
+               c.commentText    commentText,
+               c.commentUrl     commentUrl,
+               c.upNum          upNum,
+               c.downNum        downNum,
+               c.createTime     createTime,
+               u.userId         userId,
+               u.headimgUrl     headimgUrl,
+               u.nickName       nickName,
+               u.openId         openId,
+               u.userState      userIdentify
+        from `bbs_comment` c
+                 join `bbs_user` u on c.userId = u.userId
+        where c.contentId = #{contentId}
+          and c.replyCommentId = #{commentId}
+          and isMain = '0'
+          and (c.commentState = 0 or c.commentState = 1 or c.commentState = 3)
+        order by c.createTime asc
+    </select>
+    <select id="getMainCommentsByContentId" resultType="com.example.bbs.pojo.vo.HomeCommentVO">
+        select c.commentId   commentId,
+               c.contentId   contentId,
+               c.commentText commentText,
+               c.commentUrl  commentUrl,
+               c.upNum       upNum,
+               c.downNum     downNum,
+               c.createTime  createTime,
+               u.userId      userId,
+               u.headimgUrl  headimgUrl,
+               u.nickName    nickName,
+               u.openId      openId,
+               u.userState   userIdentify
+        from `bbs_comment` c
+                 join `bbs_user` u on c.userId = u.userId
+        where c.contentId = #{contentId}
+          and c.isMain = 1
+          and (c.commentState = 0 or c.commentState = 1 or c.commentState = 3)
+        order by c.createTime asc
+           limit 0, 2
+    </select>
+<!--带有请求类型的获取帖子主评论列表-->
+    <select id="getHomeCommentsPageWithType" resultType="com.example.bbs.pojo.vo.HomeCommentVO">
+        select c.commentId   commentId,
+               c.contentId   contentId,
+               c.commentText commentText,
+               c.commentUrl  commentUrl,
+               c.childrenNum childrenNum,
+               c.upNum       upNum,
+               c.downNum     downNum,
+               c.createTime  createTime,
+               u.userId      userId,
+               u.headimgUrl  headimgUrl,
+               u.nickName    nickName,
+               u.openId      openId,
+               u.userState   userIdentify
+        from `bbs_comment` c
+                 join `bbs_user` u on c.userId = u.userId
+        where c.contentId = #{contentId}
+          and c.isMain = 1
+          and (c.commentState = 0 or c.commentState = 1 or c.commentState = 3)
+        <if test="requestType == 'timeAsc'">
+            order by c.createTime asc
+        </if>
+        <if test="requestType == 'timeDesc'">
+            order by c.createTime desc
+        </if>
+        <if test="requestType == 'hot'">
+            order by c.childrenNum + c.upNum desc,c.createTime desc
+        </if>
+        limit #{pageNum}, #{pageSize}
+    </select>
+    <!--分页获取某评论的子评论列表-->
+    <select id="getChildrenCommentsVOPage" resultType="com.example.bbs.pojo.vo.ChildrenCommentVO">
+        select c.commentId      commentId,
+               c.contentId      contentId,
+               c.replyCommentId replyCommentId,
+               c.isReply        isReply,
+               c.replyNickName  replyNickName,
+               c.replyUserId    replyUserId,
+               c.commentText    commentText,
+               c.commentUrl     commentUrl,
+               c.upNum          upNum,
+               c.downNum        downNum,
+               c.createTime     createTime,
+               u.userId         userId,
+               u.headimgUrl     headimgUrl,
+               u.nickName       nickName,
+               u.openId         openId,
+               u.userState      userIdentify
+        from `bbs_comment` c
+                 join `bbs_user` u on c.userId = u.userId
+        where c.contentId = #{contentId}
+          and c.replyCommentId = #{commentId}
+          and isMain = '0'
+          and (c.commentState = 0 or c.commentState = 1 or c.commentState = 3)
+          and unix_timestamp(c.createTime) > unix_timestamp(#{queryTime})
+        order by c.createTime asc
+        limit #{pageNum}, #{pageSize}
+    </select>
+    <!--获取某评论的前两条子评论列表-->
+    <select id="getTwoChildrenCommentsVO" resultType="com.example.bbs.pojo.vo.ChildrenCommentVO">
+        select
+               c.commentId      commentId,
+               c.contentId      contentId,
+               c.replyCommentId replyCommentId,
+               c.isReply        isReply,
+               c.replyNickName  replyNickName,
+               c.replyUserId    replyUserId,
+               c.commentText    commentText,
+               c.commentUrl     commentUrl,
+               c.upNum          upNum,
+               c.downNum        downNum,
+               c.createTime     createTime,
+               u.userId         userId,
+               u.headimgUrl     headimgUrl,
+               u.nickName       nickName,
+               u.openId         openId,
+               u.userState      userIdentify
+        from `bbs_comment` c
+                 join `bbs_user` u on c.userId = u.userId
+        where c.contentId = #{contentId}
+          and c.replyCommentId = #{commentId}
+          and isMain = '0'
+          and (c.commentState = 0 or c.commentState = 1 or c.commentState = 3)
+        order by c.createTime asc
+            limit 0, 2
+    </select>
+
+    <!--带有请求类型的获取帖子主评论列表(更多联表查询)-->
+    <select id="getHomeCommentsPageWithTypeNew" resultType="com.example.bbs.pojo.vo.HomeCommentVO">
+        select c.commentId   commentId,
+        c.contentId   contentId,
+        c.commentText commentText,
+        c.commentUrl  commentUrl,
+        c.childrenNum childrenNum,
+        c.upNum       upNum,
+        c.downNum     downNum,
+        c.createTime  createTime,
+        u.userId      userId,
+        u.headimgUrl  headimgUrl,
+        u.nickName    nickName,
+        u.openId      openId,
+        u.userState   userIdentify,
+        s.userState   userState,
+        a.isLike      viewUserisLike
+        from `bbs_comment` c
+        join `bbs_user` u on c.userId = u.userId
+        join `bbs_user_school` s on u.userId=s.userId and s.schoolId = #{schoolId}
+        left join `bbs_admire` a on a.userId=#{userId} and c.commentId = a.targetId
+        where c.contentId = #{contentId}
+        and c.isMain = 1
+        and (c.commentState = 0 or c.commentState = 1 or c.commentState = 3)
+        <if test="requestType == 'timeAsc'">
+            order by c.createTime asc
+        </if>
+        <if test="requestType == 'timeDesc'">
+            order by c.createTime desc
+        </if>
+        <if test="requestType == 'hot'">
+            order by c.childrenNum + c.upNum desc,c.createTime desc
+        </if>
+        limit #{pageNum}, #{pageSize}
+    </select>
+
+    <!--获取某评论的前两条子评论列表(更多联表查询)-->
+    <select id="getTwoChildrenCommentsVONew" resultType="com.example.bbs.pojo.vo.ChildrenCommentVO">
+        select
+            c.commentId      commentId,
+            c.contentId      contentId,
+            c.replyCommentId replyCommentId,
+            c.isReply        isReply,
+            c.replyNickName  replyNickName,
+            c.replyUserId    replyUserId,
+            c.commentText    commentText,
+            c.commentUrl     commentUrl,
+            c.upNum          upNum,
+            c.downNum        downNum,
+            c.createTime     createTime,
+            u.userId         userId,
+            u.headimgUrl     headimgUrl,
+            u.nickName       nickName,
+            u.openId         openId,
+            u.userState      userIdentify,
+            s.userState      userState,
+            a.isLike         viewUserisLike
+        from `bbs_comment` c
+             join `bbs_user` u on c.userId = u.userId
+             join `bbs_user_school` s on u.userId=s.userId and s.schoolId = #{schoolId}
+             left join `bbs_admire` a on a.userId=#{userId} and c.commentId = a.targetId
+        where c.contentId = #{contentId}
+          and c.replyCommentId = #{commentId}
+          and isMain = '0'
+          and (c.commentState = 0 or c.commentState = 1 or c.commentState = 3)
+        order by c.createTime asc
+            limit 0, 3
+    </select>
+
+    <!--获取帖子所有主评论-->
+    <select id="getAllMainCommentsByContentId" resultType="com.example.bbs.pojo.vo.HomeCommentVO">
+        select c.commentId   commentId,
+        c.contentId   contentId,
+        c.commentText commentText,
+        c.commentUrl  commentUrl,
+        c.childrenNum childrenNum,
+        c.upNum       upNum,
+        c.downNum     downNum,
+        c.createTime  createTime,
+        u.userId      userId,
+        u.headimgUrl  headimgUrl,
+        u.nickName    nickName,
+        u.openId      openId,
+        u.userState   userIdentify,
+        c.commentState   commentState
+        from `bbs_comment` c
+        join `bbs_user` u on c.userId = u.userId
+        where c.contentId = #{contentId}
+        and c.isMain = 1
+        and (c.commentState = 0 or c.commentState = 1 or c.commentState = 6 or c.commentState = 3)
+    </select>
+
+    <!--获取某评论的前两条子评论列表-->
+    <select id="getTwoChildrenCommentsVOWhenRedisError" resultType="com.example.bbs.pojo.vo.ChildrenCommentVO">
+        select
+            c.commentId      commentId,
+            c.contentId      contentId,
+            c.replyCommentId replyCommentId,
+            c.isReply        isReply,
+            c.replyNickName  replyNickName,
+            c.replyUserId    replyUserId,
+            c.commentText    commentText,
+            c.commentUrl     commentUrl,
+            c.upNum          upNum,
+            c.downNum        downNum,
+            c.createTime     createTime,
+            u.userId         userId,
+            u.headimgUrl     headimgUrl,
+            u.nickName       nickName,
+            u.openId         openId,
+            u.userState      userIdentify
+        from `bbs_comment` c
+                 join `bbs_user` u on c.userId = u.userId
+        where c.contentId = #{contentId}
+          and c.replyCommentId = #{commentId}
+          and isMain = '0'
+          and (c.commentState = 0 or c.commentState = 1 or c.commentState = 3)
+        order by c.createTime asc
+            limit 0, 3
+    </select>
+
+    <!--获取某评论的所有子评论列表-->
+    <select id="getAllChildrenCommentVo" resultType="com.example.bbs.pojo.vo.ChildrenCommentVO">
+        select
+            c.commentId      commentId,
+            c.contentId      contentId,
+            c.replyCommentId replyCommentId,
+            c.isReply        isReply,
+            c.replyNickName  replyNickName,
+            c.replyUserId    replyUserId,
+            c.commentText    commentText,
+            c.commentUrl     commentUrl,
+            c.upNum          upNum,
+            c.downNum        downNum,
+            c.createTime     createTime,
+            u.userId         userId,
+            u.headimgUrl     headimgUrl,
+            u.nickName       nickName,
+            u.openId         openId,
+            u.userState      userIdentify,
+            c.commentState   commentState
+        from `bbs_comment` c
+                 join `bbs_user` u on c.userId = u.userId
+        where c.contentId = #{contentId}
+          and c.replyCommentId = #{commentId}
+          and isMain = '0'
+          and (c.commentState = 0 or c.commentState = 1 or c.commentState = 6 or c.commentState = 3)
+        order by c.createTime asc
+    </select>
+
+    <select id="getAllChildrenCommentVoFilterFreeze" resultType="com.example.bbs.pojo.vo.ChildrenCommentVO">
+        select
+            c.commentId      commentId,
+            c.contentId      contentId,
+            c.replyCommentId replyCommentId,
+            c.isReply        isReply,
+            c.replyNickName  replyNickName,
+            c.replyUserId    replyUserId,
+            c.commentText    commentText,
+            c.commentUrl     commentUrl,
+            c.upNum          upNum,
+            c.downNum        downNum,
+            c.createTime     createTime,
+            u.userId         userId,
+            u.headimgUrl     headimgUrl,
+            u.nickName       nickName,
+            u.openId         openId,
+            u.userState      userIdentify,
+            c.commentState   commentState
+        from `bbs_comment` c
+                 join `bbs_user` u on c.userId = u.userId
+        where c.contentId = #{contentId}
+          and c.replyCommentId = #{commentId}
+          and isMain = '0'
+          and (c.commentState = 0 or c.commentState = 1 )
+        order by c.createTime asc
+    </select>
+
+    <!--按评论id获取主评论Vo-->
+    <select id="getCommentVoByCommentId" resultType="com.example.bbs.pojo.vo.HomeCommentVO">
+        select c.commentId   commentId,
+               c.contentId   contentId,
+               c.commentText commentText,
+               c.commentUrl  commentUrl,
+               c.commentState  commentState,
+               c.childrenNum childrenNum,
+               c.upNum       upNum,
+               c.downNum     downNum,
+               c.createTime  createTime,
+               u.userId      userId,
+               u.headimgUrl  headimgUrl,
+               u.nickName    nickName,
+               u.openId      openId,
+               u.userState   userIdentify
+        from `bbs_comment` c
+                 join `bbs_user` u on c.userId = u.userId
+        where c.commentId = #{commentId}
+    </select>
+
+    <!--24.02.23获取帖子主评论列表,带有请求类型,过滤冻结-->
+    <select id="getHomeCommentsPageFilterFreeze" resultType="com.example.bbs.pojo.vo.HomeCommentVO">
+        select
+        c.commentId   commentId,
+        c.contentId   contentId,
+        c.commentText commentText,
+        c.commentUrl  commentUrl,
+        c.childrenNum childrenNum,
+        c.upNum       upNum,
+        c.downNum     downNum,
+        c.createTime  createTime,
+        u.userId      userId,
+        u.headimgUrl  headimgUrl,
+        u.nickName    nickName,
+        u.openId      openId,
+        u.userState   userIdentify
+        from `bbs_comment` c
+        join `bbs_user` u on c.userId = u.userId
+        where c.contentId = #{contentId}
+        and c.isMain = 1
+        <if test="userId != null and userId != ''">
+        and ((c.userId = #{userId} and c.commentState = 6) or c.commentState != 6)
+        and ((c.userId = #{userId} and c.commentState = 3) or c.commentState != 3)
+        </if>
+        and (c.commentState = 0 or c.commentState = 1 or c.commentState = 6 or c.commentState = 3)
+        <if test="requestType == 'timeAsc'">
+            order by c.createTime asc
+        </if>
+        <if test="requestType == 'timeDesc'">
+            order by c.createTime desc
+        </if>
+        <if test="requestType == 'hot'">
+            order by c.childrenNum + c.upNum desc,c.createTime desc
+        </if>
+        limit #{pageNum}, #{pageSize}
+    </select>
+
+    <!--24.02.23 获取某评论的前两条子评论列表,过滤冻结-->
+    <select id="getThreeChildrenCommentsFilterFreeze" resultType="com.example.bbs.pojo.vo.ChildrenCommentVO">
+        select
+            c.commentId      commentId,
+            c.contentId      contentId,
+            c.replyCommentId replyCommentId,
+            c.isReply        isReply,
+            c.replyNickName  replyNickName,
+            c.replyUserId    replyUserId,
+            c.commentText    commentText,
+            c.commentUrl     commentUrl,
+            c.upNum          upNum,
+            c.downNum        downNum,
+            c.createTime     createTime,
+            u.userId         userId,
+            u.headimgUrl     headimgUrl,
+            u.nickName       nickName,
+            u.openId         openId,
+            u.userState      userIdentify
+        from `bbs_comment` c
+        join `bbs_user` u on c.userId = u.userId
+        where c.contentId = #{contentId}
+          and c.replyCommentId = #{commentId}
+          and isMain = '0'
+          <if test="userId != null and userId != ''">
+          and ((c.userId = #{userId} and c.commentState = 6) or c.commentState != 6)
+          and ((c.userId = #{userId} and c.commentState = 3) or c.commentState != 3)
+          </if>
+          and (c.commentState = 0 or c.commentState = 1 or c.commentState = 6 or c.commentState = 3)
+        order by c.createTime asc
+            limit 0, 3
+    </select>
+
+    <!--24.02.23 分页获取某评论的子评论列表,过滤冻结-->
+    <select id="getChildrenCommentsVOPageFilterFreeze" resultType="com.example.bbs.pojo.vo.ChildrenCommentVO">
+        select c.commentId      commentId,
+               c.contentId      contentId,
+               c.replyCommentId replyCommentId,
+               c.isReply        isReply,
+               c.replyNickName  replyNickName,
+               c.replyUserId    replyUserId,
+               c.commentText    commentText,
+               c.commentUrl     commentUrl,
+               c.upNum          upNum,
+               c.downNum        downNum,
+               c.createTime     createTime,
+               u.userId         userId,
+               u.headimgUrl     headimgUrl,
+               u.nickName       nickName,
+               u.openId         openId,
+               u.userState      userIdentify
+        from `bbs_comment` c
+        join `bbs_user` u on c.userId = u.userId
+        where c.contentId = #{contentId}
+          and c.replyCommentId = #{commentId}
+          and isMain = '0'
+          <if test="userId != null and userId != ''">
+            and ((c.userId = #{userId} and c.commentState = 6) or c.commentState != 6)
+            and ((c.userId = #{userId} and c.commentState = 3) or c.commentState != 3)
+          </if>
+          and (c.commentState = 0 or c.commentState = 1 or c.commentState = 6 or c.commentState = 3)
+          and unix_timestamp(c.createTime) > unix_timestamp(#{queryTime})
+        order by c.createTime asc
+            limit #{pageNum}, #{pageSize}
+    </select>
+
+    <update id="logOutCommentByUserId">
+        UPDATE bbs_comment
+        SET commentState = 4
+        WHERE userId = #{userId} AND #{userId} IS NOT NULL AND #{userId} != ''
+    </update>
+</mapper>

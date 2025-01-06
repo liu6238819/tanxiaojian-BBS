@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bbs.mapper.ChatMapper">
+    <select id="getMessageList" resultType="com.example.bbs.pojo.vo.MessageListVO">
+        select u.userId                                   userId,
+               u.headimgUrl                               headimgUrl,
+               u.nickName                                 nickName,
+               sum(case c.state when 1 then 1 else 0 end) unReadNum,
+               c.createTime                               createTime,
+               c.messageContent                           messageContent
+        from (select *
+              from bbs_chat
+              where userId = #{userId}
+                and messageType = 1
+                and state != 3
+              ORDER BY createTime DESC LIMIt 0, 18446744073709551615) c
+                 join bbs_user u on c.chaterId = u.userId
+        GROUP BY u.userId, u.headimgUrl, u.nickName
+    </select>
+
+    <select id="getTaskChatList" resultType="com.example.bbs.pojo.vo.MessageListVO">
+        select u.userId                                           userId,
+               u.headimgUrl                                       headimgUrl,
+               u.nickName                                         nickName,
+               c.order_id                                         orderId,
+               sum(case c.message_state when 1 then 1 else 0 end) unReadNum,
+               c.create_time                                      createTime,
+               c.message_content                                  messageContent
+        from (select *
+              from task_chat
+              where user_id = #{userId}
+                and message_type = 1
+                and message_state != 3
+              ORDER BY create_time DESC LIMIt 0, 18446744073709551615) c
+                 join bbs_user u on c.chater_id = u.userId
+
+        GROUP BY u.userId, u.headimgUrl, u.nickName, c.order_id
+    </select>
+
+    <select id="getChatDetail" resultType="com.example.bbs.pojo.vo.ChatDetailVO">
+        select senderId,
+               receiverId,
+               messageContent,
+               createTime
+        from bbs_chat
+        WHERE userId = #{userId}
+          and chaterId = #{senderId}
+          and state != 3
+        ORDER BY createTime desc
+            limit #{pageNum}, #{pageSize}
+    </select>
+
+    <select id="getTaskChatDetail" resultType="com.example.bbs.pojo.vo.ChatDetailVO">
+        select sender_id       senderId,
+               receiver_id     userId,
+               message_content messageContent,
+               order_id        orderId,
+               create_time     createTime
+        from task_chat
+        WHERE order_id = #{orderId}
+          and user_id = #{userId}
+          and chater_id = #{senderId}
+          and message_state != 3
+        ORDER BY create_time desc
+            limit #{pageNum}, #{pageSize}
+    </select>
+
+    <update id="deleteChat">
+        update bbs_chat
+        set state     = 3,
+            updateTime=now()
+        where userId = #{userId}
+          and chaterId = #{chaterId}
+    </update>
+
+    <update id="deleteTaskChat">
+        update task_chat
+        set message_state = 3,
+            update_time=now()
+        where user_id = #{userId}
+          and chater_id = #{chaterId}
+          and order_id = #{orderId}
+    </update>
+
+    <update id="resetUnReadNum">
+        update bbs_chat
+        set state = 2
+        where userId = #{userId}
+          and chaterId = #{senderId}
+          and state != 3
+    </update>
+
+    <update id="resetUnReadNumTask">
+        update task_chat
+        set message_state = 2
+        where user_id = #{userId}
+          and chater_id = #{senderId}
+          and order_id = #{orderId}
+          and message_state != 3
+    </update>
+
+    <update id="ignoreReadNum">
+        update bbs_chat
+        set state = 2
+        where senderId = #{receiverId}
+          and receiverId = #{senderId}
+          and state != 3
+    </update>
+
+</mapper>

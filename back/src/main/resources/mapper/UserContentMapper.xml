@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bbs.mapper.User_ContentMapper">
+    <update id="batchUpdateReadNumById">
+        <foreach collection="userContentList" item="item" separator=";">
+            update
+            bbs_user_content
+            set
+            readNum = #{item.readNum}
+            where
+            id = #{item.id}
+        </foreach>
+    </update>
+
+    <insert id="batchInsertUserContent">
+        insert into bbs_user_content(id,userId,contentId,readNum,createTime,updateTime)
+        values
+        <foreach collection="userContentList" separator="," item="item">
+            (#{item.id},#{item.userId},#{item.contentId},#{item.readNum},#{item.createTime},#{item.updateTime})
+        </foreach>
+    </insert>
+</mapper>

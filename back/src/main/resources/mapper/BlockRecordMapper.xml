@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bbs.mapper.BlockRecordMapper">
+
+    <!--    带有请求时间参数的获取帖子列表-->
+    <select id="getBlockRecordVOListByUserId" resultType="com.example.bbs.pojo.vo.BlockRecordVO">
+        select
+        b.id id,
+        b.user_id userId,
+        b.target_id targetId,
+        b.target_state targetState,
+        u.nickName targetName,
+        b.create_time createTime,
+        b.update_time updateTime
+        from
+        bbs_block_record b
+        join bbs_user u on b.target_id=u.userId
+        where
+        <if test="userId != null and userId != ''">
+            b.user_id = #{userId} and
+        </if>
+        b.target_state = 1
+        order by b.update_time desc
+        limit #{pageNum},#{pageSize}
+    </select>
+
+</mapper>

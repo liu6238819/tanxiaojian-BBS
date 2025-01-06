@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bbs.mapper.TaskOrderMapper">
+
+    <sql id="selectTaskOrderVo">
+        select order_id,
+               publisher_id,
+               order_kind,
+               order_state,
+               order_content,
+               order_img,
+               order_start_place,
+               order_end_place,
+               applicant_major,
+               applicant_qualification,
+               order_remark,
+               order_cost,
+               order_deadline,
+               school_id,
+               appeal_reason,
+               start_time,
+               confirm_time,
+               finish_time,
+               appeal_time,
+               create_time,
+               update_time
+        from task_order
+    </sql>
+
+    <select id="selectTaskOrderList" resultType="com.example.bbs.pojo.TaskOrder">
+        <include refid="selectTaskOrderVo"/>
+        <where>
+            <if test="publisherId != null  and publisherId != ''">and publisher_id = #{publisherId}</if>
+            <if test="orderKind != null and orderKind != -1 ">and order_kind = #{orderKind}</if>
+            <if test="orderState != null and orderState != -1 ">and order_state = #{orderState}</if>
+            <if test="schoolId != null and schoolId != -1 ">and school_id = #{schoolId}</if>
+            and (order_state != 5 or order_state != 9)
+        </where>
+        order by create_time desc
+        limit #{pageNum},#{pageSize}
+    </select>
+
+    <select id="selectActivityList" resultType="com.example.bbs.pojo.vo.SignUpActivityVO">
+        select
+        id,
+        image,
+        content,
+        kind,
+        state,
+        school_id,
+        owner_id,
+        alumni_only,
+        deposit,
+        quota,
+        link,
+        deadline,
+        create_time,
+        update_time
+        from
+        sign_up_activity
+        <where>
+            <if test="ownerId != null">and owner_id = #{ownerId}</if>
+            <if test="kind != null and kind != -1 ">and kind = #{kind}</if>
+            <if test="state != null and state != -1 ">and state = #{state}</if>
+            <if test="schoolId != null and schoolId != -1 ">and school_id = #{schoolId}</if>
+            <if test="alumniOnly != null and alumniOnly != -1 ">and alumni_only = #{alumniOnly}</if>
+        </where>
+        order by create_time asc
+        limit #{pageNum},#{pageSize}
+    </select>
+
+    <select id="selectProfitOrderList" resultType="com.example.bbs.pojo.TaskOrder">
+        select
+        o.order_id,
+        o.publisher_id,
+        o.order_kind,
+        o.order_state,
+        o.order_content,
+        o.order_img,
+        o.order_start_place,
+        o.order_end_place,
+        o.applicant_major,
+        o.applicant_qualification,
+        o.order_remark,
+        o.order_cost,
+        o.order_deadline,
+        o.school_id,
+        o.appeal_reason,
+        o.appeal_time,
+        o.start_time,
+        o.confirm_time,
+        o.finish_time,
+        o.create_time,
+        o.update_time
+        from task_order_applicant a join task_order o on a.order_id=o.order_id
+        <where>
+            <if test="schoolId != null and schoolId != -1 ">and o.school_id = #{schoolId}</if>
+            <if test="queryType == 1">and (o.order_state = 4 or o.order_state = 10 or o.order_state = 11)</if>
+            <if test="queryType == 2">and (o.order_state = 4)</if>
+            <if test="queryType == 3">and (o.order_state = 10)</if>
+            <if test="queryType == 4">and (o.order_state = 11)</if>
+            <if test="queryType == 5">and (o.order_state = 4 or o.order_state = 10 or o.order_state = 11) and
+                TIMESTAMPDIFF(SECOND , o.finish_time, NOW()) > 0 and TIMESTAMPDIFF(SECOND ,date_sub(now(),interval
+                #{duration}
+                day) , o.finish_time) > 0
+            </if>
+            and a.applicant_id = #{userId}
+            and a.applicant_state = 1
+        </where>
+    </select>
+
+    <select id="selectProfitRanking" resultType="com.example.bbs.pojo.vo.RankingVO">
+        select u.userId          userId,
+               u.nickName        nickName,
+               u.headimgUrl      headimgUrl,
+               sum(t.order_cost) totalProfit
+        from (
+                 select o.order_id,
+                        o.order_state,
+                        o.order_cost,
+                        a.applicant_id
+                 from task_order_applicant a
+                          join task_order o on a.order_id = o.order_id
+                 where (o.order_state = 4 or o.order_state = 10 or o.order_state = 11)
+                   and a.applicant_state = 1
+                   and TIMESTAMPDIFF(SECOND , o.finish_time, NOW()) > 0
+                   and TIMESTAMPDIFF(SECOND ,date_sub(now(), interval
+                     #{duration}
+                         day), o.finish_time) > 0) t
+                 join bbs_user u
+                      on t.applicant_id = u.userId
+        GROUP BY u.userId
+        ORDER BY totalProfit DESC
+        limit #{pageNum},#{pageSize}
+    </select>
+
+
+</mapper>

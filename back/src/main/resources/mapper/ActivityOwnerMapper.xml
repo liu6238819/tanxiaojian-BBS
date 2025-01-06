@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bbs.mapper.ActivityOwnerMapper">
+    <select id="selectActivityOwnerList" resultType="com.example.bbs.pojo.ActivityOwner">
+        select
+        id,
+        name,
+        school_id,
+        intro,
+        image,
+        kind,
+        state,
+        alumni_only,
+        link,
+        create_time,
+        update_time
+        from
+        sign_up_activity_owner
+        <where>
+            <if test="ownerId != null">and id = #{ownerId}</if>
+            <if test="kind != null and kind != -1 ">and kind = #{kind}</if>
+            <if test="state != null and state != -1 ">and state = #{state}</if>
+            <if test="schoolId != null and schoolId != -1 ">and school_id = #{schoolId}</if>
+        </where>
+        order by create_time asc
+        limit #{pageNum},#{pageSize}
+    </select>
+</mapper>

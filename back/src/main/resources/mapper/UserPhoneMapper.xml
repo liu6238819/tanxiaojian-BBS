@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bbs.mapper.UserPhoneMapper">
+    <insert id="insertBatchUserPhone">
+        INSERT INTO bbs_user_phone (id, user_id, encrypted_phone, phone, create_time, update_time)
+        VALUES
+        <foreach collection="userPhoneList" item="item" separator=",">
+            (#{item.id}, #{item.userId}, #{item.encryptedPhone}, #{item.phone}, #{item.createTime}, #{item.updateTime})
+        </foreach>
+    </insert>
+</mapper>

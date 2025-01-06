@@ -16,6 +16,7 @@
 <font style="color:rgb(64, 72, 91);">演示案例为正式版并已上线运营的真实项目，日活3w+</font>
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/25855601/1736089409201-8f1d86c7-10f2-4be2-a0a8-8ed5a04ebf20.png)
+![输入图片说明](https://cdn.nlark.com/yuque/0/2025/png/25855601/1736089409201-8f1d86c7-10f2-4be2-a0a8-8ed5a04ebf20.png)
 
 也可本地快速搭建项目后体验，详见安装教程
 

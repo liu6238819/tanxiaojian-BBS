@@ -2,43 +2,31 @@
 branches: {
   }
 fileChange:
-  /back:
-    newFile: !uuid '8ed219d07d5809e0e4923c597a49e00fca357a7f'
-    oldFile: !uuid 'a088f4cc5e0638f59a820b885ba0ed371ca422b1'
-  /back/src:
-    newFile: !uuid 'd32a70d22a3b9a5265383326322476137baec16d'
-    oldFile: !uuid 'be8792cd5e9854704c8a14c9857e772ba4f6d10d'
-  /back/src/main:
-    newFile: !uuid '5580d775d24c63303bd2ad2e2ab102fe1d8e4cda'
-    oldFile: !uuid '21f3f4fa60460b73141cbcba0714af33a586a12c'
-  /back/src/main/java:
-    newFile: !uuid 'de1d1c329f3aba037497ba02cd50f574d3166347'
-    oldFile: !uuid '36292a36e886b627a4ed3f8ef6d18565598ee0fb'
-  /back/src/main/java/com:
-    newFile: !uuid '4f51b2b00dcdcc38400797a74e12375b85c2f52b'
-    oldFile: !uuid '6ef0f2cc4f2df7308868898ae1084e9600e5d693'
-  /back/src/main/java/com/example:
-    newFile: !uuid 'a140dc6a7d4efc7e74e4561b9ab90bba58365eb5'
-    oldFile: !uuid 'ee4d3cde9e2523e3b480f3c1adcefdb01c6ff98e'
-  /back/src/main/java/com/example/bbs:
-    newFile: !uuid '0700f2cbdd842814760b3ba3eb04c613ec376cb7'
-    oldFile: !uuid '698d3c73624a667f1f1295c3f3819acc5121a961'
-  /back/src/main/java/com/example/bbs/controller:
-    newFile: !uuid 'a5d9ce2cd378f8ea3aeb1b222ca887c6436663e8'
-    oldFile: !uuid 'b69842bd6e78a8619b53b0d7ae8ca04a6dbff355'
-  /back/src/main/java/com/example/bbs/controller/WeiXinController.java:
-    newFile: !uuid 'd42ab1c100abdf0868a265e2e0a27093350d16d0'
-    oldFile: !uuid 'ba61c0546fc3017706edde768f372c3226b4a973'
-  /back/src/main/java/com/example/bbs/controller/loginController.java:
-    newFile: !uuid '98a928f77c6c475a230c7e28089a54a3f73bd9dc'
-    oldFile: !uuid '15d4e623eee586d2ac20e3d2a187e07d12cb3049'
-  /back/src/main/resources:
-    newFile: !uuid '77d1dce2f204ae6ccb57680af26fa6eef6bc44c2'
-    oldFile: !uuid 'c82290b2afd3d41ca13df8432ffcf1aef05519a4'
-  /back/src/main/resources/application.properties:
-    newFile: !uuid '71c03f59cc214074083c69165e11d9a4155cfad6'
-    oldFile: !uuid '957de20a2a2d2e6626637bd9660757b7872c048d'
-gitCommitId: !uuid 'f59ce3da91ca7b5fcaf24070505d23e847abe834'
+  /front:
+    newFile: !uuid '9f3cad4d503155e5d4e0f4739ccacc83a374d597'
+    oldFile: !uuid '626e087b1d08dabc4fa6ba0b69a83f997ace32f2'
+  /front/js_sdk:
+    newFile: !uuid '077002836c098ca56b773b4a7ec1449d9fef1425'
+    oldFile: !uuid '4da206a39f918d9b50da4ebebd8ff5b2d70ffe17'
+  /front/js_sdk/yushijie-ossutil:
+    newFile: !uuid '1a26d3b93a9a7fdfc89654f42e9caa8e65414f6b'
+    oldFile: !uuid 'bcb00ae74ea6906171df7e165986f5e0e49faea1'
+  /front/js_sdk/yushijie-ossutil/ossutil:
+    newFile: !uuid '61e2ff8a38205305cc6fa8daaf24819e1084b445'
+    oldFile: !uuid '3914e31ac6b0e55c9907c38908482aae88330a0c'
+  /front/js_sdk/yushijie-ossutil/ossutil/config.js:
+    newFile: !uuid '0b9f92fa937e16e598e64c254312bbbe9e885b6e'
+    oldFile: !uuid '239515e913cf19ef871c84302d3b87d56868575d'
+  /front/manifest.json:
+    newFile: !uuid '7a62b80cd6d7ee6da82effd790930ff4badbeb5a'
+    oldFile: !uuid '39d1087d765606b14c0e1c90b1f13b1e11b246c6'
+  /front/utils:
+    newFile: !uuid '83046a229b5e82ee3ec89b9a740cfa3038aef03b'
+    oldFile: !uuid 'a43dd7de30f43ede01bffc8cecbd952b8e3abbd0'
+  /front/utils/data.js:
+    newFile: !uuid '6f2619844011bc13d475ba8e37ead6ff88e47fc4'
+    oldFile: !uuid '1f3174088b0b003e653f46f944efe062f3a16848'
+gitCommitId: !uuid '17d190526a28712c39a108891c06fb4374bff56e'
 renames: {
   }
-revisionId: 4
+revisionId: 5

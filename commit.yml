@@ -3,9 +3,12 @@ branches: {
   }
 fileChange:
   /README.md:
+    newFile: !uuid 'b2028b2de2b3b2e474dccfebc7d12081d5000fd6'
+    oldFile: null
+  /项目介绍.md:
     newFile: null
-    oldFile: !uuid '4149e3ba31019d1fdf3f4ea3979b1e308e7da8af'
-gitCommitId: !uuid 'bad322e01a0cf71589ad0e2311d29f8b565043b3'
-renames: {
-  }
-revisionId: 10
+    oldFile: !uuid 'b2028b2de2b3b2e474dccfebc7d12081d5000fd6'
+gitCommitId: !uuid 'd554a74dc0637b1402e57dddf0ac4ca2743aab6f'
+renames:
+  /README.md: /项目介绍.md
+revisionId: 11

@@ -82,14 +82,14 @@
 
 			},
 			async toAnswerExamnie() {
-				let useCount = await this.isHaveChance();
-				if (useCount >= 3) {
-					uni.showToast({
-						title: '答题认证机会已经用完',
-						icon: "none"
-					});
-					return
-				}
+				// let useCount = await this.isHaveChance();
+				// if (useCount >= 3) {
+				// 	uni.showToast({
+				// 		title: '答题认证机会已经用完',
+				// 		icon: "none"
+				// 	});
+				// 	return
+				// }
 				this.$emit("returnHid", 0) //传递的值
 				uni.navigateTo({
 					url: '/package_task/pages/bbs/user/answer-examine'

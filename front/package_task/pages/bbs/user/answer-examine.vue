@@ -20,8 +20,8 @@
 				style="width: 30%; background-color:rgba(255, 0, 0, 0.9);">
 				提 交
 			</button>
-			<button v-if="!userInfos.phone" class="cu-btn text-bold text-white" open-type="getPhoneNumber" @getphonenumber="exazmine"
-				style="width: 30%; background-color:rgba(255, 0, 0, 0.9);">
+			<button v-if="!userInfos.phone" class="cu-btn text-bold text-white" open-type="getPhoneNumber"
+				@getphonenumber="exazmine" style="width: 30%; background-color:rgba(255, 0, 0, 0.9);">
 				提 交
 			</button>
 		</view>
@@ -87,7 +87,7 @@
 	import rsa from '@/utils/rsa.js';
 	export default {
 		computed: {
-			...mapState('user', ['userInfos','userKey',]),
+			...mapState('user', ['userInfos', 'userKey', ]),
 			...mapState('user', ['currentSchoolId']),
 			...mapState('user', ['scoresFront', 'currentUserState']),
 
@@ -103,17 +103,90 @@
 			}
 		},
 		async onLoad() {
-			await this.getQuestions()
+			this.questionsList = [{
+				"title": "1+1：",
+				"options": [{
+					"content": "A．1",
+					"key": "A"
+				}, {
+					"content": "B．2",
+					"key": "B"
+				}, {
+					"key": "C",
+					"content": "C．3"
+				}, {
+					"content": "D．4",
+					"key": "D"
+				}],
+				"answer": "B",
+				"state": 1.0,
+				"school_id": -1,
+				"create_time": {
+					$date: Date.now()
+				},
+				"update_time": {
+					$date: Date.now()
+				}
+			}, {
+				"title": "2+2：",
+				"options": [{
+					"content": "A．2",
+					"key": "A"
+				}, {
+					"content": "B．4",
+					"key": "B"
+				}, {
+					"key": "C",
+					"content": "C．6"
+				}, {
+					"content": "D．8",
+					"key": "D"
+				}],
+				"answer": "B",
+				"state": 1.0,
+				"school_id": -1,
+				"create_time": {
+					$date: Date.now()
+				},
+				"update_time": {
+					$date: Date.now()
+				}
+			}, {
+				"title": "3+3：",
+				"options": [{
+					"content": "A．3",
+					"key": "A"
+				}, {
+					"content": "B．6",
+					"key": "B"
+				}, {
+					"key": "C",
+					"content": "C．9"
+				}, {
+					"content": "D．12",
+					"key": "D"
+				}],
+				"answer": "B",
+				"state": 1.0,
+				"school_id": -1,
+				"create_time": {
+					$date: Date.now()
+				},
+				"update_time": {
+					$date: Date.now()
+				}
+			}]
+			// await this.getQuestions()
 			// #ifdef MP-WEIXIN
 			//重新获取登录信息，以防止过期
-			let loginResult = await this.loginWX()
-			if (loginResult != 'success') {
-				uni.showToast({
-					icon: 'none',
-					title: '信息获取异常，请反馈客服'
-				})
-				return
-			}
+			// let loginResult = await this.loginWX()
+			// if (loginResult != 'success') {
+			// 	uni.showToast({
+			// 		icon: 'none',
+			// 		title: '信息获取异常，请反馈客服'
+			// 	})
+			// 	return
+			// }
 			// #endif
 
 		},
@@ -186,13 +259,13 @@
 					const haveOtherRecord = await haveIdentifiedInOtherSchool(queryForm)
 					uni.hideLoading()
 					//用户存在其他学校的认证记录
-					if (haveOtherRecord.code==200 && haveOtherRecord.data==1) {
-						console.log("haveOtherRecord",haveOtherRecord)
+					if (haveOtherRecord.code == 200 && haveOtherRecord.data == 1) {
+						console.log("haveOtherRecord", haveOtherRecord)
 						uni.showModal({
 							content: haveOtherRecord.message,
-							confirmText:'联系客服',
-							showCancel:true,
-							cancelText:'返回首页',
+							confirmText: '联系客服',
+							showCancel: true,
+							cancelText: '返回首页',
 							success: async res => {
 								if (res.confirm) {
 									uni.redirectTo({
@@ -289,7 +362,7 @@
 						const {
 							phoneNumber
 						} = phone
-			
+
 						// 1.3 将手机号写入后台，更新本地缓存和vuex
 						const editUserInfos = await reqEditUserInfos({
 							userId,

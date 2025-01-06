@@ -5,11 +5,11 @@ const templateId9='' //资讯更新模板ID
 const templateId10='' //内容更新模板ID
 
 export default {	
-	
-	// baseUrl: '',
-	// webSocketUrl: '',
-	// localBaseUrl: '',
-	// localWebSocketUrl: '',
+	//测试体验地址
+	baseUrl: 'http://121.40.93.179:8085', //  localhost
+	webSocketUrl: 'ws://121.40.93.179:8085/remindWSS/',
+	localBaseUrl: 'http://121.40.93.179:8085',
+	localWebSocketUrl: 'http://121.40.93.179:8085',
 	//云环境ID
 	envId: '',
 	//APPID
@@ -28,10 +28,10 @@ export default {
 
 
 	//本地后台服务
-	baseUrl: 'http://localhost:8085', //  localhost
-	webSocketUrl: 'ws://localhost:8085/remindWSS/',
-	localBaseUrl: 'http://localhost:8085',
-	localWebSocketUrl: 'ws://localhost:8085/remindWSS/',
+	// baseUrl: 'http://localhost:8085', //  localhost
+	// webSocketUrl: 'ws://localhost:8085/remindWSS/',
+	// localBaseUrl: 'http://localhost:8085',
+	// localWebSocketUrl: 'ws://localhost:8085/remindWSS/',
 
 	
 	//使用数据库：0测试数据库 ； 1正式数据库

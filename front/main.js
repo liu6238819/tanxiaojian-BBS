@@ -571,19 +571,20 @@ Vue.prototype.permissionCheckNew = async (userId, schoolId, schoolFlag) => {
 }
 
 Vue.prototype.uploadImageOSS = function(filePath, catalogue, schoolId) {
+	return filePath;
 	// console.log(filePath + ' ' + catalogue);
-	return new Promise((resolve, reject) => {
-		uploadImageOSS(filePath, catalogue, schoolId,
-			result => {
-				console.log(result);
-				resolve(result);
-			},
-			fail => {
-				console.log(fail);
-				reject(fail);
-			}
-		)
-	})
+	// return new Promise((resolve, reject) => {
+	// 	uploadImageOSS(filePath, catalogue, schoolId,
+	// 		result => {
+	// 			console.log(result);
+	// 			resolve(result);
+	// 		},
+	// 		fail => {
+	// 			console.log(fail);
+	// 			reject(fail);
+	// 		}
+	// 	)
+	// })
 }
 
 Vue.prototype.uploadVideoOSS = function(filePath, catalogue, suffix) {

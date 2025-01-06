@@ -13,7 +13,8 @@
 		getMarkMessageList_1,
 		reqEditUserInfos,
 		addUserLoginRecord,
-		searchFocusContentRecords
+		searchFocusContentRecords,
+		getUserInfoById
 	} from '@/api/index.js'
 	import localData from './utils/data.js'
 	import {
@@ -37,7 +38,8 @@
 			if (this.currentSchoolId != null) {
 				uni.setStorageSync('schoolId', this.currentSchoolId * 1);
 				// 启动小程序时通过openId获取用户信息
-				await this.firstGetUserInfo()
+				await this.firstGetUserInfoTest()
+				// await this.firstGetUserInfo()
 				//进行隐私授权判断
 				await this.judgePrivacySetting()
 				await this.getSchoolBasicConfig()
@@ -50,7 +52,8 @@
 				//如果本地缓存和页面参数中均不存在shcoolId，跳转选择学校页面
 				if (!uni.getStorageSync('schoolId') && !launchOptions.query.currentSchoolId) {
 					// 启动小程序时通过openId获取用户信息
-					await this.firstGetUserInfo()
+					await this.firstGetUserInfoTest()
+					// await this.firstGetUserInfo()
 					//进行隐私授权判断
 					await this.judgePrivacySetting()
 					this.globalData.launchChangeSchoolEnd = true;
@@ -58,7 +61,8 @@
 				}
 
 				// 启动小程序时通过openId获取用户信息
-				await this.firstGetUserInfo()
+				await this.firstGetUserInfoTest()
+				// await this.firstGetUserInfo()
 				//进行隐私授权判断
 				await this.judgePrivacySetting()
 				//获取配置信息，当stroeage中学校id不存在是时不请求
@@ -172,7 +176,7 @@
 				const remindsData = await getReminds(params)
 				if (!remindsData) {
 					console.log('请求通知失败！');
-					this.judgeMaintenanceState()
+					// this.judgeMaintenanceState()
 					return
 				}
 				if (remindsData.code === 200) {
@@ -187,7 +191,34 @@
 
 				} else {
 					console.log('请求通知失败！');
-					this.judgeMaintenanceState()
+					// this.judgeMaintenanceState()
+				}
+			},
+			//测试版获取用户信息
+			async firstGetUserInfoTest(){
+				const params = {
+					userId: "0003f1cbdb604de68cf06037ddbbdef4",//测试id
+					searchId: "0003f1cbdb604de68cf06037ddbbdef4", //测试id
+					schoolId: this.currentSchoolId,
+				}
+				const userInfosData = await getUserInfoById(params)
+				if (userInfosData.code === 200) {
+					console.log(userInfosData);
+					let userInfo = {
+						...userInfosData.data.userInfo
+					}
+					if (userInfo.introduction == null) {
+						userInfo.introduction = ''
+					}
+					userInfo.scores=1000;
+					this.getUserInfos(userInfo)
+					uni.setStorageSync('userInfos', userInfo)
+					console.log(this.userInfos)
+					//获取认证状态
+					this.getUserStateBySchool(this.userInfos.userId)
+					//用户登录
+					let launchOptions = uni.getLaunchOptionsSync()
+					this.insertUserLoginRecord(launchOptions)
 				}
 			},
 			async firstGetUserInfo() {
@@ -554,7 +585,8 @@
 							}
 							this.changeBaseUrlBySchoolId(school)
 							this.setCurrentSchoolState(school.state)
-							await this.firstGetUserInfo()
+							// await this.firstGetUserInfo()
+							await this.firstGetUserInfoTest()
 						}
 						else{
 						}

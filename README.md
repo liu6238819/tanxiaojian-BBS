@@ -1,4 +1,4 @@
-![输入图片说明](images/05.png)#### <font style="color:rgb(64, 72, 91);">1.谈校间介绍</font>
+#### <font style="color:rgb(64, 72, 91);">1.谈校间介绍</font>
 <font style="color:rgb(64, 72, 91);">谈校间是一款</font><font style="color:#DF2A3F;">迭代超三年</font><font style="color:rgb(64, 72, 91);">，经</font><font style="color:#DF2A3F;">数十万真实用户</font><font style="color:rgb(64, 72, 91);">及</font><font style="color:#DF2A3F;">上百位流量主</font><font style="color:rgb(64, 72, 91);">检验的社区论坛系统。除具备功能设计合理，页面美观实用等优点外，在</font><font style="color:#DF2A3F;">网络安全</font><font style="color:rgb(64, 72, 91);">、</font><font style="color:#DF2A3F;">性能优化</font><font style="color:rgb(64, 72, 91);">等方面也有着成熟的解决方案，能够从容应对各类实际业务场景。</font>
 
 ##### <font style="color:rgb(64, 72, 91);">1.1 技术栈</font>
@@ -34,7 +34,9 @@
 ##### <font style="color:rgb(64, 72, 91);">2.4 管理端效果截图</font>
 ![输入图片说明](images/04.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/25855601/1736091248592-fde37565-e380-4f61-8e10-983dcb907dd5.png)
+![输入图片说明](images/05.png)
+
+![输入图片说明](images/06.png)
 
 #### <font style="color:rgb(64, 72, 91);">3.安装教程</font>
 <font style="color:#DF2A3F;">已为开源版提供了远程测试地址，可以无需搭建后端环境直接体验功能！</font>
@@ -44,7 +46,7 @@
 
 如需官方提供安装服务和技术支持可联系（仅提供有偿服务）：
 
-![](https://cdn.nlark.com/yuque/0/2025/jpeg/25855601/1736167712484-72db67df-af2c-49d0-94a9-e8517eeea9ef.jpeg)
+![输入图片说明](images/07.jpg)
 
 #### <font style="color:rgb(64, 72, 91);">4.补充说明</font>
 1. <font style="color:rgb(64, 72, 91);">代码前后端均发布了开源版，已涵盖论坛系统所需的绝大多数功能，演示案例为标准版；</font>

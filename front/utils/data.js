@@ -1,27 +1,30 @@
 //pro订阅消息模板
-const templateId4='mCZ4_nAhvf0JLz6-t9lWeFb2iFWTzPg_WcS1V0Pda7Y' //认证模板ID
-const templateId7='cmHgsiYL4mD88oojFPph2zaj7x46mU0Gjkfkj7admso' //评论模板ID
-const templateId9='YaIxrQ_o6T6U0L7OkB5vo8uXov1VCUxddFtw6hTRXcI' //资讯更新模板ID
-const templateId10='7O-zj0duYbitNdpYT6RXzUd8cByoFbFDjjzLMQ0XM7g' //内容更新模板ID
+const templateId4='' //认证模板ID
+const templateId7='' //评论模板ID
+const templateId9='' //资讯更新模板ID
+const templateId10='' //内容更新模板ID
 
 export default {	
-	//pro
-	// baseUrl: 'https://tanxiaojian.zone/BBSapi-NUFE/',
-	// webSocketUrl: 'wss://tanxiaojian.zone/BBSapi-NUFE/remindWSS/',
-	envId: 'bbs-nufe-4g4wwvwz301b3695',
-	appId:'wx53ca9ca3a3bc4f65',
+	
+	// baseUrl: '',
+	// webSocketUrl: '',
+	// localBaseUrl: '',
+	// localWebSocketUrl: '',
+	//云环境ID
+	envId: '',
+	//APPID
+	appId:'',
+	//APPID
+	loacalAppId:'',
 	newNickName:'圈友_',  //新用户昵称
 	newHeadimgUrl:'/static/headImg/ngc.png', //新用户头像
 	cloud_shared: new wx.cloud.Cloud({
 		// 资源方 AppID
-		resourceAppid: 'wxf162aa13e351a338',
+		resourceAppid: '',
 		// 资源方环境 ID
-		resourceEnv: 'bbs-nufe-4g4wwvwz301b3695',
+		resourceEnv: '',
 	}),
 	UIColor:'blue',
-	// localBaseUrl: 'https://tanxiaojian.zone/BBSapi-NUFE/',
-	// localWebSocketUrl: 'wss://tanxiaojian.zone/BBSapi-NUFE/remindWSS/',
-	loacalAppId:'wx53ca9ca3a3bc4f65',
 
 
 	//本地后台服务

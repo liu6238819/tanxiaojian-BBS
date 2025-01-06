@@ -3,24 +3,3267 @@ branches: {
   }
 fileChange:
   /back:
-    newFile: !uuid '8afcc38f30b0eef83e3904a3e1bfa377b9618765'
+    newFile: !uuid 'a088f4cc5e0638f59a820b885ba0ed371ca422b1'
+    oldFile: !uuid '8afcc38f30b0eef83e3904a3e1bfa377b9618765'
+  /back/.gitignore:
+    newFile: !uuid '5cd3a72e05af4287ba60fec3cea2f323cd5dfdb0'
+    oldFile: null
+  /back/.idea:
+    newFile: !uuid '8338e6da0f0e3f4279c2ee0befc2f0a3f15ef3c0'
+    oldFile: null
+  /back/.idea/.gitignore:
+    newFile: !uuid '73f69e0958611ac6e00bde95641f6699030ad235'
+    oldFile: null
+  /back/.idea/.name:
+    newFile: !uuid '697c694810945f440d8d1712fee96a2eb633b412'
+    oldFile: null
+  /back/.idea/codeStyles:
+    newFile: !uuid 'd4642ef2efc38aa7c205d1e8e1d092a0a79c9ae5'
+    oldFile: null
+  /back/.idea/codeStyles/Project.xml:
+    newFile: !uuid '68afe5a989c7db0c2e646be2fb1574f8d784f50d'
+    oldFile: null
+  /back/.idea/codeStyles/codeStyleConfig.xml:
+    newFile: !uuid 'a55e7a179bde3e4e772c29c0c85e53354aa54618'
+    oldFile: null
+  /back/.idea/compiler.xml:
+    newFile: !uuid '35ec5f0793af402da7c4efac51922a81d7ff1e44'
+    oldFile: null
+  /back/.idea/dataSources.xml:
+    newFile: !uuid 'b8b99401d9606095951fb7842e8868222b04477a'
+    oldFile: null
+  /back/.idea/encodings.xml:
+    newFile: !uuid 'aa00ffab7828f4818589659c804ec2cfd99baed3'
+    oldFile: null
+  /back/.idea/inspectionProfiles:
+    newFile: !uuid 'cf14eb10c6ca4b9244860316221ccdeea47c8435'
+    oldFile: null
+  /back/.idea/inspectionProfiles/Project_Default.xml:
+    newFile: !uuid '3474526ed1771a102a342928ecc938791a82dc39'
+    oldFile: null
+  /back/.idea/jarRepositories.xml:
+    newFile: !uuid '22e83c6b398d40fa937107583781f65c9e1262b6'
+    oldFile: null
+  /back/.idea/libraries:
+    newFile: !uuid '883b717f61ccf6150dab8748570f496c7986665c'
+    oldFile: null
+  /back/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml:
+    newFile: !uuid '6fec8f4346ac31350b855bd6cd3886f1d15e3f79'
+    oldFile: null
+  /back/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml:
+    newFile: !uuid '9eb8596a33a55f6e2480baf37393b24b7ae8da60'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_alibaba_fastjson_1_2_68.xml:
+    newFile: !uuid '46d8ffb3455d9ae306629b2dceb5516c70291d55'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_auth0_java_jwt_3_4_0.xml:
+    newFile: !uuid '782833eb1fd2253e19f3f240d11eb6ef157b8be3'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_baomidou_mybatis_plus_3_0_5.xml:
+    newFile: !uuid 'dbfcfe91b1fac636131832d88cc43264358b1ffb'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_baomidou_mybatis_plus_annotation_3_0_5.xml:
+    newFile: !uuid '48f7562e485d2712dac2e771b748ef41132646ad'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_baomidou_mybatis_plus_boot_starter_3_0_5.xml:
+    newFile: !uuid '975c60c9c9f46acc6a00f0e207ec06ea1b003849'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_3_0_5.xml:
+    newFile: !uuid '9dcd5d8172f5b54c5ac298a7ea8b2b1b1c5be854'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_baomidou_mybatis_plus_extension_3_0_5.xml:
+    newFile: !uuid '7bf10b392bb710bc2a35ecd5c1022ec2fddbc0b3'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_baomidou_mybatis_plus_generator_3_0_5.xml:
+    newFile: !uuid '73dd9dc63801fc9059f1ff120df1fbdcc8997067'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml:
+    newFile: !uuid 'bc7d7fd869dadc58b6b2b17fd7852efe43e1671f'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_3.xml:
+    newFile: !uuid 'd6408240bbe1e1454bf626ea788db7296c7b449e'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_3.xml:
+    newFile: !uuid '572ed924b85c80dee3db6727c1abc71df438a9ed'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_3.xml:
+    newFile: !uuid 'c9ac6cc0504797b262d99da179938254c6ff7963'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_3.xml:
+    newFile: !uuid '76ed7ddfc81972797e46bb81efd90ded46244b41'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_3.xml:
+    newFile: !uuid '1ed8753066fa747fee38d3daddc239d4cca052cd'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_3.xml:
+    newFile: !uuid '2aad1f70f490dd121a656b5b31b779f0afc3f8f8'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_2.xml:
+    newFile: !uuid '33fa8b1d7c90406e46e2c2dc87a685c3a767cb4a'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_google_guava_guava_20_0.xml:
+    newFile: !uuid 'c5bd322e1504ed1ba58740d40bb6836f4fc9592b'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml:
+    newFile: !uuid 'f19f6eb36d90a68eaceb438559d62b3054eaef31'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_4_9_3.xml:
+    newFile: !uuid '2b0e895f171b97e479250ce1fe692bd3d3cbb819'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_squareup_okio_okio_2_8_0.xml:
+    newFile: !uuid '660331258eb1225395a097180722563fa652728f'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml:
+    newFile: !uuid 'b8581a6f5eef96c4979f258063e7c7c8d633f024'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_vdurmont_emoji_java_4_0_0.xml:
+    newFile: !uuid 'a1bfb55187b594946b3e6bbf5bc39fb8612d6866'
+    oldFile: null
+  /back/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_5.xml:
+    newFile: !uuid '97e22912d67e2065823863ce87154f31ca59cf07'
+    oldFile: null
+  /back/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_0.xml:
+    newFile: !uuid 'cf7c90cceef30e3068525ffb22006dca05c8a1aa'
+    oldFile: null
+  /back/.idea/libraries/Maven__commons_codec_commons_codec_1_14.xml:
+    newFile: !uuid '50b8f2b1313e4a796dbdfba11317f4323d5bc3a2'
+    oldFile: null
+  /back/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml:
+    newFile: !uuid '3caee7e547658dba7cc48a47d96dc95bd160a2cc'
+    oldFile: null
+  /back/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml:
+    newFile: !uuid '66e653715c85dc6da7371688199b7a537885f202'
+    oldFile: null
+  /back/.idea/libraries/Maven__commons_lang_commons_lang_2_5.xml:
+    newFile: !uuid '055afe5d1c257b1d741b54d625dbc4bba60d45d9'
+    oldFile: null
+  /back/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml:
+    newFile: !uuid 'b770f56aa973a210ba6b27bc867394d3695317ef'
+    oldFile: null
+  /back/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml:
+    newFile: !uuid '03588dc9d07e7b17b323755027104b226448da92'
+    oldFile: null
+  /back/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml:
+    newFile: !uuid '4a47148b6e09d9ace3694873e267f6bce97dc25d'
+    oldFile: null
+  /back/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml:
+    newFile: !uuid 'f934649ac97878982c63bf6250e8659081ca5246'
+    oldFile: null
+  /back/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml:
+    newFile: !uuid '7898a19c22ca232040d6a9743aa56c40d3b81b22'
+    oldFile: null
+  /back/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml:
+    newFile: !uuid '4ed7d0d2699c8323519085b2d06e3081a4faa4aa'
+    oldFile: null
+  /back/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml:
+    newFile: !uuid 'c40ef9ff4f6cd886cf5144d349ff8a3fec6b798d'
+    oldFile: null
+  /back/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_9_2.xml:
+    newFile: !uuid '0700f01d6a88679a82d385fe8c4d0ae076e3fc54'
+    oldFile: null
+  /back/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml:
+    newFile: !uuid '1c4a62127f3a3c6c456bbef56c14ee539f06e597'
+    oldFile: null
+  /back/.idea/libraries/Maven__io_swagger_swagger_models_1_5_21.xml:
+    newFile: !uuid '9b3959ab42c5fa6a6f594a51efd6e772202297b8'
+    oldFile: null
+  /back/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml:
+    newFile: !uuid 'be90656e69bb0356d5fbed85d2639aeac6c5f16a'
+    oldFile: null
+  /back/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml:
+    newFile: !uuid 'cba9dd244f222ce7ecbdcab4c7f9621a57fe1a67'
+    oldFile: null
+  /back/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml:
+    newFile: !uuid '04213f73868a39471664c431bdb5073055eb36d5'
+    oldFile: null
+  /back/.idea/libraries/Maven__joda_time_joda_time_2_10_1.xml:
+    newFile: !uuid '9f7554a4007a1b94f49280c83fdccc53c4831354'
+    oldFile: null
+  /back/.idea/libraries/Maven__junit_junit_4_13_1.xml:
+    newFile: !uuid '9fa24fcbd76bf46eac981dc76abe14dd2f666be1'
+    oldFile: null
+  /back/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_22.xml:
+    newFile: !uuid '4de6b45fb49933ce3b98fc8866e55be354fb7561'
+    oldFile: null
+  /back/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_18.xml:
+    newFile: !uuid '532908c856213c8f3ef653f706d1e666dbd254b2'
+    oldFile: null
+  /back/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_18.xml:
+    newFile: !uuid 'a3dcc5b43c9a1b254668e746f2a4e333817f739b'
+    oldFile: null
+  /back/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml:
+    newFile: !uuid 'b3d38583846d5aa1772f53caeccc169761a55a6f'
+    oldFile: null
+  /back/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml:
+    newFile: !uuid '108302355fbaaf40e819f97756e3ed357517a466'
+    oldFile: null
+  /back/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_6.xml:
+    newFile: !uuid '546e6cfd1122e3914986cde3bb0960e6458d1f4a'
+    oldFile: null
+  /back/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk15_2_4.xml:
+    newFile: !uuid '7c6b3e6a41125fb54ba4dc017c7df3ba61dd8864'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_10.xml:
+    newFile: !uuid '00de55351d45629262a4355e729aa285ce717f7a'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_8_1.xml:
+    newFile: !uuid 'f53d3653941b70387afed4426cbd1e77ff88f5b2'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_apache_commons_commons_text_1_9.xml:
+    newFile: !uuid 'c23dddc26933289204f8cddd6b0516129dfb54c4'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_12.xml:
+    newFile: !uuid '9cb68a28264d1eb53c10da5793f2fc971552bfd1'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_14.xml:
+    newFile: !uuid '427f319c6c036f04dc8c165d9028e4b3bbe855eb'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml:
+    newFile: !uuid '8ad499666deb18b7b66bbe7b7af75a4cb9d0a946'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml:
+    newFile: !uuid '57e6ac4878219cace6e087de5021bc4b5a223092'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_41.xml:
+    newFile: !uuid '7ea265d9336944e27916c7ca7be31a60ecc48ee9'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_41.xml:
+    newFile: !uuid '085099205cf9bae4379260f9f52a32af8db6a036'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_apache_velocity_velocity_engine_core_2_0.xml:
+    newFile: !uuid 'b16563b844f1e09435108266e3dee1afd759c5c3'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml:
+    newFile: !uuid 'f854ab00fdbf2e7209bbdf678f7c45f3bb209378'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_6.xml:
+    newFile: !uuid 'd0ca7052129517b67cacff79563a6865d611072a'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_assertj_assertj_core_3_16_1.xml:
+    newFile: !uuid '89765002a792d3fd2fba7f7c7c3d7afaf224225c'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_68.xml:
+    newFile: !uuid 'c7f7fcec72f4e8358aef245728ede28db71f2e02'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml:
+    newFile: !uuid 'ae5020d69f0e700c9eca359ae07f33d714285800'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml:
+    newFile: !uuid '6b5496ff097a7fd9b72025c4acf36cda1416eda3'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml:
+    newFile: !uuid '15f1e4c1711f60a1c1b2c37b3e0e45ba6015bcd4'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml:
+    newFile: !uuid 'e2c829756d1b49963e7df278f92e164243aebb5e'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_3_72.xml:
+    newFile: !uuid '3b2915015f38a7201190430ff5081aebccb81639'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_72.xml:
+    newFile: !uuid 'ed74d4453bcec490647739e7549b38113eac179c'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_json_json_20170516.xml:
+    newFile: !uuid '56af30b3974c2dc1823a0c1e47487bdd7f28c67b'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_6_3.xml:
+    newFile: !uuid 'd6a98a928cc2e79503203ea04d69edf39ab43f79'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_3.xml:
+    newFile: !uuid '3f50defa0ee07cacbb13d1e1f5ccd9fc77fc2344'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_6_3.xml:
+    newFile: !uuid '2331281b6ab06c92842011222b01fc9c51eaaee5'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_6_3.xml:
+    newFile: !uuid '98e9d9eb82b5c9720822582d8948ddd1f1480525'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_3.xml:
+    newFile: !uuid '0122027c72195b6405f4342fc3e3dd5f8ef00651'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_6_3.xml:
+    newFile: !uuid '8ddd1f89f5c1d76a62d908f842194c2848be917a'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml:
+    newFile: !uuid '87cb599b4fffcc104a93d2960f9798e6f4905d0b'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_mockito_mockito_core_3_3_3.xml:
+    newFile: !uuid 'd2f4afa38dac9c566f6f17c199d19f865fedfbe0'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_3_3.xml:
+    newFile: !uuid '6c02a6376ec4e61dbe2889ad621120c27b5c21f5'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml:
+    newFile: !uuid '377b7a724e20a50563ff978f14877d0e85ff5b93'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml:
+    newFile: !uuid '713f6040d926e62d40d9e1755a2e8b314c2333b0'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml:
+    newFile: !uuid 'af41e3b6171208cedd29faa1922420ed916cc5b7'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml:
+    newFile: !uuid 'fbc1b1635a2c69174f8bea7d6306f5175015adc0'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml:
+    newFile: !uuid '0bf8cf2b279adf5dbfdb0ad574f87390f1e4b072'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml:
+    newFile: !uuid 'd43fa188af467e6eaf749e78ef384fd48217270d'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml:
+    newFile: !uuid 'c4c54d6d5452b5e2f25085adb2d2b98c38ae4731'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml:
+    newFile: !uuid '27229ce3e82cb0f1ec67292e953fc9bf08bb12ba'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml:
+    newFile: !uuid '02b6812c3b22ac0b71ecfdd339cfc092deb99e0e'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_3_7_RELEASE.xml:
+    newFile: !uuid 'e2e724fa833a4f7947976ef1505b93f27bdcc472'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_3_7_RELEASE.xml:
+    newFile: !uuid '0ceef74f6a2a9689d6c51c1ef14261af213eede8'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_3_7_RELEASE.xml:
+    newFile: !uuid '0289244d62973381c3c9c3eb78bb260a3682ff34'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_3_7_RELEASE.xml:
+    newFile: !uuid '75845deac48514bebef0c6e177a202e4edc7369b'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_3_7_RELEASE.xml:
+    newFile: !uuid '4328b466dc47028b54864f51afc690d62f2c21b2'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_3_7_RELEASE.xml:
+    newFile: !uuid '309f3ed5efb81826f729159db002bbaefd44b510'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_3_7_RELEASE.xml:
+    newFile: !uuid '5562490d73690f4da4953b23f367f5035ee0ade6'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_3_7_RELEASE.xml:
+    newFile: !uuid '6e20ac24d1e825f9f95c384ece571d09b9ee19c7'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_3_7_RELEASE.xml:
+    newFile: !uuid 'f64b07bed93f26e126fbce3571c7bf9f0d616d4a'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_3_7_RELEASE.xml:
+    newFile: !uuid '62c9b70f00b89867cd2403a2ad9b85f9aeef84d4'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_3_7_RELEASE.xml:
+    newFile: !uuid 'bc668e2a28337c0c14de592813ec82ed25f64967'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_3_7_RELEASE.xml:
+    newFile: !uuid '73b208b89d38bcf63f1325413bc47318e08b7751'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_websocket_2_3_7_RELEASE.xml:
+    newFile: !uuid '538d2dd8a7ef660b27a321201ba34fc508a6697c'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_3_7_RELEASE.xml:
+    newFile: !uuid '92991c0c4fb9dc50dcef75aebea4608d64450d3b'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_3_7_RELEASE.xml:
+    newFile: !uuid '2193c1ca0ebbbf959849ee912cfca90fcb13fabc'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_3_6_RELEASE.xml:
+    newFile: !uuid '583138bad3157ab1db7cff6e3f255c174f401329'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_3_6_RELEASE.xml:
+    newFile: !uuid '9ea5ae0adbab625e50de13238c5c66bde5f4dd9c'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_3_6_RELEASE.xml:
+    newFile: !uuid '6ceee00cc236550630719163726db62a9a40913d'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml:
+    newFile: !uuid 'fbc045291892fa23bdae801938612a435a28c1be'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml:
+    newFile: !uuid '7e6f096b8ffa4f78bad1cf7d1f444eae27429179'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_spring_aop_5_2_12_RELEASE.xml:
+    newFile: !uuid 'dc6f7c3fb2de91d4c1ca477b13c81336601e74fa'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_spring_beans_5_2_12_RELEASE.xml:
+    newFile: !uuid '34c0b678c96534d64dd90c2df7abfa71f2c0a627'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_spring_context_5_2_12_RELEASE.xml:
+    newFile: !uuid '798211b0f624102ea345a4f35bb2f16ee3b1a1b0'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_spring_context_support_5_2_12_RELEASE.xml:
+    newFile: !uuid 'b89cabe448bd8a8a792a033ca2e8df2f2f8e2a95'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_spring_core_5_2_12_RELEASE.xml:
+    newFile: !uuid '6d04c1d06d0766601d6a78d94166135c87acb06a'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_spring_expression_5_2_12_RELEASE.xml:
+    newFile: !uuid '80c024b0bf1be30a3f6a396aabfc458617a436a7'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_12_RELEASE.xml:
+    newFile: !uuid 'd16bf6288d8d9aa5bf3a4817033e21750d91cb76'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_12_RELEASE.xml:
+    newFile: !uuid '3e3326299f2b7c13402842d2d8cf44f5b6ca00c6'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_spring_messaging_5_2_12_RELEASE.xml:
+    newFile: !uuid '78d21ccf78a3ac8ab46ca1f40cf69fbe93926e5a'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_spring_oxm_5_2_12_RELEASE.xml:
+    newFile: !uuid 'cc4ea603759cdd3a24f05a7da82f7ae3af0a9645'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_spring_test_5_2_12_RELEASE.xml:
+    newFile: !uuid 'a80f30bdb0a87a86199105706b9ef1f316fd706f'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_spring_tx_5_2_12_RELEASE.xml:
+    newFile: !uuid '5920caf2f6b98f96871f7cb7411f3ca3444954bc'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_spring_web_5_2_12_RELEASE.xml:
+    newFile: !uuid '35a220115580e73b4fcd7d70848c9899244fac1d'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_12_RELEASE.xml:
+    newFile: !uuid 'ba92d547db3f805a9d9279aeb92aa719eefbcc4f'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_springframework_spring_websocket_5_2_12_RELEASE.xml:
+    newFile: !uuid 'd9b6788392f08ba2bccbc641132068cffd67d288'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml:
+    newFile: !uuid '006a8d346efa506e119271dd612dfc07f4eef831'
+    oldFile: null
+  /back/.idea/libraries/Maven__org_yaml_snakeyaml_1_26.xml:
+    newFile: !uuid 'e998675a21e799d26744edcb29eac417ab916b69'
+    oldFile: null
+  /back/.idea/libraries/Maven__redis_clients_jedis_3_3_0.xml:
+    newFile: !uuid 'b3d420206e359f4294b1c8b951b247b1eb691912'
+    oldFile: null
+  /back/.idea/misc.xml:
+    newFile: !uuid 'a321eb689b13932dd87353438f3cb473a5e592be'
+    oldFile: null
+  /back/.idea/modules.xml:
+    newFile: !uuid '32a5b8edaedb9908d769256455be7404f59c2327'
+    oldFile: null
+  /back/.idea/runConfigurations.xml:
+    newFile: !uuid '797acea53eb091cf5b30518802c3073f544adeed'
+    oldFile: null
+  /back/.idea/uiDesigner.xml:
+    newFile: !uuid 'e96534fb27b68192f27f985d3879e173ec77adb8'
+    oldFile: null
+  /back/.idea/vcs.xml:
+    newFile: !uuid '62bd7a01e9c46011ff345da2389b38fd0fa6d41a'
+    oldFile: null
+  /back/.mvn:
+    newFile: !uuid '88bf4cf610648943581817557053739d932c2ca6'
+    oldFile: null
+  /back/.mvn/wrapper:
+    newFile: !uuid '6bef16b891b042bd96e7515ad6e3b1029795e3dd'
+    oldFile: null
+  /back/.mvn/wrapper/MavenWrapperDownloader.java:
+    newFile: !uuid 'a45eb6ba269cd38f8965cef786729790945d9537'
+    oldFile: null
+  /back/.mvn/wrapper/maven-wrapper.jar:
+    newFile: !uuid '2cc7d4a55c0cd0092912bf49ae38b3a9e3fd0054'
+    oldFile: null
+  /back/.mvn/wrapper/maven-wrapper.properties:
+    newFile: !uuid '642d572ce90e5085986bdd9c9204b9404f028084'
+    oldFile: null
+  /back/HELP.md:
+    newFile: !uuid '81f0b7d812deac710c961c5d0ab06e459805cee3'
+    oldFile: null
+  /back/README.en.md:
+    newFile: !uuid '3f822730f78ed96bf85cdb8ab5b9c2e0651a5ef5'
     oldFile: null
   /back/README.md:
-    newFile: !uuid 'aea0b6931c1db717efe80832f5fb6d91ffd20554'
+    newFile: !uuid 'b77b0cbe055dee4fdb3978496346d2f5e411063a'
+    oldFile: !uuid 'aea0b6931c1db717efe80832f5fb6d91ffd20554'
+  /back/campusBBS_back.iml:
+    newFile: !uuid 'c3cd2320ec949a3621c28f01c3eabb55d852ebf3'
+    oldFile: null
+  /back/mvnw:
+    newFile: !uuid 'a16b5431b4c3cab50323a3f558003fd0abd87dad'
+    oldFile: null
+  /back/mvnw.cmd:
+    newFile: !uuid 'c8d43372c986d97911cdc21bd87e0cbe3d83bdda'
+    oldFile: null
+  /back/pom.xml:
+    newFile: !uuid '9674c746adcdb20e5ed26692eebbcfccad6155a3'
+    oldFile: null
+  /back/src:
+    newFile: !uuid 'be8792cd5e9854704c8a14c9857e772ba4f6d10d'
+    oldFile: null
+  /back/src/main:
+    newFile: !uuid '21f3f4fa60460b73141cbcba0714af33a586a12c'
+    oldFile: null
+  /back/src/main/java:
+    newFile: !uuid '36292a36e886b627a4ed3f8ef6d18565598ee0fb'
+    oldFile: null
+  /back/src/main/java/com:
+    newFile: !uuid '6ef0f2cc4f2df7308868898ae1084e9600e5d693'
+    oldFile: null
+  /back/src/main/java/com/example:
+    newFile: !uuid 'ee4d3cde9e2523e3b480f3c1adcefdb01c6ff98e'
+    oldFile: null
+  /back/src/main/java/com/example/bbs:
+    newFile: !uuid '698d3c73624a667f1f1295c3f3819acc5121a961'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/BbsApplication.java:
+    newFile: !uuid '97a95486c7683284edd06e03acef8d2e94eb0060'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/auto:
+    newFile: !uuid '5baff9ccbd9002ec1fb467a930e4c44dcf868d29'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/auto/ConAndComTypeAutoEdit.java:
+    newFile: !uuid '36e961e6fa3338270f320fdf72e69f9f51c8e66e'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/auto/PermissionCheck.java:
+    newFile: !uuid '28aef137d09140412ea1f4afe868f82d432f73fc'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/auto/UserTypeAutoEdit.java:
+    newFile: !uuid '363487a382e8f6ea87f7c76d45befb42edd36179'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/component:
+    newFile: !uuid '64f72f0135c11ccf1845fd34bf86d990635fd476'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/component/MyInterceptor.java:
+    newFile: !uuid '3c3ead9a86c9173454d894a1428a790827c885b4'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/component/SpringContext.java:
+    newFile: !uuid '8071532d21727919afb989f9a05ef902fda9f043'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/config:
+    newFile: !uuid '24031e397ae54b91cd8ac74fcf1ca3fd48b7407f'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/config/MyBatisPlusConfig.java:
+    newFile: !uuid 'e03ea3818b3c8fbd072e3b6dfd9bc847a5eef4af'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/config/MyInterceptorConfig.java:
+    newFile: !uuid '3d391bfffa6049f1817af31b7734050162374e30'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/config/MyMvcConfig.java:
+    newFile: !uuid 'd8e6a9d0069695990a5149fe9546f52e0b18c8ee'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/config/RedisCacheConfig.java:
+    newFile: !uuid '73ea2a537be0d22d3ae85a4016983246fef8a715'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/config/Swagger2Config.java:
+    newFile: !uuid '3383713c45c6021c3d3f6fffffbb8b82738d919f'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller:
+    newFile: !uuid 'b69842bd6e78a8619b53b0d7ae8ca04a6dbff355'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/AISearchController.java:
+    newFile: !uuid '29eb8839dc2c5dc58140e3e5f921e5161dc0d0f6'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/ActivityOwnerController.java:
+    newFile: !uuid '31a16b057f98bdb391698fd5681616764df273b4'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/AdmireController.java:
+    newFile: !uuid 'c936f88390b6579a4c8189dc40adf08f8b7c4c8b'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/AdvertisementController.java:
+    newFile: !uuid 'b25f2773bbe0294ec54e6763506d1549f5297476'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/BlockRecordController.java:
+    newFile: !uuid '8d3b7d2eabdd0dc982885836d60dd44ce98fa518'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/ChatController.java:
+    newFile: !uuid 'bcb02da68bebb21c32bb8077cc596d3425a208d4'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/CheckRecordController.java:
+    newFile: !uuid 'c7d41ae03745674e92a5f1a5b3bf17f7e8aa0f2c'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/CommentController.java:
+    newFile: !uuid '003621388de72726e243ceb710f8d29173f08cfb'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/CommentManageController.java:
+    newFile: !uuid '64744df1a988d2dda45ff1afbd15f196532540cd'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/CommonAPIsController.java:
+    newFile: !uuid '0bdaab94240af8de20f70b2be43f51f3fc1f2dda'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/ContentController.java:
+    newFile: !uuid '72bb8fda7077a399fffd97f666130bfc28a59e00'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/ContentManageController.java:
+    newFile: !uuid '83c5ced67fd1637805816e2b229fa4eb144cd594'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/InformController.java:
+    newFile: !uuid 'b3f52fb37176c05039b8d5f34fd8b8095aad4f6a'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/OperationRecordController.java:
+    newFile: !uuid '0659a97f9290887f5b07553567bd0454c620c209'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/PlateController.java:
+    newFile: !uuid '7b304e60e1622596d788b5a6828972e4e419d76a'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/PlateManageController.java:
+    newFile: !uuid '760461d1a96c9b025b6d4ad247ea2420db53f4cd'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/RemindWSSController.java:
+    newFile: !uuid 'fdeb4603cc70132f0e667448662bf26dd6b25068'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/ScoreController.java:
+    newFile: !uuid '30b1b44b02718d11f379feaa146c884275f4c595'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/SignUpController.java:
+    newFile: !uuid '88f04c2f940415e8a43da1141f2683bdc4429d14'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/TaskOrderController.java:
+    newFile: !uuid 'c3b17fc112dd7d6166d06d05fa6533712a76d149'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/TestController.java:
+    newFile: !uuid 'bada4936fec8f8129ffb465be31886ea5d831deb'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/UserController.java:
+    newFile: !uuid 'e439e7d7d068ae6c805ea57224d0cbe4ef54efc3'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/UserManageController.java:
+    newFile: !uuid '2ec6e70cd66bf4151f13176d6a23911cc2976bf9'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/WeiXinController.java:
+    newFile: !uuid 'ba61c0546fc3017706edde768f372c3226b4a973'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/controller/loginController.java:
+    newFile: !uuid '15d4e623eee586d2ac20e3d2a187e07d12cb3049'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/handler:
+    newFile: !uuid 'd219fb715722365905596003934f559d3ca3d2ba'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/handler/MyMetaObjectHandler.java:
+    newFile: !uuid '11a66adc551ba570c93739c83642bd7794d01309'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper:
+    newFile: !uuid '779862e6a80cee24b297b88fd70b019093fe043b'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/AISearchRecordMapper.java:
+    newFile: !uuid '7f9e5b9b0b7bc3b972e8fff085c05ae07579791a'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/ActivityOwnerMapper.java:
+    newFile: !uuid '2d9973e2e6a12d542f2c66062039af21951162f2'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/AdmireMapper.java:
+    newFile: !uuid '78e6eb85155b33f626503972e278cdf3606d093e'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/AdvSignUpMapper.java:
+    newFile: !uuid '858c30827407d12475f7694cb4cc850c94b339d2'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/AdvertisementMapper.java:
+    newFile: !uuid 'a05d2cb7ccb7ab70e67f804215237868368ed5b8'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/BbsConfigMapper.java:
+    newFile: !uuid '7070849a58655facaa09362c379edccf9de8cf15'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/BlockRecordMapper.java:
+    newFile: !uuid '793546cdd69740d578fe0ff1291585990db9d7bb'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/CateMapper.java:
+    newFile: !uuid '893500fe1c1b691dae0fa7fed347c3d847ab8377'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/ChatMapper.java:
+    newFile: !uuid 'ac222343df6cae78046acb87ad548bcd12c1fa7a'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/CheckRecordMapper.java:
+    newFile: !uuid '4edb1d564da2715fb828911f639d4c342f91037d'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/CommentKeyWordMapper.java:
+    newFile: !uuid 'c6df08f7a78ed27aaa570afdc3939bdddfd894a8'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/CommentManageMapper.java:
+    newFile: !uuid '1a9d31a254ec17bd49ec1aebdef5850fd7443258'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/CommentMapper.java:
+    newFile: !uuid '3389c80ed1683ed36e0bdd4cc0776d3460a6e8de'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/ContentKeyWordMapper.java:
+    newFile: !uuid '432db121a43c566a7df80956e113a4cb25e5ead3'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/ContentManageMapper.java:
+    newFile: !uuid '574a635606c15f81474f9964e85dc8d7bdf6bca0'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/ContentMapper.java:
+    newFile: !uuid 'ae61e69839324a31f89aacbe049abefd8c8a67c2'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/FocusMapper.java:
+    newFile: !uuid '3144dbcc03d5623ab15bf0d89a1ca51612a69b62'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/FocusSearchRecordMapper.java:
+    newFile: !uuid 'ce95107d53fb4c81a8947ef66a11387e868909da'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/GroupMemberMapper.java:
+    newFile: !uuid 'e6e4452374922062c6f02247b855fd25ebcd0876'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/InformMapper.java:
+    newFile: !uuid '59b70ca910a03ef32043f24293b8f008dffa7190'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/LoginRecordMapper.java:
+    newFile: !uuid '8f82dca29f8141b359afcaeb704ed3d89e3b73f8'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/LoginStatisticsMapper.java:
+    newFile: !uuid '51d45c7844972e5fa75ce9c06f12291dbb107a43'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/MarkMapper.java:
+    newFile: !uuid '7056b818b209c27a9152bfdd98ac1614a4ee10a3'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/OperationRecordMapper.java:
+    newFile: !uuid '63aaf8a5d47e54603ef9885f95e2577b2ed91b32'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/PlateManageMapper.java:
+    newFile: !uuid '157078c989bb8931cc506765af72c53541ede874'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/PlateMapper.java:
+    newFile: !uuid '472ebfdb337bc6fbd35333b45dc071f92b5d26c8'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/PopupNoRemindMapper.java:
+    newFile: !uuid '5a5a4732495262327ca2b757cf726795c6ab4be2'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/RemindMapper.java:
+    newFile: !uuid '7c4e3d869a5570d459d2024d9e0b4fac9881a60b'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/SchoolInfoMapper.java:
+    newFile: !uuid '5e7bfeafeb5b4e755ca88618ba481c1810de62ce'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/SchoolMapper.java:
+    newFile: !uuid '531655e8f856ee4ceb70efc970e58ccca71cdcbc'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/ScoreRecordMapper.java:
+    newFile: !uuid '453d9dc1b01590a48652cea1dd7fdd8ea559ec84'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/SearchRecordMapper.java:
+    newFile: !uuid 'bb5ffa463b0cad36611ea4e1503a8267afcddf76'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/ShortUrlMapper.java:
+    newFile: !uuid 'f5686e026351b147d48394a53abbd0ade2cb1d33'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/SignMapper.java:
+    newFile: !uuid 'bb8d4c5c835813202ae17fe9b860fad148725ada'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/SignUpActivityMapper.java:
+    newFile: !uuid 'fb6c0a42102c2b2f0388acac8732f0363ccaaf8b'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/SignUpInfoMapper.java:
+    newFile: !uuid '7c97e87a46f75abe9e29b2a24f2928000d10608b'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/TaskChatMapper.java:
+    newFile: !uuid '1bc0699e07e581dbef3579a5f7b0afd7638088f5'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/TaskOrderApplicantMapper.java:
+    newFile: !uuid '4b807990f444feb9a42afbe58c35e25ec8f70f6f'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/TaskOrderMapper.java:
+    newFile: !uuid 'ee24364c37fd9e9f5511fbe18a8813ff72954d04'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/TokenMapper.java:
+    newFile: !uuid 'ae594f6f57e19cd15269ba7094e6373b9a1c8b1d'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/UserAdvMapper.java:
+    newFile: !uuid '900800fcf142db66191e81f7133043084ef70fc2'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/UserManageMapper.java:
+    newFile: !uuid '44b77c41a14c1e11c809581948be6c21494b0d1a'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/UserMapper.java:
+    newFile: !uuid '43592b7a6a6d9fa7976a4f1ecf03201a08a7610e'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/UserPhoneMapper.java:
+    newFile: !uuid '58fdeacb4efef450dadd6afbf2fb3ab0f05cdaf2'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/UserRecordMapper.java:
+    newFile: !uuid '886b8ade07a94a74fccfeffd75c3df5d2f8b8273'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/UserSchoolMapper.java:
+    newFile: !uuid '317d906edccf2e35d532edfa85502184274af3a3'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/User_ContentMapper.java:
+    newFile: !uuid 'd922482a65b916becbbea4345f4b4afeef3f56bf'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/User_PlateMapper.java:
+    newFile: !uuid 'b7d916c22d3512dc9abd24e5e8d1d20c236b2c47'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/VoteMapper.java:
+    newFile: !uuid 'ede8ab9876f1ae2b09f6626cb12310a807a6b045'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/mapper/VoteResultMapper.java:
+    newFile: !uuid '540e48d2c0f6b36a5862b2649e3ea99c4a1d3464'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo:
+    newFile: !uuid '522dca01fdfd195775eb70bd808e5f56cf953a97'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/AISearchRecord.java:
+    newFile: !uuid '10a75aa21304e623b39431e6f5a2b01ca38923af'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/ActivityOwner.java:
+    newFile: !uuid '1b9898f703d1a4af841d638298b59bcaccedf370'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/Admire.java:
+    newFile: !uuid '2de405c494180a800f38c51302b49795e963936e'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/AdvSignUp.java:
+    newFile: !uuid '7ca34d8e88e6e1459674412988782e3c0269d621'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/Advertisement.java:
+    newFile: !uuid 'ab50fe33a114633c4867ebf35a7fe477ec59cffc'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/BbsConfig.java:
+    newFile: !uuid 'e6c280a2a0edbf37dc49096d0f9b50654f308b4d'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/BlockRecord.java:
+    newFile: !uuid '987ac174c78082aee7b07b12187817c0348be837'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/Cate.java:
+    newFile: !uuid 'b6a994f9f97cb64544edc54c50aa55f0762b6297'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/Chat.java:
+    newFile: !uuid '77e643ffb37afebf29603175dfc7c778d23cbf7a'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/CheckRecord.java:
+    newFile: !uuid '175baee77a6fb0b77355096d3032368a738bcc04'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/Comment.java:
+    newFile: !uuid '17d3fbeb0cf182ef1d935971993998300ac06179'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/CommentKeyWord.java:
+    newFile: !uuid '396a8f0b9067b5d88ce8c601bc10ccd9e349527d'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/Content.java:
+    newFile: !uuid 'bdecab88c7e53ad9fd70366b184b14ac8dc08096'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/ContentKeyWord.java:
+    newFile: !uuid 'db85d9faa1ce8993658e803543685334a17081ab'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/Focus.java:
+    newFile: !uuid '3f29f07e6c77451bbe802a4b1dd22304dde78c31'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/FocusSearchRecord.java:
+    newFile: !uuid '6a8391e68a7ed387e6ba4a08a7a31261640f43f9'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/GroupMember.java:
+    newFile: !uuid '284b19d015de8206d93ae016d10b25dec4c5e3b0'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/Inform.java:
+    newFile: !uuid 'aa3dfb992c9cf6098f95906e9291ceb0d44a93f6'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/LoginRecord.java:
+    newFile: !uuid '4e340f79ca821fb3ed0d0d7a8370a27aed9795f3'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/LoginStatistics.java:
+    newFile: !uuid 'd245278092920239c20732a80cd6ce42b17b87d7'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/Mark.java:
+    newFile: !uuid '097fa7dbd7b5be6f1d62fcbc3dd3f6a72c36e4ca'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/OperationRecord.java:
+    newFile: !uuid '0c38748b990e511235ccf7d6279bea5e8022518b'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/Plate.java:
+    newFile: !uuid '4d84bfd78a62bd85bf980893b7f77083c1ce07eb'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/PopupNoRemind.java:
+    newFile: !uuid 'f1a30e45da157a87bb6252998095c0e3a573ac0f'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/Remind.java:
+    newFile: !uuid 'ae7339bdabb9ce2c62356f3874447dc2dc742075'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/School.java:
+    newFile: !uuid '3f32e3ea042557b5768b3501668b46f293bc5203'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/SchoolInfo.java:
+    newFile: !uuid 'f14b5f45bd5cfa1aaeceb3a5a2f8b22954879303'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/ScoreRecord.java:
+    newFile: !uuid '1dad06ccc9b6b8ce8887cc4f44a9e97bdaeff8df'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/SearchRecord.java:
+    newFile: !uuid 'de2206dd8f9b662984db22b7d7298d6964748547'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/ShortUrl.java:
+    newFile: !uuid 'b87698f9f42d10bd3160a9fb0a1db24ff4e4b61e'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/Sign.java:
+    newFile: !uuid 'a8869e31f960f0c30413a40066316ce22488a3f6'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/SignUpActivity.java:
+    newFile: !uuid '0c5313fbfd698dcfb235c0781442baa0753bea19'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/SignUpInfo.java:
+    newFile: !uuid '3662be6e5ffae2bc6b7db4593396fe305d469124'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/TaskChat.java:
+    newFile: !uuid 'c7ea28c7b5497baf147510844cbbe627e060503f'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/TaskOrder.java:
+    newFile: !uuid '0e2f18b8fb254e38484f42f62d2bbb63b6b42150'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/TaskOrderApplicant.java:
+    newFile: !uuid 'a60873fc6f695fd03051f9104f3ff1cac24f8e4a'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/Token.java:
+    newFile: !uuid '08896e6172aa6de0a23d667393f37e3cba89f645'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/User.java:
+    newFile: !uuid '1faf23d617c0a33b5d0785dc805fd1945e96ce65'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/UserAdv.java:
+    newFile: !uuid '3c85bd1954d377bb12e4bd85ed8b3d57f488875d'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/UserPhone.java:
+    newFile: !uuid '6ae2516f3877aab96a5b88b18ad3c378d44ebfdb'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/UserRecord.java:
+    newFile: !uuid '23145d4896940318f9066f0f629ff87d2aa90b58'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/UserSchool.java:
+    newFile: !uuid '4c38168a7cfa3c646e003c482bd812cd5370f0d1'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/User_Content.java:
+    newFile: !uuid 'e6b64ad57e92117f237cc2e06c3def089251fd01'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/User_Plate.java:
+    newFile: !uuid 'd507bb55bfda5de99eff9776cb806de00997fc54'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/Vote.java:
+    newFile: !uuid '0255f0622018fb7dbebfc852b86518bf6ffe60d4'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/VoteResult.java:
+    newFile: !uuid '650413d9f8d77fc3497afd625af50bb65e7c32bb'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo:
+    newFile: !uuid '04dbc7832a3390e7629107f2107070f4d6c93e54'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/BlockRecordVO.java:
+    newFile: !uuid '537089a2f7fa1d44a084d3f700d48dea6d58f14c'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/ChatDetailVO.java:
+    newFile: !uuid '2090e5daaa9a6096ec9dc1f320d1f1919fbe2888'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/ChildrenCommentVO.java:
+    newFile: !uuid '3f66d70dd6ef5b2dd7b5dd7c1d34428c39bc2264'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/CommonSearchVO.java:
+    newFile: !uuid '8993585a18d54ce3a266302a4c025f9da7e6761f'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/EditPlateInfoVO.java:
+    newFile: !uuid '44a0ea705e9fb7b4266d7b02eb880d52c41ac673'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/EditUserInfoVO.java:
+    newFile: !uuid 'd8c3a3bed39c51c599d5954c569518f14ad040ed'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/HomeCommentVO.java:
+    newFile: !uuid 'aeda34b9fc7cf510d78045342d48d1bcb5398c19'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/HomeContentVO.java:
+    newFile: !uuid '1c35c0525b1d055920d955c803426fdfa0a00564'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/MarkMessageVO.java:
+    newFile: !uuid '10a7e92236977b82a092f1538fcb0118a18e20fb'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/MessageListVO.java:
+    newFile: !uuid '6e4aaf9d57d514ecc46f9557a36005eb9a27308c'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/PermissionCheckVO.java:
+    newFile: !uuid 'acb82bab71cc644a4c04c0802027579d9e935198'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/PlateVO.java:
+    newFile: !uuid '185ee4d991ca3e24f9a28f1fb6c10b66b6bd3f21'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/RankingVO.java:
+    newFile: !uuid '18cfa365383b8a91d1142d9f717d5b262b551cdd'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/RemindVO.java:
+    newFile: !uuid 'f08b6a76a2d316f1cb6fa28f4ffd96bc984cb0b1'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/RemindWithCountVO.java:
+    newFile: !uuid '8f30eda855823b9a0da45dd536380070d0f5efbf'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/SchoolVO.java:
+    newFile: !uuid 'd5a39ea8c8bd6f758fd57bea14db296b845a6d29'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/SearchPlateVO.java:
+    newFile: !uuid '9dc2b8ed28eb638aa0df7906b3d67f1d05a866d3'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/SearchUserVO.java:
+    newFile: !uuid '76863b7f1614d0d4f572d18eceffad75ff264a45'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/SignUpActivityVO.java:
+    newFile: !uuid '990d75e9daf8cc2a4c0c03ea00fd3a24d11adb35'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/TaskOrderVO.java:
+    newFile: !uuid '73e70fb10baa966c44b6b2b096721b7f1115311c'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/pojo/vo/UserRobot.java:
+    newFile: !uuid '6b503baac5183cfcbe67c13a2e9b07c4078af068'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/result:
+    newFile: !uuid '58a53945303f18bf817e11435f68305f0aa56f3c'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/result/CommonResult.java:
+    newFile: !uuid 'cb170455df5f0771feb159b36f9a3485f44be70d'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/result/R.java:
+    newFile: !uuid 'bf8651705570552eba8ed2111293b2d45e4c4ae7'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/result/ResultCode.java:
+    newFile: !uuid '5b89b0f099ccdcab8b08bb70427e07b8397fe05c'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/result/ResultCodeEnum.java:
+    newFile: !uuid 'd99e269714008673b36e7ce53bc1aaee41cc921c'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service:
+    newFile: !uuid 'cb0696b50e312fd6c6d23230df9d9ca646761316'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/AISearchRecordService.java:
+    newFile: !uuid 'bdce8c8be8fda6f352d8124cd8fc2c4148790c39'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/ActivityOwnerService.java:
+    newFile: !uuid '0bd1e9c9098e1f9ae1146fec32258bd9d004ac2d'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/AdmireService.java:
+    newFile: !uuid 'aa98a50992051875e97aef7a381c327063557daf'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/AdvertisementService.java:
+    newFile: !uuid '5074a3a28d861d51ef3e82363c866ac77f5327ad'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/BlockRecordService.java:
+    newFile: !uuid '4127d8dea8ed98c8566ae1e809cd28fbe3ea257c'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/ChatService.java:
+    newFile: !uuid 'd44296070050ecb5525ad252260ef0dbd0e12ee6'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/CheckRecordService.java:
+    newFile: !uuid 'e95bbb4ac4e3f56cf972706c6c94c2d03a4edb3d'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/CommentManageService.java:
+    newFile: !uuid '055c311871e213853b9712eb4a5916a571d7a167'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/CommentService.java:
+    newFile: !uuid '40774378fb419e72cb6561d2755b5ff0ebfe4d36'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/CommonSearchService.java:
+    newFile: !uuid '96bf8819404c62798b09f945df5656210d59b4ed'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/ContentManageService.java:
+    newFile: !uuid '8a158f4e5cb7d34196d7b93d5df7f5e845aadc37'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/ContentService.java:
+    newFile: !uuid 'faca7a0439d7fb8d72fa3a68ada65653d5c206d6'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/FocusService.java:
+    newFile: !uuid 'b4094ac116e0bdc747ca982b382147f0aff36e32'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/FuzzySearchService.java:
+    newFile: !uuid 'a0c93a359583aa3d83411ece5b5b3fec70fea38f'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/GroupMemberService.java:
+    newFile: !uuid '70dcc80b82cc7cc7a5920115d0b61a1a5937a41e'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/InformService.java:
+    newFile: !uuid '6f29fad09e33a2e14b6317699c9e505d2ac3855f'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/LoginRecordService.java:
+    newFile: !uuid 'd0285cee3c8c00442da5ad40c7aa9109d026220a'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/LoginStatisticsService.java:
+    newFile: !uuid 'ae2dffc8545e71322a2363cbf423b9f1f3cfc826'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/MarkService.java:
+    newFile: !uuid '176f7b3cb61b8145d22a5fec4dbc23927102b42e'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/OperationRecordService.java:
+    newFile: !uuid 'bb9f159ec018239b09be8051722530db2c355708'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/PlateManageService.java:
+    newFile: !uuid 'fa3c9efc1d45234ebd2711a2e319d7377988d709'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/PlateService.java:
+    newFile: !uuid '4c0f6feab08967f80513698f0797bca6588d960e'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/RSAService.java:
+    newFile: !uuid '65aa95876157a96d29cc93d5bfa2a221ba3c1a4e'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/RedisService.java:
+    newFile: !uuid '4fbc5224f2e1e578c985e46b2a76a269b1b1cefb'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/RemindService.java:
+    newFile: !uuid '692297cefad3b1478ef4c47f83137db69336b3b8'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/SchoolService.java:
+    newFile: !uuid '6b6432f6879027c5c011954154e654467edab03a'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/ShortUrlService.java:
+    newFile: !uuid 'f162230d03b47932a60f5855aed40a13ad663589'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/SignUpService.java:
+    newFile: !uuid '1628ee0b3ac2efd33298969b7b948c16773bc103'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/TaskOrderService.java:
+    newFile: !uuid '07c1b43befc10f167f6ddb0953e4c05c3a8b11e6'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/TokenService.java:
+    newFile: !uuid 'a5fd1e9833a0b5cb682e766d61fdac379fd369ab'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/UserContentService.java:
+    newFile: !uuid '21edd3fd8b53e8353572eb1131d3d132b8288310'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/UserManageService.java:
+    newFile: !uuid '89788fd2eb03b229f4ad2d6ff6a1dee6a3ac71ac'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/UserPhoneService.java:
+    newFile: !uuid '92f29a4a86501a5e6bc8191cea0bc469fe034994'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/UserRecordService.java:
+    newFile: !uuid '8381234f56882edde13f9518d8a369d5a1da69ee'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/UserSchoolService.java:
+    newFile: !uuid 'faaf5ccee190d0fc47ee5d98ba0135fd9bf34c39'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/UserService.java:
+    newFile: !uuid '430736d251b8b2c3e637b8e28cab37dcbc9f4ed8'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/VoteService.java:
+    newFile: !uuid '17eab46fae099fe65e5ac2a7e875cc491430ac41'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl:
+    newFile: !uuid '7ff2ddc77f8aa606b0a826bf69fe3205fb88d591'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/AISearchRecordServiceImpl.java:
+    newFile: !uuid '62e2d6863fa3aff914af24482e3e34aa7880d59c'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/ActivityOwnerServiceImpl.java:
+    newFile: !uuid 'a0779f199a593f97c994575f89e9c672398eb841'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/AdmireServiceImpl.java:
+    newFile: !uuid 'b6eea5342be46e840a285aed3bc99e1d3045d95a'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/AdvertisementServiceImpl.java:
+    newFile: !uuid '8bdcc6ebb3a08071a4244a6c6ece84521c0389ad'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/BlockRecordServiceImpl.java:
+    newFile: !uuid '6ef7d549c905db21c3b99a0ba45579b760633f94'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/ChatServiceImpl.java:
+    newFile: !uuid 'a5e84ff35ee45c009711e4d802d2e4c86b703e39'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/CheckRecordServiceImpl.java:
+    newFile: !uuid '13ddc25b0ed4afa10310368444d69b1110f77ed0'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/CommentManageServiceImpl.java:
+    newFile: !uuid 'c1b6104b28699b29b6e4802e794d12b8818d2d95'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/CommentServiceImpl.java:
+    newFile: !uuid '2c0edf0a3913889245a6485650455fdcc764986d'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/CommonSearchServiceImpl.java:
+    newFile: !uuid 'eabfed08979e619299fe863ea8cd099de3319cac'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/ContentManageServiceImpl.java:
+    newFile: !uuid 'fef648c584998d3f38aadffdc26d820a9429e37a'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/ContentServiceImpl.java:
+    newFile: !uuid '7f9f91a59de20795a9a93735aedc46d82602e155'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/FocusServiceImpl.java:
+    newFile: !uuid 'b00ba41acea925b4511b455afc4eb36d4ac7433d'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/FuzzySearchServiceImpl.java:
+    newFile: !uuid 'b068563500e46d9fd7e31d93d9873e712d05a608'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/GroupMemberServiceImpl.java:
+    newFile: !uuid '1f6609d85ee433e8deee356d43f7e40e69d17884'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/InformServiceImpl.java:
+    newFile: !uuid 'b0cd9f6c66968b9c23cc2e488d3895312bc3b068'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/LoginRecordServiceImpl.java:
+    newFile: !uuid 'e155027d11f6d91dc82d18623a83ea78c070aec9'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/LoginStatisticsServiceImpl.java:
+    newFile: !uuid 'a9a74abd3b9ed0fea7b2b21df4fe035734ad29b4'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/MarkServiceImpl.java:
+    newFile: !uuid '18a19ed8caad5900b05dd5dbccf69139dd9407f7'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/OperationRecordServiceImpl.java:
+    newFile: !uuid '612920d63c81b22647d922d23a228fc5944dc66a'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/PlateManageServiceImpl.java:
+    newFile: !uuid '32ce8fbf4b7bdb9e177e5e148da2c76bb1767625'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/PlateServiceImpl.java:
+    newFile: !uuid 'f75b896af8ecf7a8516eaac0e239dc64f76b0c06'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/RSAServiceImpl.java:
+    newFile: !uuid '382e652964336e55bd9e030a10748342a0c96c47'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/RedisServiceImpl.java:
+    newFile: !uuid 'b79d5855dbfd3e42e6c15385b1ac90c0268d47bc'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/RemindServiceImpl.java:
+    newFile: !uuid 'e1208bb3d2ee78feda110a9de82c374b479d99cf'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/SchoolServiceImpl.java:
+    newFile: !uuid '58e27affbc7841022ffa75ccb861dc86b243efc4'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/ShortUrlServiceImpl.java:
+    newFile: !uuid '2340f7a347f7b9ade0ed0c429d2b39462e8c0b11'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/SignUpServiceImpl.java:
+    newFile: !uuid '51459b51c87a110433558a685cc85da19f7f9bb6'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/TaskOrderServiceImpl.java:
+    newFile: !uuid '726a53a0a05d51571ee22b6bb5031cab226b3056'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/TokenServiceImpl.java:
+    newFile: !uuid 'b5f47d1a4f5f5e15f9046d81d2e7fd841a9f2144'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/UserContentServiceImpl.java:
+    newFile: !uuid 'b29df013e0ff68bb6b2e89a1b49bcb40741f81ac'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/UserManageServiceImpl.java:
+    newFile: !uuid '0fb6a5fedef118a96b85538f4e4ed19928fe8b7f'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/UserPhoneServiceImpl.java:
+    newFile: !uuid '914ce1d025f33c9ec2ef314143d121348920b3cf'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/UserRecordServiceImpl.java:
+    newFile: !uuid 'd6a3dc647063a48d8a5ccaf339248c8c0751cb74'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/UserSchoolServiceImpl.java:
+    newFile: !uuid '3ab9e7edbef90f3afaac0c9749bb0e57c7111744'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/UserServiceImpl.java:
+    newFile: !uuid '1d2971696e6ec2afc063efc4b17cc369df895319'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/service/impl/VoteServiceImpl.java:
+    newFile: !uuid '0b6d19d5838ee1674224f8d76ddcfddb0bd6ca26'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/util:
+    newFile: !uuid 'e2815b23f6369135f2099d32798ceea7f971477b'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/util/DateUtil.java:
+    newFile: !uuid 'd98d9a91d119c67e44a5b62d779ca7c274200737'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/util/HttpMethod.java:
+    newFile: !uuid 'b6ebc5337c742cb94d8463e361e52e1e6533e6f7'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/util/IpUtil.java:
+    newFile: !uuid '9c70c2260afef9e44b422fbf7072eb46a745c4c7'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/util/SchedulerUtil.java:
+    newFile: !uuid 'f48eefbc33dbe97197c7fdd83116f085867cdd10'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/util/ScoreUtil.java:
+    newFile: !uuid '98a92c277fb0997156d6f6b6216e2dfc64334fe8'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/util/WebSocketUtil.java:
+    newFile: !uuid '73f58de580e615b398e38ea4f079fe41dac115e3'
+    oldFile: null
+  /back/src/main/java/com/example/bbs/util/commonSearch.java:
+    newFile: !uuid 'cadc34dc895fb8addf4824e32f75eb4dc3f205f9'
+    oldFile: null
+  /back/src/main/resources:
+    newFile: !uuid 'c82290b2afd3d41ca13df8432ffcf1aef05519a4'
+    oldFile: null
+  /back/src/main/resources/application.properties:
+    newFile: !uuid '957de20a2a2d2e6626637bd9660757b7872c048d'
+    oldFile: null
+  /back/src/main/resources/logback.xml:
+    newFile: !uuid '7c856352ccfde6d4d668cf555bbc5bc3df5062e2'
+    oldFile: null
+  /back/src/main/resources/mapper:
+    newFile: !uuid 'a9c4d5e6047eba9aeb1f2996e176596fe5225ea6'
+    oldFile: null
+  /back/src/main/resources/mapper/ActivityOwnerMapper.xml:
+    newFile: !uuid '653dacdcb2a54467c073dd610d3597e24b7f3eea'
+    oldFile: null
+  /back/src/main/resources/mapper/BlockRecordMapper.xml:
+    newFile: !uuid '608f3bc1b9694639deaf4c09d4a97a7707df62bb'
+    oldFile: null
+  /back/src/main/resources/mapper/ChatMapper.xml:
+    newFile: !uuid '042ad0581a77efaf3bb8b47ca94180328b50ed56'
+    oldFile: null
+  /back/src/main/resources/mapper/CommentKeyWordMapper.xml:
+    newFile: !uuid '38b3e72afe3a798cb75b03d91f9e427111353d7b'
+    oldFile: null
+  /back/src/main/resources/mapper/CommentMapper.xml:
+    newFile: !uuid 'a730785a7c700f5a952780042e7567f60d588a54'
+    oldFile: null
+  /back/src/main/resources/mapper/ContentKeyWordMapper.xml:
+    newFile: !uuid '58a8c8c5726256129039b55e1e68537bb7ddab1d'
+    oldFile: null
+  /back/src/main/resources/mapper/ContentMapper.xml:
+    newFile: !uuid 'bc0d3c2b406e06e69bdb094b1c348caf98683b52'
+    oldFile: null
+  /back/src/main/resources/mapper/LoginRecordMapper.xml:
+    newFile: !uuid '4b7279d4dead345614c14fee2df61cedc4af2105'
+    oldFile: null
+  /back/src/main/resources/mapper/MarkMapper.xml:
+    newFile: !uuid '16dfdf05b8ea8017453b8689118e17fc661a5ac0'
+    oldFile: null
+  /back/src/main/resources/mapper/RemindMapper.xml:
+    newFile: !uuid 'd21ec6bd1354f018de1f0e2cfc987c109c3bdd03'
+    oldFile: null
+  /back/src/main/resources/mapper/TaskOrderMapper.xml:
+    newFile: !uuid 'fe78dd26f49eb432624a6981884ab63df4d4cddc'
+    oldFile: null
+  /back/src/main/resources/mapper/UserContentMapper.xml:
+    newFile: !uuid 'f981b7761a5ea3556fea1dd48330b00e8f5d061e'
+    oldFile: null
+  /back/src/main/resources/mapper/UserMapper.xml:
+    newFile: !uuid '808833967834c4cafc8224ffaf1b8d8c22ed3889'
+    oldFile: null
+  /back/src/main/resources/mapper/UserPhoneMapper.xml:
+    newFile: !uuid '9380e5ced7ad0f54b7a2b47c70f4bbdc719053db'
+    oldFile: null
+  /back/src/main/resources/mapper/UserRecordMapper.xml:
+    newFile: !uuid '701900f22554146018e7266c5cad2a9eb9813de9'
+    oldFile: null
+  /back/src/main/resources/static:
+    newFile: !uuid '6f1237323c1ea1825a01d8c47d208e83263d89f0'
+    oldFile: null
+  /back/src/main/resources/static/main.html:
+    newFile: !uuid '0f7e7c77a3d8072f3c7b5d567767141ddbd6bf32'
+    oldFile: null
+  /back/src/test:
+    newFile: !uuid 'cd5b0bdf6a3805742bede51df5cfbbcfbe47a599'
+    oldFile: null
+  /back/src/test/java:
+    newFile: !uuid 'a84eb8653cb380337fcd43680c493973bf2fbb32'
+    oldFile: null
+  /back/src/test/java/com:
+    newFile: !uuid '268f50956f1f531df48ceeb4181c997b3c975580'
+    oldFile: null
+  /back/src/test/java/com/example:
+    newFile: !uuid '98abfbcda4de22993ff106f40e93d30307308fc3'
+    oldFile: null
+  /back/src/test/java/com/example/bbs:
+    newFile: !uuid '91b97270406e5f954ff31f0d5c1ce5681dd00477'
+    oldFile: null
+  /back/src/test/java/com/example/bbs/BbsApplicationTests.java:
+    newFile: !uuid '2ebae44538b328e16a43296fd27bd765e6c17b51'
     oldFile: null
   /front:
-    newFile: !uuid '8afcc38f30b0eef83e3904a3e1bfa377b9618765'
+    newFile: !uuid '626e087b1d08dabc4fa6ba0b69a83f997ace32f2'
+    oldFile: !uuid '8afcc38f30b0eef83e3904a3e1bfa377b9618765'
+  /front/.gitignore:
+    newFile: !uuid 'ba441eba38599ac73f62fc9b405e51ee4cd193fd'
     oldFile: null
-  /front/README.md:
-    newFile: !uuid 'aea0b6931c1db717efe80832f5fb6d91ffd20554'
+  /front/.hbuilderx:
+    newFile: !uuid 'b7a547c0b4130f863623e405480a9a8acb23bb55'
     oldFile: null
-  /sql:
-    newFile: !uuid '8afcc38f30b0eef83e3904a3e1bfa377b9618765'
+  /front/.hbuilderx/launch.json:
+    newFile: !uuid '32f4dc599fab99484f6d736d7e48460af54b1ac8'
     oldFile: null
-  /sql/README.md:
-    newFile: !uuid 'aea0b6931c1db717efe80832f5fb6d91ffd20554'
+  /front/App.vue:
+    newFile: !uuid '6c0879ac7e6412c50f82d0cd807765d7f881d258'
     oldFile: null
-gitCommitId: !uuid '3dd06bf3749eae3be8c06806196dc9ebbb21926b'
+  /front/api:
+    newFile: !uuid '154c491711874111f95df08c9d30f1e0d9f4d5a7'
+    oldFile: null
+  /front/api/index.js:
+    newFile: !uuid '2e45711083aba9db1591e892c6ee93f9f403edb5'
+    oldFile: null
+  /front/api/request.js:
+    newFile: !uuid 'ba8733d9ccf1704bffd7ee5809041d61fabc594d'
+    oldFile: null
+  /front/colorui:
+    newFile: !uuid '0282b235daf0d01e70a5a4b41178ecd979a18916'
+    oldFile: null
+  /front/colorui/animation.css:
+    newFile: !uuid '931bb513bf3431152acb6453d280500e316c5e18'
+    oldFile: null
+  /front/colorui/components:
+    newFile: !uuid 'e3b3b189ecb47ce05d1add97b587d33db748d093'
+    oldFile: null
+  /front/colorui/components/cu-custom.vue:
+    newFile: !uuid 'b09f70d06a9f1ff65a2c3489585e392ce58566ff'
+    oldFile: null
+  /front/colorui/icon.css:
+    newFile: !uuid '16ed1217a8afde142bbf72f0cb69791dd75089f4'
+    oldFile: null
+  /front/colorui/main.css:
+    newFile: !uuid '533f2b19dfe966391f1a6cdb58b72d94834b808c'
+    oldFile: null
+  /front/components:
+    newFile: !uuid '26e8ec4ae47b046e41e6e1e52363821bc7030641'
+    oldFile: null
+  /front/components/add_my_app:
+    newFile: !uuid '6db95aea331f1a910a95fd9c51ef447668d10cfb'
+    oldFile: null
+  /front/components/add_my_app/add_my_app.vue:
+    newFile: !uuid 'ce41e6a1f1ba11b9a921624808eef8f314fe8609'
+    oldFile: null
+  /front/components/daily_login_popup:
+    newFile: !uuid 'c9c33992ccc38104ef10dea6fd9b149c2e5d217f'
+    oldFile: null
+  /front/components/daily_login_popup/daily_login_popup.vue:
+    newFile: !uuid '0b87c03d475e6d674df3d3bacad1f7cb5e4f1bf6'
+    oldFile: null
+  /front/components/examine-popup:
+    newFile: !uuid 'dd638cc5758e56b8121f72b94cad044fba81fd35'
+    oldFile: null
+  /front/components/examine-popup/examine-popup.vue:
+    newFile: !uuid '0e411e7762e2d0b5ccd1efaeeacc5bb8c35b1a92'
+    oldFile: null
+  /front/components/helang-compress:
+    newFile: !uuid 'd1fe35024d1cf297142c1862956081670b2909f9'
+    oldFile: null
+  /front/components/helang-compress/helang-compress.vue:
+    newFile: !uuid '290272fd9adeae07bd5ce52aaa89b8fa7c9a80b5'
+    oldFile: null
+  /front/components/manage-modal:
+    newFile: !uuid '9c5c6fd648ec04d7e5ebc9aa4d6628566de6622f'
+    oldFile: null
+  /front/components/manage-modal/manage-modal.vue:
+    newFile: !uuid '15d6ed28cf29eb0738f310ae0b424242528a6a8a'
+    oldFile: null
+  /front/components/post-list:
+    newFile: !uuid '7c102d0886167b159353bbc535b4f946950e008e'
+    oldFile: null
+  /front/components/post-list/post-list.vue:
+    newFile: !uuid '6d57a1bda756a49b7e910d1b67fb69ebc633ee7f'
+    oldFile: null
+  /front/components/privacy-popup:
+    newFile: !uuid 'cff25412db70028bbd96272c14daf5fd43df8e9f'
+    oldFile: null
+  /front/components/privacy-popup/privacy-popup.vue:
+    newFile: !uuid '349f196cf71e01fb4c7401b41636d4d00c743134'
+    oldFile: null
+  /front/components/topic-list:
+    newFile: !uuid 'f0670a3db4cd735f14a39eafd7556ce4a65315a4'
+    oldFile: null
+  /front/components/topic-list/topic-list.vue:
+    newFile: !uuid 'cd3b12b5323eb2b083e6f95e8061bb9a8327f209'
+    oldFile: null
+  /front/components/uni-icons:
+    newFile: !uuid '21f8ee0f6070db34a96923288219887d78409a10'
+    oldFile: null
+  /front/components/uni-icons/icons.js:
+    newFile: !uuid '60b733214dc67b78c1523ae31f878d937e5a830b'
+    oldFile: null
+  /front/components/uni-icons/uni-icons.vue:
+    newFile: !uuid '5f303e401f6c514a566964d119fc38a9d989ff79'
+    oldFile: null
+  /front/components/user-list:
+    newFile: !uuid 'f17b3eee577ebca2e28cffbe44435c6c2e67c484'
+    oldFile: null
+  /front/components/user-list/user-list.vue:
+    newFile: !uuid '55fbc662a95d3d5f96f94e3c8750a911259203f7'
+    oldFile: null
+  /front/components/w-select:
+    newFile: !uuid '289a104c08be29662a1592f38ef1e8926c704ecb'
+    oldFile: null
+  /front/components/w-select/w-select.vue:
+    newFile: !uuid 'b9d88dc827023e498e9ee20a46c143a558610d92'
+    oldFile: null
+  /front/functions_wx:
+    newFile: !uuid 'edde0ff13debe38051263ace843ea1aee3f385d7'
+    oldFile: null
+  /front/functions_wx/answerExamineSQL:
+    newFile: !uuid 'a304b29be3cebd5180d597d92172bf954901ecf9'
+    oldFile: null
+  /front/functions_wx/answerExamineSQL/config.json:
+    newFile: !uuid 'c1fb749f2d04da18f4e00bd024c218c123222750'
+    oldFile: null
+  /front/functions_wx/answerExamineSQL/index.js:
+    newFile: !uuid 'c4f0782000dd5163ef8ad43e542274ee85a0dcb6'
+    oldFile: null
+  /front/functions_wx/answerExamineSQL/package.json:
+    newFile: !uuid 'edf9cc9c46ff279e0521328d3812315b80d54b6c'
+    oldFile: null
+  /front/functions_wx/cloudbase_auth:
+    newFile: !uuid 'cac0a86ababec52c3c2405615b6c97cb88e4c714'
+    oldFile: null
+  /front/functions_wx/cloudbase_auth/config.json:
+    newFile: !uuid 'c1fb749f2d04da18f4e00bd024c218c123222750'
+    oldFile: null
+  /front/functions_wx/cloudbase_auth/index.js:
+    newFile: !uuid '98f704c3b8d04cce6e7bae7a6ee92359d36099fa'
+    oldFile: null
+  /front/functions_wx/cloudbase_auth/package.json:
+    newFile: !uuid '529f8e26acb03530f8395b3e1cabffdc0d5de344'
+    oldFile: null
+  /front/functions_wx/getWxacode:
+    newFile: !uuid 'b18a44fbe3e851f3bc2d11432dc890294b3a905a'
+    oldFile: null
+  /front/functions_wx/getWxacode/config.json:
+    newFile: !uuid 'c1fb749f2d04da18f4e00bd024c218c123222750'
+    oldFile: null
+  /front/functions_wx/getWxacode/index.js:
+    newFile: !uuid 'ed755a212c9b957292cd53f766c3c125cfb6273f'
+    oldFile: null
+  /front/functions_wx/getWxacode/package.json:
+    newFile: !uuid '323b2c5def72dd3c71f8bc9c4df269c91266095a'
+    oldFile: null
+  /front/functions_wx/popupSQL:
+    newFile: !uuid 'b613ef3c6f32efaf22b7b34f424a5d7965e8c7f5'
+    oldFile: null
+  /front/functions_wx/popupSQL/config.json:
+    newFile: !uuid 'c1fb749f2d04da18f4e00bd024c218c123222750'
+    oldFile: null
+  /front/functions_wx/popupSQL/index.js:
+    newFile: !uuid '2e1c2e351fc614fd8976c6dfec369e816bd6e1ce'
+    oldFile: null
+  /front/functions_wx/popupSQL/package.json:
+    newFile: !uuid 'ca793795ce6ebc7ee94e82e695e9c49b2b570c74'
+    oldFile: null
+  /front/functions_wx/sendRemind:
+    newFile: !uuid '087e3e78e9d3449c237b3cb09125297ed14b8c56'
+    oldFile: null
+  /front/functions_wx/sendRemind/config.json:
+    newFile: !uuid '3c82e61826814ec76435f66af132c219f89a7789'
+    oldFile: null
+  /front/functions_wx/sendRemind/index.js:
+    newFile: !uuid 'd643435b3064b31452f81e7f4f44e94792950963'
+    oldFile: null
+  /front/functions_wx/sendRemind/package.json:
+    newFile: !uuid 'efffffc279336ab1232f6c85f2584ddff9d8cad2'
+    oldFile: null
+  /front/index.html:
+    newFile: !uuid 'b61f63ec81a3c40bcdebb6768d4acb9b53bf0efd'
+    oldFile: null
+  /front/js_sdk:
+    newFile: !uuid '4da206a39f918d9b50da4ebebd8ff5b2d70ffe17'
+    oldFile: null
+  /front/js_sdk/yushijie-ossutil:
+    newFile: !uuid 'bcb00ae74ea6906171df7e165986f5e0e49faea1'
+    oldFile: null
+  /front/js_sdk/yushijie-ossutil/ossutil:
+    newFile: !uuid '3914e31ac6b0e55c9907c38908482aae88330a0c'
+    oldFile: null
+  /front/js_sdk/yushijie-ossutil/ossutil/base64.js:
+    newFile: !uuid 'eea932ef69e113233ee0720e8f98a1ee50979bb2'
+    oldFile: null
+  /front/js_sdk/yushijie-ossutil/ossutil/config.js:
+    newFile: !uuid '239515e913cf19ef871c84302d3b87d56868575d'
+    oldFile: null
+  /front/js_sdk/yushijie-ossutil/ossutil/crypto.js:
+    newFile: !uuid '40a475dfeccd8faa6fc8abd8e720aec7e70ea51c'
+    oldFile: null
+  /front/js_sdk/yushijie-ossutil/ossutil/hmac.js:
+    newFile: !uuid 'b307c7c052f906a77aeccf11427419938f02de14'
+    oldFile: null
+  /front/js_sdk/yushijie-ossutil/ossutil/sha1.js:
+    newFile: !uuid '77c6bcc42fd5fdde8e08e19fa9cbd52f9f32620f'
+    oldFile: null
+  /front/js_sdk/yushijie-ossutil/ossutil/uploadFile.js:
+    newFile: !uuid 'f0828e3295dd9715c878819b4092a0e342151417'
+    oldFile: null
+  /front/js_sdk/yushijie-ossutil/ossutil/uploadVideo.js:
+    newFile: !uuid '975108a8f9744e30faecf5d6f318120a5b385d83'
+    oldFile: null
+  /front/main.js:
+    newFile: !uuid '1ff7433af186736868d4fb793dfae006fded7b6f'
+    oldFile: null
+  /front/manifest.json:
+    newFile: !uuid '39d1087d765606b14c0e1c90b1f13b1e11b246c6'
+    oldFile: null
+  /front/package-lock.json:
+    newFile: !uuid 'e4f1381fad0b84aeda67de6909579949b9b68c9f'
+    oldFile: null
+  /front/package.json:
+    newFile: !uuid '5925587e5e7ece82bd77bd9812cd195f56e6dbd0'
+    oldFile: null
+  /front/package_task:
+    newFile: !uuid 'e3c22cb70542cb8c676257c76ca5cf2e513b46c2'
+    oldFile: null
+  /front/package_task/component:
+    newFile: !uuid '2a5b609b7ca5bf98a8bdd5d4f057bf6ce829bdbc'
+    oldFile: null
+  /front/package_task/component/order-functions.js:
+    newFile: !uuid '1daf7284d100a255150c924792a587604d974382'
+    oldFile: null
+  /front/package_task/component/order-list:
+    newFile: !uuid 'fd5c681eb636371a65ebffaadb3553008bcf55ac'
+    oldFile: null
+  /front/package_task/component/order-list/order-list.vue:
+    newFile: !uuid 'e71e7f6119fdb5a65d9feaf249c550f9ee6208c7'
+    oldFile: null
+  /front/package_task/pages:
+    newFile: !uuid 'badeb5e8d3ee88d7c58b98c0c1890c51069b5b7c'
+    oldFile: null
+  /front/package_task/pages/bbs:
+    newFile: !uuid '0c689ac7c91f4261a0d621070215f1a12d388cc9'
+    oldFile: null
+  /front/package_task/pages/bbs/message:
+    newFile: !uuid 'c75796bccb0432728512b08a98e46662f5a0fda7'
+    oldFile: null
+  /front/package_task/pages/bbs/message/list.vue:
+    newFile: !uuid 'cf904bd33a966d1844de675de9b871f7e807a4f4'
+    oldFile: null
+  /front/package_task/pages/bbs/mine:
+    newFile: !uuid '6c351d90eb3bc103bcf24c9a6208438d77c911ba'
+    oldFile: null
+  /front/package_task/pages/bbs/mine/fans.vue:
+    newFile: !uuid '8c6e84ad994959026e0adbdb3c2d650837f26ba4'
+    oldFile: null
+  /front/package_task/pages/bbs/mine/follow.vue:
+    newFile: !uuid '2d6f521b3ed547caf375d047a34c742323d2d67b'
+    oldFile: null
+  /front/package_task/pages/bbs/mine/post.vue:
+    newFile: !uuid '69593a89f1b3330503460a87e4aa1b1ee673670f'
+    oldFile: null
+  /front/package_task/pages/bbs/more:
+    newFile: !uuid 'f1333333f9216b45c4775e5f4096faf664f46a8d'
+    oldFile: null
+  /front/package_task/pages/bbs/more/adv.vue:
+    newFile: !uuid 'd28505e5b5e5567251179b2cdbc3e29c0e24580e'
+    oldFile: null
+  /front/package_task/pages/bbs/more/chang-school.vue:
+    newFile: !uuid '473fa57c703e8f56100f89a51ac10a2bd2cec49c'
+    oldFile: null
+  /front/package_task/pages/bbs/more/maintenance.vue:
+    newFile: !uuid '72ff303d39b39715be7c4ec216306210c217ee30'
+    oldFile: null
+  /front/package_task/pages/bbs/more/multi-business-adv.vue:
+    newFile: !uuid 'eabaa70a62d51b5f62dd8bf2c9809555e086d3b3'
+    oldFile: null
+  /front/package_task/pages/bbs/more/web-view.vue:
+    newFile: !uuid '5a3c0e4d73486414a4ccbda93622b1b1c373df69'
+    oldFile: null
+  /front/package_task/pages/bbs/topic:
+    newFile: !uuid '4021b6d723c8a572afba75a4f3def2134a389bb6'
+    oldFile: null
+  /front/package_task/pages/bbs/topic/add:
+    newFile: !uuid 'd8e034244101168db8a854927ae99a10864aac94'
+    oldFile: null
+  /front/package_task/pages/bbs/topic/add/add.vue:
+    newFile: !uuid '114083ccef0b1dc36a0f1053dfa73f5b61dfeab5'
+    oldFile: null
+  /front/package_task/pages/bbs/topic/add/shoose-class.vue:
+    newFile: !uuid 'a406c9c892762e19783bd55a2a2f34d1ae50fda9'
+    oldFile: null
+  /front/package_task/pages/bbs/topic/class-list.vue:
+    newFile: !uuid 'f26f62b80cc2861650b03f24e92978b6d61ba65b'
+    oldFile: null
+  /front/package_task/pages/bbs/topic/detail.vue:
+    newFile: !uuid '0543b2f88e85ba2914e9fde55943ab182dc97b63'
+    oldFile: null
+  /front/package_task/pages/bbs/topic/list.vue:
+    newFile: !uuid '283710b7262f3419cb455aa817d0f94ef3ad4d46'
+    oldFile: null
+  /front/package_task/pages/bbs/user:
+    newFile: !uuid '81994a0afdae8ee731a5f90d5afecf484115eab0'
+    oldFile: null
+  /front/package_task/pages/bbs/user/answer-examine.vue:
+    newFile: !uuid 'f2ec74c8779e806f6dbe38eb774e8f40a6dabf83'
+    oldFile: null
+  /front/package_task/pages/bbs/user/edit-info:
+    newFile: !uuid 'a4393b638a08491c6436f6302fb5810fb1b4ac6b'
+    oldFile: null
+  /front/package_task/pages/bbs/user/edit-info/edit.vue:
+    newFile: !uuid 'e692686477a1f11e0a4ebab5608a024bed047568'
+    oldFile: null
+  /front/package_task/pages/bbs/user/edit-info/submit.vue:
+    newFile: !uuid '4a8b6b99478be19a3d2befc7cfbc7075d2717080'
+    oldFile: null
+  /front/package_task/pages/bbs/user/home.vue:
+    newFile: !uuid 'a27f4951929c06475f27f84fd1a7d46279008d30'
+    oldFile: null
+  /front/package_task/pages/bbs/user/login.vue:
+    newFile: !uuid '6a6bf216c0ddbd9ecd591095c1c11a39ac1a0eee'
+    oldFile: null
+  /front/package_task/pages/bbs/user/register.vue:
+    newFile: !uuid '57bb90bc4972a2f59178ba4da4376c11b0fa2655'
+    oldFile: null
+  /front/package_task/pages/bbs/user/user-examine.vue:
+    newFile: !uuid '6aea1940252363fd9d957f4a7ae397518878301b'
+    oldFile: null
+  /front/package_task/pages/group-code:
+    newFile: !uuid 'fc6730493653aa147d9949776f0efdb69ac22f2e'
+    oldFile: null
+  /front/package_task/pages/group-code/group-code.vue:
+    newFile: !uuid '7eddcbf4a64df1d62a5ddebcb7f7375eed33a3c0'
+    oldFile: null
+  /front/package_task/pages/group-code/index.vue:
+    newFile: !uuid 'c409398fdc15e2132c35f731f39d53037891cbfc'
+    oldFile: null
+  /front/package_task/pages/rule-page:
+    newFile: !uuid 'cda993cf21c47a68707350f607df8a1f4f2cb952'
+    oldFile: null
+  /front/package_task/pages/rule-page/rule-page.vue:
+    newFile: !uuid 'ce41cd91f92198eedcf77a631707c295bef55261'
+    oldFile: null
+  /front/package_task/pages/second-hand-item:
+    newFile: !uuid '31e3054ece748f5d98c291e2ed4c06329a9724ac'
+    oldFile: null
+  /front/package_task/pages/second-hand-item/list.vue:
+    newFile: !uuid '3c438e14176898650c8c66eab93848647f5b23c5'
+    oldFile: null
+  /front/package_task/pages/second-hand-item/search.vue:
+    newFile: !uuid 'ca77a35fa517d9f2ffce22fa981a176c164e9ba6'
+    oldFile: null
+  /front/package_task/pages/sign-up:
+    newFile: !uuid '4339ed50cb80ee6361aae2e9548a669c54f3c8c0'
+    oldFile: null
+  /front/package_task/pages/sign-up/sign-up.vue:
+    newFile: !uuid '4bd722a4a40259832f3c651e84757c3216d62b4e'
+    oldFile: null
+  /front/package_task/static:
+    newFile: !uuid '0c90445ab600c7b6f68af56a75b4165c97a04d3a'
+    oldFile: null
+  /front/package_task/static/No_1.png:
+    newFile: !uuid '8b451d69cdd5fee8efd8f8b520904b37736733a3'
+    oldFile: null
+  /front/package_task/static/No_2.png:
+    newFile: !uuid '66923f6c687610cbd42cdbb57560e96ee51f21f8'
+    oldFile: null
+  /front/package_task/static/No_3.png:
+    newFile: !uuid 'b0bda907e61bd9d447fd91ef0b7e52d12c3ee064'
+    oldFile: null
+  /front/package_task/static/avatar.png:
+    newFile: !uuid '26f42f216f5473f578b66e8ca576fdba16ff3757'
+    oldFile: null
+  /front/package_task/static/background_nightsky.png:
+    newFile: !uuid 'd053412c1710a01e3c4aabfceed45cf413c326d8'
+    oldFile: null
+  /front/package_task/static/box-1.png:
+    newFile: !uuid 'b352b4db671eeb278b54bcc689f69f777691ed2a'
+    oldFile: null
+  /front/package_task/static/box-2.png:
+    newFile: !uuid '4d57e952ba94062293f8c5622bda91087bf29ab0'
+    oldFile: null
+  /front/package_task/static/boy-1.png:
+    newFile: !uuid '77ce076e2880e505a305c78417b26ede2c075e74'
+    oldFile: null
+  /front/package_task/static/girl-1.png:
+    newFile: !uuid '0e907d2275f4bde79d0bb5c9b4cd6a2d34a109e7'
+    oldFile: null
+  /front/package_task/static/img:
+    newFile: !uuid '4a252a95d5d340a9313b0c0b3922716b312e8681'
+    oldFile: null
+  /front/package_task/static/img/action1.png:
+    newFile: !uuid 'bc7052910b6f3d72becc8b7ab85419c8e758cdca'
+    oldFile: null
+  /front/package_task/static/img/action2.png:
+    newFile: !uuid '20e1f3228812f35a22475f8439b40a129f64744f'
+    oldFile: null
+  /front/package_task/static/img/action3.png:
+    newFile: !uuid 'a241a0b838f54081ae9b705cf60a30f6cbf05457'
+    oldFile: null
+  /front/package_task/static/img/address.png:
+    newFile: !uuid '5566069c1d719d2de9b227d22aa58443690371eb'
+    oldFile: null
+  /front/package_task/static/img/addressend.png:
+    newFile: !uuid '5566069c1d719d2de9b227d22aa58443690371eb'
+    oldFile: null
+  /front/package_task/static/img/addtemplate.png:
+    newFile: !uuid 'ebe0dedc70b8a4cc6b5016b457105805d2cbf8d5'
+    oldFile: null
+  /front/package_task/static/img/bolang.png:
+    newFile: !uuid '15eda70d7432465b9f5f820d7895a91cfe8ee9eb'
+    oldFile: null
+  /front/package_task/static/img/clock.png:
+    newFile: !uuid 'da787b1c5a088af6329e893a36ddf188f16f1380'
+    oldFile: null
+  /front/package_task/static/img/code.jpg:
+    newFile: !uuid '71e3cd0e24a16e71674bd7aebc51d0964b9c23d0'
+    oldFile: null
+  /front/package_task/static/img/fleet.png:
+    newFile: !uuid '999aa8e1afaf055ddc7daac6f4c3a3f0c50513eb'
+    oldFile: null
+  /front/package_task/static/img/infoprice.png:
+    newFile: !uuid '409b8447e02fdecc73c7e3935b5be374f428022a'
+    oldFile: null
+  /front/package_task/static/img/infos.png:
+    newFile: !uuid '4bcc75493e3383b9d4cfff657eecf7f587f617b2'
+    oldFile: null
+  /front/package_task/static/img/jiicon.png:
+    newFile: !uuid '6682f9bca4fe50f6f1ab2c65ff934a35e711c6f8'
+    oldFile: null
+  /front/package_task/static/img/joinsuccess.png:
+    newFile: !uuid 'bae77cdd9a5a6b72e351f9bd6265a20fbdb915b5'
+    oldFile: null
+  /front/package_task/static/img/mius.png:
+    newFile: !uuid 'de96825775784fe3c2ed3aeab94bacbb67b456ef'
+    oldFile: null
+  /front/package_task/static/img/noren.png:
+    newFile: !uuid '0039ebbf184786651d13a47e6c8a6091c7bf3451'
+    oldFile: null
+  /front/package_task/static/img/now.png:
+    newFile: !uuid 'a2663b2de6d2c819ef61cb87c70192c81429ff83'
+    oldFile: null
+  /front/package_task/static/img/now1.png:
+    newFile: !uuid '60bea58b9aa62e60f8a0933e015e3f44702c4489'
+    oldFile: null
+  /front/package_task/static/img/play.png:
+    newFile: !uuid '2f6dec4bddf5d20bb34b2f6aa9f3e292fac4373b'
+    oldFile: null
+  /front/package_task/static/img/plus.png:
+    newFile: !uuid '7661893cc819d639e2e0226776b66e85d58ddf71'
+    oldFile: null
+  /front/package_task/static/img/quicon.png:
+    newFile: !uuid '80af154e5966ba81e2545ea09f9b41cefa17a1c2'
+    oldFile: null
+  /front/package_task/static/img/send.png:
+    newFile: !uuid '494f9eb2080ac1d479ec20038a3957d13dc0af96'
+    oldFile: null
+  /front/package_task/static/img/set.png:
+    newFile: !uuid '685565937d9e53df6b782fb2a27b699343540d21'
+    oldFile: null
+  /front/package_task/static/img/shanchu.png:
+    newFile: !uuid 'bb19857be28518c213481caa43b22e704d835b0a'
+    oldFile: null
+  /front/package_task/static/img/stop.png:
+    newFile: !uuid 'b5efe48f6006531bb81f677353637f4435629572'
+    oldFile: null
+  /front/package_task/static/img/team.png:
+    newFile: !uuid 'a3dcf3455768fdc0f47a39947d7a2bd1bf41fe10'
+    oldFile: null
+  /front/package_task/static/img/zhifubao.png:
+    newFile: !uuid 'b3de42e8fac905e84aee61fdf423168cff928c6a'
+    oldFile: null
+  /front/package_task/static/img/zhong.png:
+    newFile: !uuid 'b7bc842c1f5f332b1f78f2b067c3d30bc53c99bb'
+    oldFile: null
+  /front/package_task/static/kongming-light1.png:
+    newFile: !uuid '01005bb1f1f081cbf0dc410a031a04bc1059c7fd'
+    oldFile: null
+  /front/package_task/static/kongming-light2.png:
+    newFile: !uuid 'c6c85a4aa4a111bc5e889db94c1b9e974b59d9dd'
+    oldFile: null
+  /front/package_task/static/kongming-light3.png:
+    newFile: !uuid '2bb131fa25b0c882948899015fc36bb6c60a8f46'
+    oldFile: null
+  /front/package_task/static/moutain.png:
+    newFile: !uuid 'eac04e468652ce476b86254ca5564c7f906aabb8'
+    oldFile: null
+  /front/package_task/static/text-box.png:
+    newFile: !uuid '5c9c375b3f7cf3cc60441a2b130743702ebdab3f'
+    oldFile: null
+  /front/package_task/static/text_bg.png:
+    newFile: !uuid '95121d525d3571484f18e4de7ff2b07752ebf007'
+    oldFile: null
+  /front/package_task/static/video.png:
+    newFile: !uuid 'd4d040b32f3945ff1cb5a54c58116ba8ccd6ab93'
+    oldFile: null
+  /front/pages:
+    newFile: !uuid '5fe1f220282b509efdbea09fe89c47d63beab90a'
+    oldFile: null
+  /front/pages.json:
+    newFile: !uuid 'bad29ff01c9d0bb4d8bd4fa99f3bb7bcb1bc2fbd'
+    oldFile: null
+  /front/pages/index:
+    newFile: !uuid 'a1efebd1a9d2983e366bed39d15807086c87e2ab'
+    oldFile: null
+  /front/pages/index/index.vue:
+    newFile: !uuid '374bf6521027fd683a52e2d17bbdb7b6dd982e49'
+    oldFile: null
+  /front/pages/message:
+    newFile: !uuid '18e750bf01f51ca8c46ce6232810818b767158c5'
+    oldFile: null
+  /front/pages/message/message.vue:
+    newFile: !uuid '9231052e6a81f7169374b0ca3e32caeeafa8481a'
+    oldFile: null
+  /front/pages/mine:
+    newFile: !uuid '16723f7ee8214b6c494988014ee9e547633867b6'
+    oldFile: null
+  /front/pages/mine/mine.vue:
+    newFile: !uuid '66a23f6d9a1be48220c531d7af8d8db8b603a127'
+    oldFile: null
+  /front/pages/post:
+    newFile: !uuid 'a1ad9282bbddba230e6cc5e49440b654218efcd7'
+    oldFile: null
+  /front/pages/post/add.vue:
+    newFile: !uuid '9f8a8f8821342cbad7f6e5ead760e9c65bae438a'
+    oldFile: null
+  /front/pages/post/choosePlate:
+    newFile: !uuid '0c928b1652ae41eb38375302229892f12355f896'
+    oldFile: null
+  /front/pages/post/choosePlate/choosePlate.vue:
+    newFile: !uuid 'ee0b6427a55d69ea9f02beadc505dd2e18c51254'
+    oldFile: null
+  /front/pages/post/detail.vue:
+    newFile: !uuid '6d9feff49e4a43219b16d034ca07d48d40bd5227'
+    oldFile: null
+  /front/pages/post/history-post.vue:
+    newFile: !uuid '7d0389508b63ea34a4902f191722b3771e1b33d8'
+    oldFile: null
+  /front/pages/vote:
+    newFile: !uuid 'bb16b3659afb914e45fe3d78cac337229787ae01'
+    oldFile: null
+  /front/pages/vote/vote.vue:
+    newFile: !uuid '91792aabe8593d123ab57e8b4d40d9a80a6c40e6'
+    oldFile: null
+  /front/project.config.json:
+    newFile: !uuid '479fefaab225fb1fcaa9c96e9258282c15076c70'
+    oldFile: null
+  /front/static:
+    newFile: !uuid '98cc9e743c4bf18038882f2e3c0b8a025cbfec64'
+    oldFile: null
+  /front/static/NXB:
+    newFile: !uuid 'd2dd274758a4b82f6b543f12028172c2701f66bc'
+    oldFile: null
+  /front/static/NXB/NXB-bg.jpg:
+    newFile: !uuid '4c4ba58390dc13f2293ad6074fb7d382b2b544af'
+    oldFile: null
+  /front/static/NXB/home-purple.png:
+    newFile: !uuid '4a3602a90df2aa978c06b505820f22b06d8504c2'
+    oldFile: null
+  /front/static/NXB/index-back-purple2.jpg:
+    newFile: !uuid '976e481ffc39c10342b2c9d97d9462d489394f2a'
+    oldFile: null
+  /front/static/NXB/message-purple.png:
+    newFile: !uuid '8b213c7ca574c8f08ae2c5a2dd3063596b4b6e65'
+    oldFile: null
+  /front/static/NXB/mine-purple.png:
+    newFile: !uuid '0fa572a0c3b7077bad067722ce0402d524c7bf8a'
+    oldFile: null
+  /front/static/NXB/tab2-purple.png:
+    newFile: !uuid '152a0e0782c9e61041a83c6f03b27d7b72e4714b'
+    oldFile: null
+  /front/static/calendar.png:
+    newFile: !uuid '5ea8116ca9ca5129421a17bdf9dc896c766ed829'
+    oldFile: null
+  /front/static/clear.png:
+    newFile: !uuid '80acd0a8fb6b8dd9833a05127b3a8284f30e54e5'
+    oldFile: null
+  /front/static/css:
+    newFile: !uuid '68cf69bcfe4d826499083ddbeb61c7596f47d521'
+    oldFile: null
+  /front/static/css/iconfont.css:
+    newFile: !uuid '2ccb4862940ff4dbd240d26bed1cf7fa59284371'
+    oldFile: null
+  /front/static/data.png:
+    newFile: !uuid '94ce65f809ebf6d735653d9ab07e2af9920631a1'
+    oldFile: null
+  /front/static/empty.png:
+    newFile: !uuid '4a5211528ec642d953c59a1522b0e793c494c24d'
+    oldFile: null
+  /front/static/fav-1.png:
+    newFile: !uuid '15ce744112f2c5b78367ff9a18e82830423a7364'
+    oldFile: null
+  /front/static/fav.png:
+    newFile: !uuid '4ad63d84584226a9607b2df59bfea4ed8a7e18f8'
+    oldFile: null
+  /front/static/group.png:
+    newFile: !uuid '5fdd7e86b2b94d4628cbb3d9964fc2bcd187b1d0'
+    oldFile: null
+  /front/static/h_1.png:
+    newFile: !uuid '83c4d17a81daee983c181ca8422a54c2e4f7c35b'
+    oldFile: null
+  /front/static/h_2.png:
+    newFile: !uuid '4b53a6fbb09bf7322d61feed1b80bf0ace5f58b6'
+    oldFile: null
+  /front/static/h_3.png:
+    newFile: !uuid '3b200c17cd4977e4928d570a82ea27dea6b7f910'
+    oldFile: null
+  /front/static/headImg:
+    newFile: !uuid '4acce966a44c84992ed675df09253fcb8017f2db'
+    oldFile: null
+  /front/static/headImg/NNU_headImage.png:
+    newFile: !uuid '344ecab51ca7a04942bc179e0bdd97b35d333b1a'
+    oldFile: null
+  /front/static/headImg/NUFE_headImage.png:
+    newFile: !uuid '6389e086b8bafbd4f9aa35b99a0b04deb4339654'
+    oldFile: null
+  /front/static/headImg/ngc.png:
+    newFile: !uuid '89380a17b8097fa84ee62a82cdddd6db747d08c6'
+    oldFile: null
+  /front/static/hot.png:
+    newFile: !uuid '3616cbb843d1f9193b20ac7b7733d1c2ce3a1aa0'
+    oldFile: null
+  /front/static/images:
+    newFile: !uuid 'e4ffa40e9decf43e0420673406a3346973d404a8'
+    oldFile: null
+  /front/static/images/address.png:
+    newFile: !uuid '4c842d62c7573f5860d2c8dd643141d4be4766d4'
+    oldFile: null
+  /front/static/images/guangguang-poster.png:
+    newFile: !uuid '528c435a05839e8cb1b534099e44f612556c26ff'
+    oldFile: null
+  /front/static/images/hot-comment.png:
+    newFile: !uuid '3176975e742a105f35e866c4f2a3c4f3ceb38186'
+    oldFile: null
+  /front/static/images/icon:
+    newFile: !uuid '98f4e2e164f1f074b8f69a50c8f3b59d6f63a30d'
+    oldFile: null
+  /front/static/images/icon/gz.png:
+    newFile: !uuid '1fdc248b964d1b8479fe1e750cbdccb32a72c586'
+    oldFile: null
+  /front/static/images/icon/jfdh.png:
+    newFile: !uuid '4707c48560489681532a64eaaade09b77e5a30b3'
+    oldFile: null
+  /front/static/images/icon/pl.png:
+    newFile: !uuid 'c05c3bd9a5b2001b164df8950af7b772a1cfa89e'
+    oldFile: null
+  /front/static/images/icon/s3.png:
+    newFile: !uuid 'd0c0cf1a9b826e4cf417ea26a82bf45aaa54d8d5'
+    oldFile: null
+  /front/static/images/icon/s4.png:
+    newFile: !uuid 'b1b1b9c9a09f861e6caedbcd6ae7c56fe5646df1'
+    oldFile: null
+  /front/static/images/icon/souc.png:
+    newFile: !uuid 'd7e182578830e341bcc860384f879560067f7b50'
+    oldFile: null
+  /front/static/images/light.svg:
+    newFile: !uuid 'ab7cc088fac34b349141bba5eeeed5cf68922667'
+    oldFile: null
+  /front/static/images/scan.png:
+    newFile: !uuid 'c324bbb24d076b629d989b14cd984a66dc2acc46'
+    oldFile: null
+  /front/static/images/txj-poster.png:
+    newFile: !uuid '06298c3c9704e0f65eba014804c0d70a5da8c08f'
+    oldFile: null
+  /front/static/images/xge-poster.png:
+    newFile: !uuid '827db5fcd7d8b4434172f4ff93a35dd0afed433d'
+    oldFile: null
+  /front/static/img.png:
+    newFile: !uuid 'b5e518d9cb38c43f63ae8ce97655406b71f3a70e'
+    oldFile: null
+  /front/static/jiesan.png:
+    newFile: !uuid 'b5730f18ac67d181137e1b6bfc80005a0aad6771'
+    oldFile: null
+  /front/static/m_10.png:
+    newFile: !uuid 'f0a161b92d0664fe06e96d9d8c0d68309d0d831e'
+    oldFile: null
+  /front/static/m_11.png:
+    newFile: !uuid 'eb43f10d02f2d26e41bde49eee9f3b1b2f7589e4'
+    oldFile: null
+  /front/static/m_12.png:
+    newFile: !uuid 'db70eec65c26052e0170f6dd03ad4e74353f5f39'
+    oldFile: null
+  /front/static/m_14.png:
+    newFile: !uuid '850d1d36e54cac3bc9f89d2703034fec403dbe67'
+    oldFile: null
+  /front/static/m_16.png:
+    newFile: !uuid 'f86d466871e55e581880a7214b2cf936d351531d'
+    oldFile: null
+  /front/static/m_17.png:
+    newFile: !uuid '877ad1e5843adc873744544d91585f60c0f9b077'
+    oldFile: null
+  /front/static/m_2.png:
+    newFile: !uuid '34010dddbf841c34fcfc47ce2be5b13fbec56119'
+    oldFile: null
+  /front/static/m_20.png:
+    newFile: !uuid '2bb45892218b4919e3f2d7fcc0be6d66117740fe'
+    oldFile: null
+  /front/static/m_21.png:
+    newFile: !uuid 'a66ba087cd8e2cfbc2633578dd9b003c1b0b1aee'
+    oldFile: null
+  /front/static/m_22.png:
+    newFile: !uuid '39f5d8e31d06be6e4c882430785d31fb20d0dc35'
+    oldFile: null
+  /front/static/m_3.png:
+    newFile: !uuid '58315936d7a7763dc83bce38d4851f90fd823138'
+    oldFile: null
+  /front/static/m_4.png:
+    newFile: !uuid 'e54ac83802436bdb46dedd4fbb2feb872e850bf4'
+    oldFile: null
+  /front/static/m_8.png:
+    newFile: !uuid '250e30c27ddf75eb5cedb777dbf383b4b40e7b42'
+    oldFile: null
+  /front/static/m_9.png:
+    newFile: !uuid 'bde5f27766a2bc92f7e4f0eec7993842833a7fcd'
+    oldFile: null
+  /front/static/mark-fill.png:
+    newFile: !uuid 'da673f3456664d5bd47d1717a8d3270130842f54'
+    oldFile: null
+  /front/static/mark-old.png:
+    newFile: !uuid '678f41d66380462a055ca11307d67b9ca5de6717'
+    oldFile: null
+  /front/static/mark.png:
+    newFile: !uuid '740b037d36fdd231ad8500dd880c743222a6f99a'
+    oldFile: null
+  /front/static/mark_blue.png:
+    newFile: !uuid '14acb0406eca1861e86c076a87cdf7415ca84b27'
+    oldFile: null
+  /front/static/menu.png:
+    newFile: !uuid 'a460ff01c98241c12dcc9ad9dfc4adca3a3b696e'
+    oldFile: null
+  /front/static/newUI:
+    newFile: !uuid '2759bd44dc3e629bafd1fbc024e1b6b801e7b4b8'
+    oldFile: null
+  /front/static/newUI/add.png:
+    newFile: !uuid '387f4a06d27f3488d04f6b484fcf05fa1206baa9'
+    oldFile: null
+  /front/static/newUI/detail-back-blue.jpg:
+    newFile: !uuid '3a7e13c317361db93571d1ef6bcd1c01076a73df'
+    oldFile: null
+  /front/static/newUI/detail-back.jpg:
+    newFile: !uuid '4b25b97ba976ad7ef4778d9d08a4b921b513c90d'
+    oldFile: null
+  /front/static/newUI/home-blue.png:
+    newFile: !uuid 'af42d8046b24825bcc7145cade29bbfb42134314'
+    oldFile: null
+  /front/static/newUI/home-fill.png:
+    newFile: !uuid '83445734f0cc73509a333cc0fa574f7ecb4d1e83'
+    oldFile: null
+  /front/static/newUI/home.png:
+    newFile: !uuid 'cdf34fd1b1a854de398c82adb6455801c3df1448'
+    oldFile: null
+  /front/static/newUI/hot1.png:
+    newFile: !uuid '06642a236287b8fa26f97447688a7a1b25ffe645'
+    oldFile: null
+  /front/static/newUI/hot2.png:
+    newFile: !uuid '30a01a2e0e8e0226f5305c6dba80e45bbb90c5d7'
+    oldFile: null
+  /front/static/newUI/hot3.png:
+    newFile: !uuid 'f3ed9622b4418e797387fc2c632a5520ed855b78'
+    oldFile: null
+  /front/static/newUI/index-back-blue.jpg:
+    newFile: !uuid 'e1d007e184fe6f79d2754ad80df510976767557d'
+    oldFile: null
+  /front/static/newUI/index-back-blue2.jpg:
+    newFile: !uuid '7692eb9c06906073b08752b42ff43022ed0f3cba'
+    oldFile: null
+  /front/static/newUI/index-back.jpg:
+    newFile: !uuid 'd74c9dc509912dabf44f9537a126247da76cda11'
+    oldFile: null
+  /front/static/newUI/index-back2.jpg:
+    newFile: !uuid '75bedf04c6156615ce9c35b75cfe117dfb363936'
+    oldFile: null
+  /front/static/newUI/mark-fill.png:
+    newFile: !uuid 'da673f3456664d5bd47d1717a8d3270130842f54'
+    oldFile: null
+  /front/static/newUI/mark.png:
+    newFile: !uuid '740b037d36fdd231ad8500dd880c743222a6f99a'
+    oldFile: null
+  /front/static/newUI/message-blue.png:
+    newFile: !uuid '771cb980d20f8392c819c32b913715750c72ac1f'
+    oldFile: null
+  /front/static/newUI/message-fill.png:
+    newFile: !uuid '11746df10f285cacb950cae796f4a0c2284a48d7'
+    oldFile: null
+  /front/static/newUI/message.png:
+    newFile: !uuid '184477b68ffa1959b53cf8c78bf5bd1d76352334'
+    oldFile: null
+  /front/static/newUI/mine-blue.png:
+    newFile: !uuid '3d30d0e987f3d05cd52cc5716bc5ff89d429ecd4'
+    oldFile: null
+  /front/static/newUI/mine-fill.png:
+    newFile: !uuid 'bfad5d2ac2d6d11096eb18f61e882b67561cbb79'
+    oldFile: null
+  /front/static/newUI/mine.png:
+    newFile: !uuid '78e4b784350360260b110da9f1985b76fdb7384e'
+    oldFile: null
+  /front/static/newUI/one.png:
+    newFile: !uuid '62940ce770e2aed54db6f734ad48bfcdd2715f4a'
+    oldFile: null
+  /front/static/newUI/tab2-blue.png:
+    newFile: !uuid '5d0e61e9aba1e86b9b469bf329a7542736e27dd9'
+    oldFile: null
+  /front/static/newUI/tab2-fill.png:
+    newFile: !uuid 'd62edd06a7ff6ae2c6d34ad955d3332905c5640e'
+    oldFile: null
+  /front/static/newUI/tab2.png:
+    newFile: !uuid '9ef2df6eec7b87a5bd8173e9d9beec1948963470'
+    oldFile: null
+  /front/static/newUI/three.png:
+    newFile: !uuid 'd476b1b949d2f45015cd438f248db904d9cfc0d3'
+    oldFile: null
+  /front/static/newUI/timeLine.png:
+    newFile: !uuid 'd295858f9f05db136981b3291da15b0fa409557d'
+    oldFile: null
+  /front/static/newUI/two.png:
+    newFile: !uuid '6f5a8f1dc2f92d2257942fdbcff9cbc19da05052'
+    oldFile: null
+  /front/static/newUI/type1.png:
+    newFile: !uuid 'face032d9e906c16bd19657f19559e665e257265'
+    oldFile: null
+  /front/static/newUI/type2.png:
+    newFile: !uuid '6db2e91c05068571c283f4262cf16a1651ff4c2d'
+    oldFile: null
+  /front/static/newUI/type3.png:
+    newFile: !uuid '8865da555be48e8fb7365e9e251b908a92a02381'
+    oldFile: null
+  /front/static/newUI/type4.png:
+    newFile: !uuid 'd14e046b677b9f071e2d0af57fd915a941bfb691'
+    oldFile: null
+  /front/static/newUI/type5.png:
+    newFile: !uuid '29f39a87b77c47f39dfefb8702f78c5159326650'
+    oldFile: null
+  /front/static/newUI/weixin-fill.png:
+    newFile: !uuid '7636a50e1a85de5de57f97a9b9157bae82c3aadd'
+    oldFile: null
+  /front/static/newUI/weixin.png:
+    newFile: !uuid '12f993edf44a7054622f809a5b5aca6e07e85fa0'
+    oldFile: null
+  /front/static/p_1.png:
+    newFile: !uuid 'dd83ccf84fc0abc781786d000cdd933f527ef91f'
+    oldFile: null
+  /front/static/return_1.png:
+    newFile: !uuid 'a95ef6eedc2b10954b2153e6840af3b41ba1a51c'
+    oldFile: null
+  /front/static/return_2.png:
+    newFile: !uuid 'ae93003117043e54dcdad1c29028bc8bcb07328f'
+    oldFile: null
+  /front/static/success.png:
+    newFile: !uuid '03021d4ed8074025e43a28dabfb504c5b22cec8f'
+    oldFile: null
+  /front/static/tabbar:
+    newFile: !uuid 'd3e6a1692fb9e5381f3f39c6fa3b7af1296863c3'
+    oldFile: null
+  /front/static/tabbar/add.png:
+    newFile: !uuid '25c340b537e2ab2c07f4b02faf2ebbad0e743db3'
+    oldFile: null
+  /front/static/tabbar/home-1.png:
+    newFile: !uuid 'bf4ca5632ecf84fb1c57ce9195cfd110519892c9'
+    oldFile: null
+  /front/static/tabbar/home.png:
+    newFile: !uuid 'f42b7474e826707b6cc4f6e8a1ea3260b4b3abc5'
+    oldFile: null
+  /front/static/tabbar/msg-1.png:
+    newFile: !uuid '00bd7196084458c64194aa753c56bd391ccd4689'
+    oldFile: null
+  /front/static/tabbar/msg.png:
+    newFile: !uuid '06cc5b03dc464e751427fd9aef72abd4fa223fcb'
+    oldFile: null
+  /front/static/tabbar/my-1.png:
+    newFile: !uuid '67ef0a6e25f3e65eda418aabc5c350bf176a7c83'
+    oldFile: null
+  /front/static/tabbar/my.png:
+    newFile: !uuid '9790dfe8323351ef36b5bd4048f379aaa10efdc6'
+    oldFile: null
+  /front/static/tabbar/order-1.png:
+    newFile: !uuid 'b73f0d0a162eefa27af2db7951c5da88cebee06f'
+    oldFile: null
+  /front/static/tabbar/order.png:
+    newFile: !uuid '259e30772bb69e8197ea70640a24de479662c4fa'
+    oldFile: null
+  /front/static/tabbar/quanzi-1.png:
+    newFile: !uuid 'ceae7b8c898b0805a820e4a58d239c57a3c0bfc9'
+    oldFile: null
+  /front/static/tabbar/quanzi.png:
+    newFile: !uuid 'd2caec7106c6088c81753f093d5f701bf65e5ec0'
+    oldFile: null
+  /front/static/topic.png:
+    newFile: !uuid 'b29ea1447150c696b5188b8d506c46aac926c400'
+    oldFile: null
+  /front/static/ufo.png:
+    newFile: !uuid 'a4602d40e7590ac0dd61ec51a58cb6206dfb2c25'
+    oldFile: null
+  /front/static/wechat.png:
+    newFile: !uuid 'a352cbb08aca393eb11ae438509cfe2dfc79ca7f'
+    oldFile: null
+  /front/store:
+    newFile: !uuid '9ee39f66fd5bc27d777666043c2b5e69171a5a6c'
+    oldFile: null
+  /front/store/config.js:
+    newFile: !uuid 'c913e7efda6208039ddb45ff6e3a51010c612e31'
+    oldFile: null
+  /front/store/content.js:
+    newFile: !uuid 'a2758dd63b2c3fc633f673f5dde6e8ca1bfd9055'
+    oldFile: null
+  /front/store/index.js:
+    newFile: !uuid '992dba78784c02a4509eb1d2de355d149a0de792'
+    oldFile: null
+  /front/store/popup.js:
+    newFile: !uuid '5df6fd5562a0f5f9bdad1b8a33496653de601b99'
+    oldFile: null
+  /front/store/remind.js:
+    newFile: !uuid '3835140d3e3598e614c979ce340d9a28c28ad273'
+    oldFile: null
+  /front/store/remindWSS.js:
+    newFile: !uuid '982513d39687bcb9f67c8ccafda3db68f0722ddb'
+    oldFile: null
+  /front/store/user.js:
+    newFile: !uuid 'c9c30b5a72825b6f1611892bca6a8f7c65484f5b'
+    oldFile: null
+  /front/uni.scss:
+    newFile: !uuid 'c817d1c9b5bc8cb0d454ab1ba5fda81a30b0b4ed'
+    oldFile: null
+  /front/uni_modules:
+    newFile: !uuid '5a774544fc2b32d47e0bd00d98e585e4bc6bc4c1'
+    oldFile: null
+  /front/uni_modules/q-view:
+    newFile: !uuid '90adea5d5a2f5cb2db98bfe362a2b7fd65fce2b4'
+    oldFile: null
+  /front/uni_modules/q-view/changelog.md:
+    newFile: !uuid '236eabcb918e5f8898eb28caa5230cec1101b4fa'
+    oldFile: null
+  /front/uni_modules/q-view/components:
+    newFile: !uuid '7ce7c65d05beaf2d9b1fb50131c236cd99ca115a'
+    oldFile: null
+  /front/uni_modules/q-view/components/q-back-top:
+    newFile: !uuid '2d65fc1a33b890ab7d95f7c4ccbbe9500f6ff66b'
+    oldFile: null
+  /front/uni_modules/q-view/components/q-back-top/q-back-top.vue:
+    newFile: !uuid '1e8522e555e5c49f6ce4fe8a3f88e73bcf1fc940'
+    oldFile: null
+  /front/uni_modules/q-view/components/q-button:
+    newFile: !uuid 'e757c380d787aaeaafa4b419847c01fdcf00e0b2'
+    oldFile: null
+  /front/uni_modules/q-view/components/q-button/q-button.vue:
+    newFile: !uuid '375e832c900e738cb2dfcdfe92b255620f6e4f5c'
+    oldFile: null
+  /front/uni_modules/q-view/components/q-field:
+    newFile: !uuid 'd71cb2b010bc16275791695de7df913996c00316'
+    oldFile: null
+  /front/uni_modules/q-view/components/q-field/q-field.vue:
+    newFile: !uuid '4bee32047c67e92700eeacfd3d41e00780a2ab46'
+    oldFile: null
+  /front/uni_modules/q-view/components/q-icon:
+    newFile: !uuid 'e466c7eb6905a849a1e983ccdec96c02f6612a56'
+    oldFile: null
+  /front/uni_modules/q-view/components/q-icon/iconfont.css:
+    newFile: !uuid '3b6276fdd912be2290718483d36d6071991884c0'
+    oldFile: null
+  /front/uni_modules/q-view/components/q-icon/q-icon.vue:
+    newFile: !uuid '63c473c5b8d881cfb84f6b690dc85c7e3b2485bc'
+    oldFile: null
+  /front/uni_modules/q-view/components/q-popup:
+    newFile: !uuid '2a2e8333b746cb0f04becbe5c428cec82d44a20b'
+    oldFile: null
+  /front/uni_modules/q-view/components/q-popup/q-popup.vue:
+    newFile: !uuid '6aa6deb804f7bf85848aa5d02077788c98cf1037'
+    oldFile: null
+  /front/uni_modules/q-view/components/q-select:
+    newFile: !uuid '8e96d65912ca5e4c786316f27f24dc177c899f14'
+    oldFile: null
+  /front/uni_modules/q-view/components/q-select/q-select.vue:
+    newFile: !uuid '13490ed04b7daa7b2cb6b9ce21e81a9145b529d7'
+    oldFile: null
+  /front/uni_modules/q-view/components/q-tabbar:
+    newFile: !uuid '72f49d9ecbf26d6ba8791e72ed3c9df4727f79ff'
+    oldFile: null
+  /front/uni_modules/q-view/components/q-tabbar/q-tabbar.vue:
+    newFile: !uuid 'cb31e78e62af652cb7f597364a5dfae4e2e34ba4'
+    oldFile: null
+  /front/uni_modules/q-view/components/q-view:
+    newFile: !uuid '71c4c526c8899e879a00ca4d66e317c5d7c9f0e0'
+    oldFile: null
+  /front/uni_modules/q-view/components/q-view/q-view.vue:
+    newFile: !uuid '8c3b35f6ad3f17bd62572d0aa2dea47bdf522c6b'
+    oldFile: null
+  /front/uni_modules/q-view/js_sdk:
+    newFile: !uuid 'be59c219024bb450d68427e2e30b4f764ae3dd31'
+    oldFile: null
+  /front/uni_modules/q-view/js_sdk/index.js:
+    newFile: !uuid '325bf78893c5ff649535ecd6cd025c33549f26d5'
+    oldFile: null
+  /front/uni_modules/q-view/package.json:
+    newFile: !uuid '3b0ac22dee54ece89c27b0b0ead0ce951e9e34b4'
+    oldFile: null
+  /front/uni_modules/q-view/readme.md:
+    newFile: !uuid 'bfb59bdf9140e90c9ee18665a7971740c9265a60'
+    oldFile: null
+  /front/uni_modules/uni-badge:
+    newFile: !uuid '3a11d9ce677cf283e9b60c1892a06d23f6f751af'
+    oldFile: null
+  /front/uni_modules/uni-badge/changelog.md:
+    newFile: !uuid '544ecc135b69587852ea7708654345908f9f83bc'
+    oldFile: null
+  /front/uni_modules/uni-badge/components:
+    newFile: !uuid '11833db79003286375730760514463a46dbdb9d3'
+    oldFile: null
+  /front/uni_modules/uni-badge/components/uni-badge:
+    newFile: !uuid '348e93a5e58b89ab4a2dbe0c9db18b276f4ede4b'
+    oldFile: null
+  /front/uni_modules/uni-badge/components/uni-badge/uni-badge.vue:
+    newFile: !uuid '1981b4e7c4c04d0adeaff59b066ce1f1808bd0eb'
+    oldFile: null
+  /front/uni_modules/uni-badge/package.json:
+    newFile: !uuid '7ba6d2f67ebddbff45a7997e8e6c845bd65dd043'
+    oldFile: null
+  /front/uni_modules/uni-badge/readme.md:
+    newFile: !uuid 'bdf175da9f759cafe6a4bc910c0e8ac0d20fcff7'
+    oldFile: null
+  /front/uni_modules/uni-data-checkbox:
+    newFile: !uuid '1490805eb7c314b15b776806e26dd24898f26fe2'
+    oldFile: null
+  /front/uni_modules/uni-data-checkbox/changelog.md:
+    newFile: !uuid '179130a71b2f3243f65427cdaf93b6e71df3c219'
+    oldFile: null
+  /front/uni_modules/uni-data-checkbox/components:
+    newFile: !uuid 'bf0b8bcbde542881fc9df19a368957c8f65bafad'
+    oldFile: null
+  /front/uni_modules/uni-data-checkbox/components/uni-data-checkbox:
+    newFile: !uuid '16785517e849435f3aed4239762b2820003d00f4'
+    oldFile: null
+  /front/uni_modules/uni-data-checkbox/components/uni-data-checkbox/uni-data-checkbox.vue:
+    newFile: !uuid '63af3a3dab2f87a09d7fbc2de40187c3360ebe03'
+    oldFile: null
+  /front/uni_modules/uni-data-checkbox/package.json:
+    newFile: !uuid '515293d7c80ae0d76deb2ccf6cfde262ee6d66a8'
+    oldFile: null
+  /front/uni_modules/uni-data-checkbox/readme.md:
+    newFile: !uuid '6eb253d426b901544142e92748696e89fe0bb2f8'
+    oldFile: null
+  /front/uni_modules/uni-load-more:
+    newFile: !uuid 'b7ae4df602634d9931821968072b49d82d249b4b'
+    oldFile: null
+  /front/uni_modules/uni-load-more/changelog.md:
+    newFile: !uuid '4eacc0f71dbc78b9d4d520d577ac5e1d253aa937'
+    oldFile: null
+  /front/uni_modules/uni-load-more/components:
+    newFile: !uuid '792b503a6afa572a76e13375d9acc7f6d14d5828'
+    oldFile: null
+  /front/uni_modules/uni-load-more/components/uni-load-more:
+    newFile: !uuid '5f44703af029e40cfb3993a67c3516c838b9152b'
+    oldFile: null
+  /front/uni_modules/uni-load-more/components/uni-load-more/i18n:
+    newFile: !uuid 'accf8f63444a15c6320794db296494bcc7c2ed84'
+    oldFile: null
+  /front/uni_modules/uni-load-more/components/uni-load-more/i18n/en.json:
+    newFile: !uuid 'a4f14a5454b19c2e6245be1cfdcf6b2f48ac0a34'
+    oldFile: null
+  /front/uni_modules/uni-load-more/components/uni-load-more/i18n/index.js:
+    newFile: !uuid 'de7509c87ba5197b9f5d20ca94a0558c7a8e08a9'
+    oldFile: null
+  /front/uni_modules/uni-load-more/components/uni-load-more/i18n/zh-Hans.json:
+    newFile: !uuid 'f15d5105033ed020b5286f3c6219bf9102134c72'
+    oldFile: null
+  /front/uni_modules/uni-load-more/components/uni-load-more/i18n/zh-Hant.json:
+    newFile: !uuid 'a255c6ded74a6a2422caab02e46a0b41d4a86353'
+    oldFile: null
+  /front/uni_modules/uni-load-more/components/uni-load-more/uni-load-more.vue:
+    newFile: !uuid '5134ae2c231e1f501a6fc206ea6b74b47973888e'
+    oldFile: null
+  /front/uni_modules/uni-load-more/package.json:
+    newFile: !uuid 'ee80055299792db54a36c5bce3dedfa10a5e0a55'
+    oldFile: null
+  /front/uni_modules/uni-load-more/readme.md:
+    newFile: !uuid '54dc1fad29ca3906f3498530878791679e63a7bf'
+    oldFile: null
+  /front/uni_modules/uni-nav-bar:
+    newFile: !uuid 'e79891c8a45db4f0525a3d6af162774dc7db8105'
+    oldFile: null
+  /front/uni_modules/uni-nav-bar/changelog.md:
+    newFile: !uuid 'fbacca4ba091f83acc7b463f7dc2e853930323ee'
+    oldFile: null
+  /front/uni_modules/uni-nav-bar/components:
+    newFile: !uuid '0f5309d12ce44d4134b5717870bfc6f33669ef7f'
+    oldFile: null
+  /front/uni_modules/uni-nav-bar/components/uni-nav-bar:
+    newFile: !uuid '088d749f1d398a9ecd3fa7bc2762e11cd11f20e2'
+    oldFile: null
+  /front/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-nav-bar.vue:
+    newFile: !uuid '2baf987dd2cba775c7a182bd049cbda0f764d6e9'
+    oldFile: null
+  /front/uni_modules/uni-nav-bar/components/uni-nav-bar/uni-status-bar.vue:
+    newFile: !uuid '6a688744fdca7e3e310ebe9cb6aaaf071f5efad5'
+    oldFile: null
+  /front/uni_modules/uni-nav-bar/package.json:
+    newFile: !uuid 'e1473ca11fbe97bf1fc012f7c963c1308c3430d4'
+    oldFile: null
+  /front/uni_modules/uni-nav-bar/readme.md:
+    newFile: !uuid '3934b3277583a4a8073d2b42a367d237f748157a'
+    oldFile: null
+  /front/uni_modules/uni-scss:
+    newFile: !uuid '2dabc21fe4b2f3ae9ca65f387a1042dba57ff51b'
+    oldFile: null
+  /front/uni_modules/uni-scss/changelog.md:
+    newFile: !uuid '0c5fc86dec27aa4b16def3d926d6472546ebac1e'
+    oldFile: null
+  /front/uni_modules/uni-scss/index.scss:
+    newFile: !uuid '1744a5f9845f6e3399263d7136e7e195e1e44957'
+    oldFile: null
+  /front/uni_modules/uni-scss/manifest.json:
+    newFile: !uuid '9f8baee30dd573c61b9d140fd3f97aa60bbf2207'
+    oldFile: null
+  /front/uni_modules/uni-scss/package.json:
+    newFile: !uuid 'd24aac89a9cfa664ca0a652abedeee536cc2d543'
+    oldFile: null
+  /front/uni_modules/uni-scss/readme.md:
+    newFile: !uuid 'b7d1c25f3df7789fd3347cd1f8f00e3df05718e4'
+    oldFile: null
+  /front/uni_modules/uni-scss/styles:
+    newFile: !uuid '5559738e191acedaadbf2aaeef9ce2c25ee2505d'
+    oldFile: null
+  /front/uni_modules/uni-scss/styles/index.scss:
+    newFile: !uuid 'ffac4fecdf294152885eb82aac1e9d69e13ace8b'
+    oldFile: null
+  /front/uni_modules/uni-scss/styles/setting:
+    newFile: !uuid 'f760c5b0a7f3540d16decbff4dde29af871ac362'
+    oldFile: null
+  /front/uni_modules/uni-scss/styles/setting/_border.scss:
+    newFile: !uuid '12a11c3227c180d36c7ae8b19da0395c8a37edf2'
+    oldFile: null
+  /front/uni_modules/uni-scss/styles/setting/_color.scss:
+    newFile: !uuid '1ededd94d929eb8043c0f0f50e4b6eaef19d5056'
+    oldFile: null
+  /front/uni_modules/uni-scss/styles/setting/_radius.scss:
+    newFile: !uuid '9a0428bb87c90b48771945ac6dd1e96d0004b159'
+    oldFile: null
+  /front/uni_modules/uni-scss/styles/setting/_space.scss:
+    newFile: !uuid '3c895289782aec33e3b8cc7f7f302bdc86131174'
+    oldFile: null
+  /front/uni_modules/uni-scss/styles/setting/_styles.scss:
+    newFile: !uuid '689afec661c6e7212b41437ad3f1fdf26659606c'
+    oldFile: null
+  /front/uni_modules/uni-scss/styles/setting/_text.scss:
+    newFile: !uuid 'a34d08f3f70b83d36f019e6e268f8e62ba9d932d'
+    oldFile: null
+  /front/uni_modules/uni-scss/styles/setting/_variables.scss:
+    newFile: !uuid '557d3d7c9cfcf8b1d1ce94d23c75333886749841'
+    oldFile: null
+  /front/uni_modules/uni-scss/styles/tools:
+    newFile: !uuid '09f9eeaecaf5e2eede2e4034e63bfa88edd66366'
+    oldFile: null
+  /front/uni_modules/uni-scss/styles/tools/functions.scss:
+    newFile: !uuid 'ac6f63e53a9342840367582982b1f6a465928e48'
+    oldFile: null
+  /front/uni_modules/uni-scss/theme.scss:
+    newFile: !uuid '80ee62f7d82dd550f11e643f55b66353a48b2b55'
+    oldFile: null
+  /front/uni_modules/uni-scss/variables.scss:
+    newFile: !uuid '1c062d42b29f02edc623834720ef88437b6a3277'
+    oldFile: null
+  /front/uni_modules/wo-slider:
+    newFile: !uuid '68b50a5b1759f0682e2660277f1096c809792acb'
+    oldFile: null
+  /front/uni_modules/wo-slider/changelog.md:
+    newFile: !uuid 'c51eb01c7abdfcf9bd5616195f613b399a7e4683'
+    oldFile: null
+  /front/uni_modules/wo-slider/components:
+    newFile: !uuid 'e6cce8f60e618792abda5380c41c38c4b28a854f'
+    oldFile: null
+  /front/uni_modules/wo-slider/components/wo-slider:
+    newFile: !uuid 'd87a89bd17d03e155e6e882d253b9003d3b4b93a'
+    oldFile: null
+  /front/uni_modules/wo-slider/components/wo-slider/wo-slider.vue:
+    newFile: !uuid 'dd536c73649928cfb7c26f911e09fbffeaf65aa3'
+    oldFile: null
+  /front/uni_modules/wo-slider/package.json:
+    newFile: !uuid 'ddbfe6d3a042c5c8f424b9bb0b00a5605444899a'
+    oldFile: null
+  /front/uni_modules/wo-slider/readme.md:
+    newFile: !uuid '8119d1cbad0a2d1da31143d967387d266bbc5bda'
+    oldFile: null
+  /front/utils:
+    newFile: !uuid 'a43dd7de30f43ede01bffc8cecbd952b8e3abbd0'
+    oldFile: null
+  /front/utils/WXBizDataCrypt.js:
+    newFile: !uuid '6727256e51892d2ca218596ae40ae990a761ce8f'
+    oldFile: null
+  /front/utils/data.js:
+    newFile: !uuid '1f3174088b0b003e653f46f944efe062f3a16848'
+    oldFile: null
+  /front/utils/rsa.js:
+    newFile: !uuid '48eaa3dd5361562257e4123dccbe91833dc58a12'
+    oldFile: null
+  /front/utils/tabbar.js:
+    newFile: !uuid '2ecba02ea1ffabe8adb194d0d4f38871f987b851'
+    oldFile: null
+  /front/uview-ui:
+    newFile: !uuid '9d0caad540aa73c9c631a1919e1ae4bc198315c6'
+    oldFile: null
+  /front/uview-ui/LICENSE:
+    newFile: !uuid '8e39eada86b1bcfe5b8be70399e183caa4625918'
+    oldFile: null
+  /front/uview-ui/README.md:
+    newFile: !uuid '06d5676d8122fe67c33843cee361a0152d06f1b9'
+    oldFile: null
+  /front/uview-ui/components:
+    newFile: !uuid '809d2a8e70cd98427878b3611703df1930fdc808'
+    oldFile: null
+  /front/uview-ui/components/u-action-sheet:
+    newFile: !uuid '2049ed8d56065c2cdad44db6bb421d0480a90d9a'
+    oldFile: null
+  /front/uview-ui/components/u-action-sheet/u-action-sheet.vue:
+    newFile: !uuid '722b668b1254c24452603e73d6ce596e97054bb7'
+    oldFile: null
+  /front/uview-ui/components/u-alert-tips:
+    newFile: !uuid '27535024c08bde9222a601fc0753d23fa5135d9f'
+    oldFile: null
+  /front/uview-ui/components/u-alert-tips/u-alert-tips.vue:
+    newFile: !uuid 'e81fc37979e9e1a5d9c9cbbc4e1abd2a2e888eba'
+    oldFile: null
+  /front/uview-ui/components/u-avatar:
+    newFile: !uuid 'ff57730d0a5d9b25b2a0d84fd7e53a1d86ad7cc2'
+    oldFile: null
+  /front/uview-ui/components/u-avatar-cropper:
+    newFile: !uuid '41f51b70b69b5cdadfb75311ef73d9357803535e'
+    oldFile: null
+  /front/uview-ui/components/u-avatar-cropper/u-avatar-cropper.vue:
+    newFile: !uuid 'a48dd546434c653d8b1645a2cc1840a6fe72a230'
+    oldFile: null
+  /front/uview-ui/components/u-avatar-cropper/weCropper.js:
+    newFile: !uuid 'df02483861703559b7735b11e26d8ebbbff76c1a'
+    oldFile: null
+  /front/uview-ui/components/u-avatar/u-avatar.vue:
+    newFile: !uuid '289b9b029fc00b3c4ce4353475dbdf6bdb59868f'
+    oldFile: null
+  /front/uview-ui/components/u-back-top:
+    newFile: !uuid 'd837a907711873b369276e2408978e2db38a04c8'
+    oldFile: null
+  /front/uview-ui/components/u-back-top/u-back-top.vue:
+    newFile: !uuid '7970fc7ab5c13878253f39d12b5ee3e6073a9027'
+    oldFile: null
+  /front/uview-ui/components/u-badge:
+    newFile: !uuid '0b9a1986cdc603315fbd5eb1c03ff6b0ce82d2d8'
+    oldFile: null
+  /front/uview-ui/components/u-badge/u-badge.vue:
+    newFile: !uuid 'e85b133ae4623769ddfeb4e739a1e22460d2f632'
+    oldFile: null
+  /front/uview-ui/components/u-button:
+    newFile: !uuid '2a17719687746dc1da9b8a09df8e699b6e1f195d'
+    oldFile: null
+  /front/uview-ui/components/u-button/u-button.vue:
+    newFile: !uuid '82c3a6f08b37fb5af7c4c7be82109b7775f09277'
+    oldFile: null
+  /front/uview-ui/components/u-calendar:
+    newFile: !uuid '6e259698d0a6c35967c6c6d9f7c3123936442c15'
+    oldFile: null
+  /front/uview-ui/components/u-calendar/u-calendar.vue:
+    newFile: !uuid '2b3018426bca0b184c6236c83a7a328acb335915'
+    oldFile: null
+  /front/uview-ui/components/u-car-keyboard:
+    newFile: !uuid '59efb17869c569f996c3a118551c1bdf5226caef'
+    oldFile: null
+  /front/uview-ui/components/u-car-keyboard/u-car-keyboard.vue:
+    newFile: !uuid '84b14678e2e82fd200ef6c15930f415a8d4df1df'
+    oldFile: null
+  /front/uview-ui/components/u-card:
+    newFile: !uuid '6e6b979cff9e9fa9b8d1c8f8f346fc31bce468ff'
+    oldFile: null
+  /front/uview-ui/components/u-card/u-card.vue:
+    newFile: !uuid 'a3cb2aa92992021a31b587db7cea59d3ce1a5727'
+    oldFile: null
+  /front/uview-ui/components/u-cell-group:
+    newFile: !uuid 'd6ba152e17c4d0d1bec4a092d19294a3e1dd859c'
+    oldFile: null
+  /front/uview-ui/components/u-cell-group/u-cell-group.vue:
+    newFile: !uuid '3fbca72588ef3c0fa87b4753c057aa7b28bad6ac'
+    oldFile: null
+  /front/uview-ui/components/u-cell-item:
+    newFile: !uuid 'd2a117111aa9cf5f008a09eff4ba74138b27cb8a'
+    oldFile: null
+  /front/uview-ui/components/u-cell-item/u-cell-item.vue:
+    newFile: !uuid '055af3a6383180dfb841f72e1dfe5270b514879e'
+    oldFile: null
+  /front/uview-ui/components/u-checkbox:
+    newFile: !uuid '7eeccd526c805802a254a77c6f16e5261d29dbff'
+    oldFile: null
+  /front/uview-ui/components/u-checkbox-group:
+    newFile: !uuid 'b7b8a15d6a047482cd98a03d64c1bf0eae0d1f02'
+    oldFile: null
+  /front/uview-ui/components/u-checkbox-group/u-checkbox-group.vue:
+    newFile: !uuid '6a149b33f10a82506ef566e183e039c5501f9720'
+    oldFile: null
+  /front/uview-ui/components/u-checkbox/u-checkbox.vue:
+    newFile: !uuid '94144616b0ca290051eabadb78eea185933d187d'
+    oldFile: null
+  /front/uview-ui/components/u-circle-progress:
+    newFile: !uuid '597441b3d045b3f6bd7c81ea70af7d6a0c56740b'
+    oldFile: null
+  /front/uview-ui/components/u-circle-progress/u-circle-progress.vue:
+    newFile: !uuid '46e7c18105724a9c9cd771575efcdbd5f95bd37f'
+    oldFile: null
+  /front/uview-ui/components/u-circle-progress/u-line-progress:
+    newFile: !uuid '0b5989b616e9bc875bd090abae66803cb7d00408'
+    oldFile: null
+  /front/uview-ui/components/u-circle-progress/u-line-progress/u-line-progress.vue:
+    newFile: !uuid '77e2da202d2436bcae9d83b4b826f0b83bb64af5'
+    oldFile: null
+  /front/uview-ui/components/u-col:
+    newFile: !uuid '9adeb4292cee35705c881f9fbd9879c7878f3e0e'
+    oldFile: null
+  /front/uview-ui/components/u-col/u-col.vue:
+    newFile: !uuid '3b6cc64ece6b284ae2a0be128bffa51236cce6c0'
+    oldFile: null
+  /front/uview-ui/components/u-collapse:
+    newFile: !uuid '9a128758c80dd41621bd7376398b260fe2abbf84'
+    oldFile: null
+  /front/uview-ui/components/u-collapse-item:
+    newFile: !uuid '24cabaabc8a03b2452ac5f5658d1f6436370ebec'
+    oldFile: null
+  /front/uview-ui/components/u-collapse-item/u-collapse-item.vue:
+    newFile: !uuid '3b66bfa5583883cc5f779cab7f7cb9d96f7a5d41'
+    oldFile: null
+  /front/uview-ui/components/u-collapse/u-collapse.vue:
+    newFile: !uuid '8572957adf5722656fe1dd9738b9f92635616c6a'
+    oldFile: null
+  /front/uview-ui/components/u-column-notice:
+    newFile: !uuid 'd91638dd669a8f208a25258d94078ed88f5eebeb'
+    oldFile: null
+  /front/uview-ui/components/u-column-notice/u-column-notice.vue:
+    newFile: !uuid 'dd8bd3182d5dc207dd116b6c306c9ee59b3622d3'
+    oldFile: null
+  /front/uview-ui/components/u-count-down:
+    newFile: !uuid '8b395580b5cd6f090c735c4b63477d6e079d770b'
+    oldFile: null
+  /front/uview-ui/components/u-count-down/u-count-down.vue:
+    newFile: !uuid '7285d672179ea8d3088dfdb6bd567851baf1c7c6'
+    oldFile: null
+  /front/uview-ui/components/u-count-to:
+    newFile: !uuid '3220e6e137c7fd37d2ed47993be9dce75ced0ecf'
+    oldFile: null
+  /front/uview-ui/components/u-count-to/u-count-to.vue:
+    newFile: !uuid '053dc5ffefcf1ad538f0c7a0832180f4b99dbd0d'
+    oldFile: null
+  /front/uview-ui/components/u-divider:
+    newFile: !uuid 'dd97bfe6a19698bf70cc3ebddbd5ff4bfe7ef35f'
+    oldFile: null
+  /front/uview-ui/components/u-divider/u-divider.vue:
+    newFile: !uuid '6f8d7e69ee819ddeebe436dfe2594fb6d80afcfd'
+    oldFile: null
+  /front/uview-ui/components/u-dropdown:
+    newFile: !uuid '410d8eb0a877427d3485f8c3d25404268f4f5ed1'
+    oldFile: null
+  /front/uview-ui/components/u-dropdown-item:
+    newFile: !uuid '51c94dd9d5bbc40099597817185812a18e84b43d'
+    oldFile: null
+  /front/uview-ui/components/u-dropdown-item/u-dropdown-item.vue:
+    newFile: !uuid 'ba60d8f769a5e31e63c625a294cbd5d3e040e8ff'
+    oldFile: null
+  /front/uview-ui/components/u-dropdown/u-dropdown.vue:
+    newFile: !uuid 'a62e469aee7574d8b9666b37b869a0acdd8bedd7'
+    oldFile: null
+  /front/uview-ui/components/u-empty:
+    newFile: !uuid '94b119f2ec0dcdaaf22a19c20ea55d3b418b5e48'
+    oldFile: null
+  /front/uview-ui/components/u-empty/u-empty.vue:
+    newFile: !uuid '2c77b24eef006f9fad3c1f3098900b610ef34105'
+    oldFile: null
+  /front/uview-ui/components/u-field:
+    newFile: !uuid 'aa76d0e336828bb2283a3688334d8c855cc07a50'
+    oldFile: null
+  /front/uview-ui/components/u-field/u-field.vue:
+    newFile: !uuid 'b562798acea97a6231a9f7148bd3ee17f64c516e'
+    oldFile: null
+  /front/uview-ui/components/u-form:
+    newFile: !uuid 'fadf2e8ce1945b7a128e45f6514b19c5c5d9d1e0'
+    oldFile: null
+  /front/uview-ui/components/u-form-item:
+    newFile: !uuid '12ae76018305111e9dfa4614d5eea3ac89898246'
+    oldFile: null
+  /front/uview-ui/components/u-form-item/u-form-item.vue:
+    newFile: !uuid 'd6b8c8b056c05410083510e626ee96167e9ffd56'
+    oldFile: null
+  /front/uview-ui/components/u-form/u-form.vue:
+    newFile: !uuid 'bdbafaf08ec63e7d8f8ec72f5412c7a019cf9f33'
+    oldFile: null
+  /front/uview-ui/components/u-full-screen:
+    newFile: !uuid '7b6e08b77518c22e4d99e1ea03519e8a725cff17'
+    oldFile: null
+  /front/uview-ui/components/u-full-screen/u-full-screen.vue:
+    newFile: !uuid '4f7e7d95b1ed390301de5a5f9cebd9a1b1076380'
+    oldFile: null
+  /front/uview-ui/components/u-gap:
+    newFile: !uuid '137cb2e5106cf4d2a5d1c281cd87d903bd796977'
+    oldFile: null
+  /front/uview-ui/components/u-gap/u-gap.vue:
+    newFile: !uuid '6c01f94377017bf3470b92122b603f2d3009cf30'
+    oldFile: null
+  /front/uview-ui/components/u-grid:
+    newFile: !uuid '6143a02f7cbdff1d35031ac9f3483b7fdf9ffa17'
+    oldFile: null
+  /front/uview-ui/components/u-grid-item:
+    newFile: !uuid 'fbca222ebb1b06c5bd3784ee9fd63721decb24fc'
+    oldFile: null
+  /front/uview-ui/components/u-grid-item/u-grid-item.vue:
+    newFile: !uuid '8cf4e93fd6096b36138d8b68113b2f84bd1de804'
+    oldFile: null
+  /front/uview-ui/components/u-grid/u-grid.vue:
+    newFile: !uuid '6588c06fc43499f6ee5d1082dd5d67442bdadcfd'
+    oldFile: null
+  /front/uview-ui/components/u-icon:
+    newFile: !uuid 'c8f92ac289951e514e1a52ec4991a6eb53fb9474'
+    oldFile: null
+  /front/uview-ui/components/u-icon/u-icon.vue:
+    newFile: !uuid 'db1b0195314765ed12980d9331972626be210418'
+    oldFile: null
+  /front/uview-ui/components/u-image:
+    newFile: !uuid '2c0fd94c47eaa167c0a775d1367f3c30693d2163'
+    oldFile: null
+  /front/uview-ui/components/u-image/u-image.vue:
+    newFile: !uuid 'c729c3c804e741c67443451f4574a62889b808ac'
+    oldFile: null
+  /front/uview-ui/components/u-index-anchor:
+    newFile: !uuid '867e8fdd1e92bc9070723e178abfedb4dbd882b3'
+    oldFile: null
+  /front/uview-ui/components/u-index-anchor/u-index-anchor.vue:
+    newFile: !uuid '5038827b678d9b3192e05eae73399080636a2fd3'
+    oldFile: null
+  /front/uview-ui/components/u-index-list:
+    newFile: !uuid '61bfee59e20dab46fe7670fd4c1d4111823a2def'
+    oldFile: null
+  /front/uview-ui/components/u-index-list/u-index-list.vue:
+    newFile: !uuid '30fcda094cd4ef8335c287fa87d4f0aa649d255a'
+    oldFile: null
+  /front/uview-ui/components/u-input:
+    newFile: !uuid 'c9722d3e5015fdf33a966382412852df9173d8f1'
+    oldFile: null
+  /front/uview-ui/components/u-input/u-input.vue:
+    newFile: !uuid '09a63622d453e7ce79d526724c715a0df8d02a7d'
+    oldFile: null
+  /front/uview-ui/components/u-keyboard:
+    newFile: !uuid '09be7a1b35008f4501d17a7519c6c8293452a107'
+    oldFile: null
+  /front/uview-ui/components/u-keyboard/u-keyboard.vue:
+    newFile: !uuid '1904a2ba24c15150e3b9afcc8b78ab6c09baca8e'
+    oldFile: null
+  /front/uview-ui/components/u-lazy-load:
+    newFile: !uuid '2b9136a4d92cf0be4527b49679e1b848d807fa20'
+    oldFile: null
+  /front/uview-ui/components/u-lazy-load/u-lazy-load.vue:
+    newFile: !uuid '019c8d1ab4f51fd216e368ddbe43f882391e49de'
+    oldFile: null
+  /front/uview-ui/components/u-line:
+    newFile: !uuid '99b9588e1418622d6b785dd252cf87510ce14b0f'
+    oldFile: null
+  /front/uview-ui/components/u-line-progress:
+    newFile: !uuid '0b5989b616e9bc875bd090abae66803cb7d00408'
+    oldFile: null
+  /front/uview-ui/components/u-line-progress/u-line-progress.vue:
+    newFile: !uuid '77e2da202d2436bcae9d83b4b826f0b83bb64af5'
+    oldFile: null
+  /front/uview-ui/components/u-line/u-line.vue:
+    newFile: !uuid 'c56fbc3fab931a0baef4268029a5d0ac8c9d1120'
+    oldFile: null
+  /front/uview-ui/components/u-link:
+    newFile: !uuid '38ef0cc5df1439f16d9619c565ef0e3ac7deec56'
+    oldFile: null
+  /front/uview-ui/components/u-link/u-link.vue:
+    newFile: !uuid '2dd2a7355fca885a808ad4be1e8fbfa02bd45e7a'
+    oldFile: null
+  /front/uview-ui/components/u-loading:
+    newFile: !uuid '982b4b113effa98264add0bebbaf129c5d0b74ca'
+    oldFile: null
+  /front/uview-ui/components/u-loading-page:
+    newFile: !uuid 'b1e883354228e404d407185e3914928fbc4427f6'
+    oldFile: null
+  /front/uview-ui/components/u-loading-page/u-loading-page.vue:
+    newFile: !uuid '7e0440135e36b42b244d16e07a39067c000725f0'
+    oldFile: null
+  /front/uview-ui/components/u-loading/u-loading.vue:
+    newFile: !uuid 'c747f643945182aba4bfa724520f38aa0768b426'
+    oldFile: null
+  /front/uview-ui/components/u-loadmore:
+    newFile: !uuid '06db8c2cbd6faa54af982882f94e625b4fb9cfd4'
+    oldFile: null
+  /front/uview-ui/components/u-loadmore/u-loadmore.vue:
+    newFile: !uuid '6b852a8a7718b1871861e51dc32691244263db8a'
+    oldFile: null
+  /front/uview-ui/components/u-mask:
+    newFile: !uuid 'dfa7d77d2a58603007cfa49af8786c8559059b4f'
+    oldFile: null
+  /front/uview-ui/components/u-mask/u-mask.vue:
+    newFile: !uuid '0b55d9d844753ccf4385e3aa57384c5b3df4c456'
+    oldFile: null
+  /front/uview-ui/components/u-message-input:
+    newFile: !uuid '5c56c0ad9c47947d162633bb316024f562ee0db7'
+    oldFile: null
+  /front/uview-ui/components/u-message-input/u-message-input.vue:
+    newFile: !uuid '41e071938784f6fccbaaac95b40079e588389baf'
+    oldFile: null
+  /front/uview-ui/components/u-modal:
+    newFile: !uuid '180f2bb9b9841ef3ce99cdbd24dfd32e1864df29'
+    oldFile: null
+  /front/uview-ui/components/u-modal/u-modal.vue:
+    newFile: !uuid 'ce58113307e19774ba321ac22db7929a02b5a3c3'
+    oldFile: null
+  /front/uview-ui/components/u-navbar:
+    newFile: !uuid '25295a04ed916fcb4a3512eb7e778bbeb47ec457'
+    oldFile: null
+  /front/uview-ui/components/u-navbar/u-navbar.vue:
+    newFile: !uuid '450242e992683f50442b79c2ca409c6f3d9463bf'
+    oldFile: null
+  /front/uview-ui/components/u-no-network:
+    newFile: !uuid '10824de0ea7a7df380e5868beb0e40b16348a3bc'
+    oldFile: null
+  /front/uview-ui/components/u-no-network/u-no-network.vue:
+    newFile: !uuid '51d9f4f024fd57fcff1240430453520902b27241'
+    oldFile: null
+  /front/uview-ui/components/u-notice-bar:
+    newFile: !uuid '790cb9b221cd4d41b9293143c7ae02dd641eb5e2'
+    oldFile: null
+  /front/uview-ui/components/u-notice-bar/u-notice-bar.vue:
+    newFile: !uuid '41a6cc474abecc47b83c1e053cde08edb22d0151'
+    oldFile: null
+  /front/uview-ui/components/u-number-box:
+    newFile: !uuid '66d5956c3f49856942e04995a86b247baf1df7ae'
+    oldFile: null
+  /front/uview-ui/components/u-number-box/u-number-box.vue:
+    newFile: !uuid '54a679eb5b0b5f75b6b00fcfe29d73507a7dd0ca'
+    oldFile: null
+  /front/uview-ui/components/u-number-keyboard:
+    newFile: !uuid '4692c537573576bd571afcc5b87574076e5d30aa'
+    oldFile: null
+  /front/uview-ui/components/u-number-keyboard/u-number-keyboard.vue:
+    newFile: !uuid '6425a1f8dd993ef198dfa0f9040a4fbbff715408'
+    oldFile: null
+  /front/uview-ui/components/u-parse:
+    newFile: !uuid '764877c0e706e1f8f4b7b7962913a8f2aaeaeeb7'
+    oldFile: null
+  /front/uview-ui/components/u-parse/libs:
+    newFile: !uuid 'c2f2738c80a517b3934b561c46bd354169346e37'
+    oldFile: null
+  /front/uview-ui/components/u-parse/libs/CssHandler.js:
+    newFile: !uuid '75c60154107bbb6d0f16b1d1b92937b5bf4f6353'
+    oldFile: null
+  /front/uview-ui/components/u-parse/libs/MpHtmlParser.js:
+    newFile: !uuid 'aeb0fc385a492fe00cf8467f6525c86186400933'
+    oldFile: null
+  /front/uview-ui/components/u-parse/libs/config.js:
+    newFile: !uuid '1f772e9fe2217356049b7b7d42c33ed4fe41b269'
+    oldFile: null
+  /front/uview-ui/components/u-parse/libs/handler.wxs:
+    newFile: !uuid 'd3b1aaabec8906ac5987f5a22c921659e98db2a9'
+    oldFile: null
+  /front/uview-ui/components/u-parse/libs/trees.vue:
+    newFile: !uuid '2b2482061ba62012fd4b8109520df0c77524658a'
+    oldFile: null
+  /front/uview-ui/components/u-parse/u-parse.vue:
+    newFile: !uuid '57a105eb90efcbaa5f19e10e3ab9d1e5db751a32'
+    oldFile: null
+  /front/uview-ui/components/u-picker:
+    newFile: !uuid '89681e0814450be2011bc9b9d7b14c27c8a80367'
+    oldFile: null
+  /front/uview-ui/components/u-picker/u-picker.vue:
+    newFile: !uuid '68212a48082c9b5b7bb3814636d9f6f37e27aa69'
+    oldFile: null
+  /front/uview-ui/components/u-popup:
+    newFile: !uuid '330e3522fb843ff1d061e9827215991d6e620341'
+    oldFile: null
+  /front/uview-ui/components/u-popup/u-popup.vue:
+    newFile: !uuid '69c0ec8d2d00e606b81aa7a5a952b18920c419af'
+    oldFile: null
+  /front/uview-ui/components/u-radio:
+    newFile: !uuid 'fa88989f4afcfe2b3183a6b9f348bb216d503aeb'
+    oldFile: null
+  /front/uview-ui/components/u-radio-group:
+    newFile: !uuid '44dd525bedbb9d2f8de931a0893268d1fa9ac6c1'
+    oldFile: null
+  /front/uview-ui/components/u-radio-group/u-radio-group.vue:
+    newFile: !uuid '2172eb2053222f24e2cf132a234231d385004c2d'
+    oldFile: null
+  /front/uview-ui/components/u-radio/u-radio.vue:
+    newFile: !uuid '1d9a439e6e7d0ef2bea98cc0386cc0a1da9dd018'
+    oldFile: null
+  /front/uview-ui/components/u-rate:
+    newFile: !uuid '13babde6234ac50f077443c158b1618dbf40e5b5'
+    oldFile: null
+  /front/uview-ui/components/u-rate/u-rate.vue:
+    newFile: !uuid '17eb3a87a678dcd6ccd0c859a6dc2543634c23dc'
+    oldFile: null
+  /front/uview-ui/components/u-read-more:
+    newFile: !uuid 'bd53a8a5b2d7e0141ed7507eb65a1a2db9ee2d1f'
+    oldFile: null
+  /front/uview-ui/components/u-read-more/u-read-more.vue:
+    newFile: !uuid 'a77a44f7cb4b5ae255a0671d17c373cedfd82743'
+    oldFile: null
+  /front/uview-ui/components/u-row:
+    newFile: !uuid '219fd6348303e3123a7ae1d1f3d9e49e6be0d115'
+    oldFile: null
+  /front/uview-ui/components/u-row-notice:
+    newFile: !uuid '53b9ecb10be152e9276c454fcdf0200f25210fbe'
+    oldFile: null
+  /front/uview-ui/components/u-row-notice/u-row-notice.vue:
+    newFile: !uuid 'f4683f1e6716f81ca592e9cd87941fbf06b040f8'
+    oldFile: null
+  /front/uview-ui/components/u-row/u-row.vue:
+    newFile: !uuid '915dfa691c8faf562837c8909be7cf592c8b37b4'
+    oldFile: null
+  /front/uview-ui/components/u-search:
+    newFile: !uuid '3310bb0be946eb7b36cd6596ef3c114df31f9ef3'
+    oldFile: null
+  /front/uview-ui/components/u-search/u-search.vue:
+    newFile: !uuid '206f661fdec9a93a1bb37714a0f25e98fd8fb581'
+    oldFile: null
+  /front/uview-ui/components/u-section:
+    newFile: !uuid 'eedfedf05e6a990f1830c86df6de0b83ee2fc087'
+    oldFile: null
+  /front/uview-ui/components/u-section/u-section.vue:
+    newFile: !uuid '02293ce36cac79832b3b211c240ba1df01ccb128'
+    oldFile: null
+  /front/uview-ui/components/u-select:
+    newFile: !uuid '6fb05b0bd37b3c9649dae56c6ef95a452542620c'
+    oldFile: null
+  /front/uview-ui/components/u-select/u-select.vue:
+    newFile: !uuid '1285845e06547a161067c61b542a85a79425ed8d'
+    oldFile: null
+  /front/uview-ui/components/u-skeleton:
+    newFile: !uuid '9da4bfa0d2bece36a4e9472bb33d85549db3026c'
+    oldFile: null
+  /front/uview-ui/components/u-skeleton/u-skeleton.vue:
+    newFile: !uuid 'c8cb19eb46a1aade33cd8a92663de63c6c492719'
+    oldFile: null
+  /front/uview-ui/components/u-slider:
+    newFile: !uuid '59b9c99a3ec926c2493a2cb52906cf98a687dd51'
+    oldFile: null
+  /front/uview-ui/components/u-slider/u-slider.vue:
+    newFile: !uuid '6d21b92982106d27fd27816b867fdf3a8d132e14'
+    oldFile: null
+  /front/uview-ui/components/u-steps:
+    newFile: !uuid '532a1a41e57fe41350c6a6ad292bd94b0c8076cd'
+    oldFile: null
+  /front/uview-ui/components/u-steps/u-steps.vue:
+    newFile: !uuid 'a72cfcff1495e7a9d07f149457f381f5fe1fdb7f'
+    oldFile: null
+  /front/uview-ui/components/u-sticky:
+    newFile: !uuid '9abfa268d35ca71a07be9d66f4589f2b4af0e42f'
+    oldFile: null
+  /front/uview-ui/components/u-sticky/u-sticky.vue:
+    newFile: !uuid 'd9bc34c073bc54b54a92ecc00a34c1b6f4bd6a9e'
+    oldFile: null
+  /front/uview-ui/components/u-subsection:
+    newFile: !uuid '088870ab42e511cb1b85164b39715a238c676eee'
+    oldFile: null
+  /front/uview-ui/components/u-subsection/u-subsection.vue:
+    newFile: !uuid 'b8fbd794d86897b725812c0f0d81481572fe5f05'
+    oldFile: null
+  /front/uview-ui/components/u-swipe-action:
+    newFile: !uuid '023012fb93eae85a5978814fc551a1ea278a706b'
+    oldFile: null
+  /front/uview-ui/components/u-swipe-action/u-swipe-action.vue:
+    newFile: !uuid '13fb33c29c5d97d570d2b9aa57e218c05c6b1715'
+    oldFile: null
+  /front/uview-ui/components/u-swiper:
+    newFile: !uuid '91ddad0d7076b0cd5def461e48e2db72745cd1d8'
+    oldFile: null
+  /front/uview-ui/components/u-swiper/u-swiper.vue:
+    newFile: !uuid 'b6e7e819e3c859738823c71c42991e4a1f888871'
+    oldFile: null
+  /front/uview-ui/components/u-switch:
+    newFile: !uuid '62e14d254b04e7815fac1644d0b09abae3cddcf3'
+    oldFile: null
+  /front/uview-ui/components/u-switch/u-switch.vue:
+    newFile: !uuid 'dd8e4bb114aa36be2048118785ae25eb2ed5b61e'
+    oldFile: null
+  /front/uview-ui/components/u-tabbar:
+    newFile: !uuid '44464a48a7504947dd16082677b2117e679f97bb'
+    oldFile: null
+  /front/uview-ui/components/u-tabbar/u-tabbar.vue:
+    newFile: !uuid '2e1b6a2fa8a065c4eb48e43c803a62aa34590418'
+    oldFile: null
+  /front/uview-ui/components/u-table:
+    newFile: !uuid 'c48537f40d0b571465cbac9515eac8613bab8a87'
+    oldFile: null
+  /front/uview-ui/components/u-table/u-table.vue:
+    newFile: !uuid '79df16f36f27b8be7c5a9e60213bbbddb4175b51'
+    oldFile: null
+  /front/uview-ui/components/u-tabs:
+    newFile: !uuid '21daba266fe116091142dd67651ed3de16b69f57'
+    oldFile: null
+  /front/uview-ui/components/u-tabs-swiper:
+    newFile: !uuid 'bf459df2977b2f526c76fc30efb0c95ee81c6d46'
+    oldFile: null
+  /front/uview-ui/components/u-tabs-swiper/u-tabs-swiper.vue:
+    newFile: !uuid '75be2a3d87a49143eb9729fa0d93589424a48e2a'
+    oldFile: null
+  /front/uview-ui/components/u-tabs/u-tabs.vue:
+    newFile: !uuid '852294e543cef1b24fdb9a3f187e60156e1f4dc2'
+    oldFile: null
+  /front/uview-ui/components/u-tag:
+    newFile: !uuid '97dcde2efb8abd1dd07a55c66d599a84e8094af0'
+    oldFile: null
+  /front/uview-ui/components/u-tag/u-tag.vue:
+    newFile: !uuid '90ec3f41e01009f9d01b8c250c7ac6c4acf20198'
+    oldFile: null
+  /front/uview-ui/components/u-td:
+    newFile: !uuid 'd515c2b08cfa623f0fdb81741abc56b02cf56fca'
+    oldFile: null
+  /front/uview-ui/components/u-td/u-td.vue:
+    newFile: !uuid 'b00ad8b5c11c9877b60d4d26f16d2d3c0df235a5'
+    oldFile: null
+  /front/uview-ui/components/u-th:
+    newFile: !uuid '88bacded4944b3c6ffbe46763cd04a7cc2f84e55'
+    oldFile: null
+  /front/uview-ui/components/u-th/u-th.vue:
+    newFile: !uuid '9fe5a164ad2dae1bf4d70fb71c7ee1b38ef166a5'
+    oldFile: null
+  /front/uview-ui/components/u-time-line:
+    newFile: !uuid '04fba3b992c91e025df6ab5dca37e56b4c93c29d'
+    oldFile: null
+  /front/uview-ui/components/u-time-line-item:
+    newFile: !uuid 'b2387709e381ad1036bb69f3272f571f5c3ee2ac'
+    oldFile: null
+  /front/uview-ui/components/u-time-line-item/u-time-line-item.vue:
+    newFile: !uuid 'be86fdc196ad0ae419907ee9f2adc67d720a9ef6'
+    oldFile: null
+  /front/uview-ui/components/u-time-line/u-time-line.vue:
+    newFile: !uuid 'f3c75871466a879f65faece8d4d1ebbe47779021'
+    oldFile: null
+  /front/uview-ui/components/u-toast:
+    newFile: !uuid '446702c28739dfeb073b88dd53ee43df301d99f9'
+    oldFile: null
+  /front/uview-ui/components/u-toast/u-toast.vue:
+    newFile: !uuid 'a2209a51e454665c2af7087d7550cadeb7537e3c'
+    oldFile: null
+  /front/uview-ui/components/u-top-tips:
+    newFile: !uuid 'edd0ba38e85df950b8b5782253fc4f22c6abbf59'
+    oldFile: null
+  /front/uview-ui/components/u-top-tips/u-top-tips.vue:
+    newFile: !uuid '98d58df3f0e0c42da013c73db25356a9d9c2549c'
+    oldFile: null
+  /front/uview-ui/components/u-tr:
+    newFile: !uuid '047c979d72f8653aefa24fd3653555b1685f9a25'
+    oldFile: null
+  /front/uview-ui/components/u-tr/u-tr.vue:
+    newFile: !uuid '06aed4a59d79be529853e7f9b262812d71f016d6'
+    oldFile: null
+  /front/uview-ui/components/u-upload:
+    newFile: !uuid 'ec2e35a052e617c3350641f68d7f3b571a72df2d'
+    oldFile: null
+  /front/uview-ui/components/u-upload/u-upload.vue:
+    newFile: !uuid '517889679d5f2a2849d659da72d7817043bd8a87'
+    oldFile: null
+  /front/uview-ui/components/u-verification-code:
+    newFile: !uuid '7b72456532a9bd429cb5c2fbdbde627f07a80c22'
+    oldFile: null
+  /front/uview-ui/components/u-verification-code/u-verification-code.vue:
+    newFile: !uuid 'b3079f4232e74bd4b93f7fa899f4ef52f877b798'
+    oldFile: null
+  /front/uview-ui/components/u-waterfall:
+    newFile: !uuid '7b1693ce6515e0def6ea2568a10a87819b4362d7'
+    oldFile: null
+  /front/uview-ui/components/u-waterfall/u-waterfall.vue:
+    newFile: !uuid 'f579ffbb79f241444d9bb3d67661efb3d998ffed'
+    oldFile: null
+  /front/uview-ui/iconfont.css:
+    newFile: !uuid '836c7180b99c5b1c94ed57a9b63df94d797f3055'
+    oldFile: null
+  /front/uview-ui/index.js:
+    newFile: !uuid 'd38a3bf5cbd9e381362353958bb525a22e507cb1'
+    oldFile: null
+  /front/uview-ui/index.scss:
+    newFile: !uuid '84daa7294442587c5c2d3e57bf0e4fa22ad9625c'
+    oldFile: null
+  /front/uview-ui/libs:
+    newFile: !uuid '60234864e5b83e4f3b5d11efba46be70e7b40187'
+    oldFile: null
+  /front/uview-ui/libs/config:
+    newFile: !uuid 'bc8a0ec0858a35c820d71c56c37773925088bd7e'
+    oldFile: null
+  /front/uview-ui/libs/config/config.js:
+    newFile: !uuid '44925a1d3d5ef603fd5b63287ee6736ff79c6372'
+    oldFile: null
+  /front/uview-ui/libs/config/zIndex.js:
+    newFile: !uuid 'd60e5bd473202608c2a51277dce483132c2ba2db'
+    oldFile: null
+  /front/uview-ui/libs/css:
+    newFile: !uuid '3c8d86da120881925a3e5434e4d5cc05e6d06200'
+    oldFile: null
+  /front/uview-ui/libs/css/color.scss:
+    newFile: !uuid '279bc40bd280ba95d95a60b17da48bf4600dfc2d'
+    oldFile: null
+  /front/uview-ui/libs/css/common.scss:
+    newFile: !uuid '29eb7f4f5fb1eba6229db7a8f39502e88808b166'
+    oldFile: null
+  /front/uview-ui/libs/css/style.components.scss:
+    newFile: !uuid '6835876f8ee052cf7aa4138bbd1a6b5b51f8d427'
+    oldFile: null
+  /front/uview-ui/libs/css/style.h5.scss:
+    newFile: !uuid '62839eb9494a0641a685b4357e76a08fd5b70826'
+    oldFile: null
+  /front/uview-ui/libs/css/style.mp.scss:
+    newFile: !uuid 'ca1d3e0e5d6dbbc87362c4efa7e9bdaa526257ba'
+    oldFile: null
+  /front/uview-ui/libs/css/style.nvue.scss:
+    newFile: !uuid '4a6192aabb1b09645d67beaef570396195f24da3'
+    oldFile: null
+  /front/uview-ui/libs/css/style.vue.scss:
+    newFile: !uuid '1ab370782a2d37605b5d508c914f3060f736e537'
+    oldFile: null
+  /front/uview-ui/libs/function:
+    newFile: !uuid '747497019f2b5c4e678ff4e62c9b42b9244298b2'
+    oldFile: null
+  /front/uview-ui/libs/function/$parent.js:
+    newFile: !uuid '80515c41948847c99314c6223b4f8d49d39b1563'
+    oldFile: null
+  /front/uview-ui/libs/function/addUnit.js:
+    newFile: !uuid '247fae22f6709f3727248d824385a517e219d190'
+    oldFile: null
+  /front/uview-ui/libs/function/bem.js:
+    newFile: !uuid '05d1a3650a44dafca41ca206d074c4642f32604a'
+    oldFile: null
+  /front/uview-ui/libs/function/color.js:
+    newFile: !uuid 'dafb8c1c756395e6e71fa3d5cf9cbe1983778263'
+    oldFile: null
+  /front/uview-ui/libs/function/colorGradient.js:
+    newFile: !uuid 'eca30a27afb6f61178a65715475f5f84eff49afd'
+    oldFile: null
+  /front/uview-ui/libs/function/debounce.js:
+    newFile: !uuid '4f1027bad3b9e7119b9ee66f353866ce65bcaa19'
+    oldFile: null
+  /front/uview-ui/libs/function/deepClone.js:
+    newFile: !uuid '3db999a3764f1b4a80d5255fa3d81af5778f2d3a'
+    oldFile: null
+  /front/uview-ui/libs/function/deepMerge.js:
+    newFile: !uuid '81d2d18f763fd0c2588eeb9fa8b0d38d8b2d7569'
+    oldFile: null
+  /front/uview-ui/libs/function/getParent.js:
+    newFile: !uuid '9cb45c400e9c63309b21da0df14914845f1c31f8'
+    oldFile: null
+  /front/uview-ui/libs/function/guid.js:
+    newFile: !uuid '8497664aabb7a776294eb681b934d3c4ec7f2bfa'
+    oldFile: null
+  /front/uview-ui/libs/function/md5.js:
+    newFile: !uuid '8d541a10f2dd3d12c315607ff85221444fb97cc2'
+    oldFile: null
+  /front/uview-ui/libs/function/queryParams.js:
+    newFile: !uuid '81c7e5e073a3ba28ebfe888274fc8058e09237ab'
+    oldFile: null
+  /front/uview-ui/libs/function/random.js:
+    newFile: !uuid 'e155279ad5ca502b914760859bf6244e6de3ecf1'
+    oldFile: null
+  /front/uview-ui/libs/function/randomArray.js:
+    newFile: !uuid '590a048036778fa3e3b53851c95a3b8d19c8ea05'
+    oldFile: null
+  /front/uview-ui/libs/function/route.js:
+    newFile: !uuid '28a81b729d1f22663b0161cf6102cdbf5b87a2e6'
+    oldFile: null
+  /front/uview-ui/libs/function/sys.js:
+    newFile: !uuid '00f6a28f2b84a1d95d3fac16ffad9cb3549f0889'
+    oldFile: null
+  /front/uview-ui/libs/function/test.js:
+    newFile: !uuid 'fd25e180ffcdd65981248e903ef286040c0a4937'
+    oldFile: null
+  /front/uview-ui/libs/function/throttle.js:
+    newFile: !uuid 'ad830b27b4eebf57fd99dd71e29c1f1d3d68daa1'
+    oldFile: null
+  /front/uview-ui/libs/function/timeFormat.js:
+    newFile: !uuid '0372f2f10fa082ce426ea6ee8af5f74a85fed6fb'
+    oldFile: null
+  /front/uview-ui/libs/function/timeFrom.js:
+    newFile: !uuid '68cd9901bc3db41c1dff5be7f46dafcadddcef15'
+    oldFile: null
+  /front/uview-ui/libs/function/toast.js:
+    newFile: !uuid '91afa738a9cbed99fbc13698aa1390b5de98f8ce'
+    oldFile: null
+  /front/uview-ui/libs/function/trim.js:
+    newFile: !uuid '72adc37deb3af5ab65ccedebc3d04dc472e8dbea'
+    oldFile: null
+  /front/uview-ui/libs/function/type2icon.js:
+    newFile: !uuid '23cb40e94b20372e82c6a26f6eab3661466e5a5a'
+    oldFile: null
+  /front/uview-ui/libs/mixin:
+    newFile: !uuid '7d276ef890eeaea446fa73fc7784c72b2188a118'
+    oldFile: null
+  /front/uview-ui/libs/mixin/mixin.js:
+    newFile: !uuid 'e388986796ed8b8c0644cac805b5569c7ac0394f'
+    oldFile: null
+  /front/uview-ui/libs/mixin/mpShare.js:
+    newFile: !uuid '057d369e068df421d899fc026c9e3a142cf3c5d7'
+    oldFile: null
+  /front/uview-ui/libs/request:
+    newFile: !uuid '9e6b1f56c94d8697f7fc6bb9d645b56dfee311f6'
+    oldFile: null
+  /front/uview-ui/libs/request/index.js:
+    newFile: !uuid '1f5f471654fce08fdbb25d16308e971ea8fdda50'
+    oldFile: null
+  /front/uview-ui/libs/store:
+    newFile: !uuid '1d7eb9746191230ef1909e525aa4d3b39ff362a3'
+    oldFile: null
+  /front/uview-ui/libs/store/index.js:
+    newFile: !uuid 'a5927b3bac2e64d8c1bfc641d9c31eae20a220d7'
+    oldFile: null
+  /front/uview-ui/libs/util:
+    newFile: !uuid 'fd19d19a920c36a63e6d14fd4a88096118b3640f'
+    oldFile: null
+  /front/uview-ui/libs/util/area.js:
+    newFile: !uuid 'ff267a6847831463b70b989e4c016bfc4ae2bc9d'
+    oldFile: null
+  /front/uview-ui/libs/util/async-validator.js:
+    newFile: !uuid 'd7215b9f80dd0aa45a9f5f100edd0100cbf774ea'
+    oldFile: null
+  /front/uview-ui/libs/util/city.js:
+    newFile: !uuid '94169eb8b40a0c6de0e700b6e1963c819f88ddd3'
+    oldFile: null
+  /front/uview-ui/libs/util/emitter.js:
+    newFile: !uuid '228016e49b734f14e4c438f444ed6abbf11c98e7'
+    oldFile: null
+  /front/uview-ui/libs/util/province.js:
+    newFile: !uuid '436b19048b7ae30d3d5b82013bc3f7027f9ca24d'
+    oldFile: null
+  /front/uview-ui/package.json:
+    newFile: !uuid '431d58596364bb6774068c60a57adaa39136a5f8'
+    oldFile: null
+  /front/uview-ui/theme.scss:
+    newFile: !uuid 'f3bb36db626d541480224333b675f237f1f8f83e'
+    oldFile: null
+  /front/vue.config.js:
+    newFile: !uuid '73adcb76b92236cdfd28b3ff44eb695f7ac22214'
+    oldFile: null
+gitCommitId: !uuid '8636abee63414af8c273623a6e49aa8e9fd242f4'
 renames: {
   }
-revisionId: 2
+revisionId: 3

@@ -1,4 +1,4 @@
-#### <font style="color:rgb(64, 72, 91);">1.谈校间介绍</font>
+![输入图片说明](images/05.png)#### <font style="color:rgb(64, 72, 91);">1.谈校间介绍</font>
 <font style="color:rgb(64, 72, 91);">谈校间是一款</font><font style="color:#DF2A3F;">迭代超三年</font><font style="color:rgb(64, 72, 91);">，经</font><font style="color:#DF2A3F;">数十万真实用户</font><font style="color:rgb(64, 72, 91);">及</font><font style="color:#DF2A3F;">上百位流量主</font><font style="color:rgb(64, 72, 91);">检验的社区论坛系统。除具备功能设计合理，页面美观实用等优点外，在</font><font style="color:#DF2A3F;">网络安全</font><font style="color:rgb(64, 72, 91);">、</font><font style="color:#DF2A3F;">性能优化</font><font style="color:rgb(64, 72, 91);">等方面也有着成熟的解决方案，能够从容应对各类实际业务场景。</font>
 
 ##### <font style="color:rgb(64, 72, 91);">1.1 技术栈</font>
@@ -15,7 +15,6 @@
 ##### <font style="color:rgb(64, 72, 91);">2.1 用户端小程序</font>
 <font style="color:rgb(64, 72, 91);">演示案例为正式版并已上线运营的真实项目，日活3w+</font>
 
-![](https://cdn.nlark.com/yuque/0/2025/png/25855601/1736089409201-8f1d86c7-10f2-4be2-a0a8-8ed5a04ebf20.png)
 ![输入图片说明](images/01.png)
 
 也可本地快速搭建项目后体验，详见安装教程
@@ -28,12 +27,12 @@
 [查看开源版与正式版功能清单](https://www.yuque.com/kemingxinxi/eeu3o3/wkw99ybqh01a2szg?singleDoc#%20《版本区别》)
 
 ##### <font style="color:rgb(64, 72, 91);">2.3 用户端效果截图</font>
-![](https://cdn.nlark.com/yuque/0/2025/png/25855601/1736090760890-4fa71aff-f2fe-45d5-bdd4-ad9d27153c63.png)
+![输入图片说明](images/02.png)
 
-![](https://cdn.nlark.com/yuque/0/2025/png/25855601/1736091588613-2c0201da-725d-423c-87bf-2f9a2246cb65.png)
+![输入图片说明](images/03.png)
 
 ##### <font style="color:rgb(64, 72, 91);">2.4 管理端效果截图</font>
-![](https://cdn.nlark.com/yuque/0/2025/png/25855601/1736090939863-129e28e5-d3dd-4224-82aa-42913e0a5259.png)![](https://cdn.nlark.com/yuque/0/2025/png/25855601/1736091029189-f25f25d0-0530-49c3-9b27-6078a8750c47.png)
+![输入图片说明](images/04.png)
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/25855601/1736091248592-fde37565-e380-4f61-8e10-983dcb907dd5.png)
 

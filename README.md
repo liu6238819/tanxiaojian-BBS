@@ -1,42 +1,42 @@
-<h4 id="W9Wok"><font style="color:rgb(64, 72, 91);">1.谈校间介绍</font></h4>
+#### <font style="color:rgb(64, 72, 91);">1.谈校间介绍</font>
 <font style="color:rgb(64, 72, 91);">谈校间是一款</font><font style="color:#DF2A3F;">迭代超三年</font><font style="color:rgb(64, 72, 91);">，经</font><font style="color:#DF2A3F;">数十万真实用户</font><font style="color:rgb(64, 72, 91);">及</font><font style="color:#DF2A3F;">上百位流量主</font><font style="color:rgb(64, 72, 91);">检验的社区论坛系统。除具备功能设计合理，页面美观实用等优点外，在</font><font style="color:#DF2A3F;">网络安全</font><font style="color:rgb(64, 72, 91);">、</font><font style="color:#DF2A3F;">性能优化</font><font style="color:rgb(64, 72, 91);">等方面也有着成熟的解决方案，能够从容应对各类实际业务场景。</font>
 
-<h5 id="Xw7jc"><font style="color:rgb(64, 72, 91);">1.1 技术栈</font></h5>
+##### <font style="color:rgb(64, 72, 91);">1.1 技术栈</font>
 + <font style="color:rgb(64, 72, 91);">前端使用uni-app（Vue2语法），目前只适配了微信小程序；</font>
 + <font style="color:rgb(64, 72, 91);">后端采用了Mysql+SpringBoot+MybatisPlus+redis的主流Java技术方案；</font>
 + <font style="color:rgb(64, 72, 91);">管理端基于Ruoyi框架开发（感谢若依提供的开源支持）。</font>
 
-<h5 id="Z4r9J"><font style="color:rgb(64, 72, 91);">1.2 功能亮点</font></h5>
+##### <font style="color:rgb(64, 72, 91);">1.2 功能亮点</font>
 + <font style="color:rgb(64, 72, 91);">完善稳定的论坛基础功能（发帖评论、热榜、搜索、举报、消息中心等），以及基于微信生态的账户体系、通知、交易、小程序/公众号跳转等，便于私域经营以及流量转化变现；</font>
 + <font style="color:rgb(64, 72, 91);">社群自动推送机器人、身份及实名认证、用户权限、广告设置、开通分站与管理员、内容审核与关键词拦截等，流量主需要的功能应有尽有；</font>
 + <font style="color:rgb(64, 72, 91);">交友盲盒、活动报名、课程评价等引流功能与拓展模块，并会持续升级迭代...</font>
 
-<h4 id="03c59c9a"><font style="color:rgb(64, 72, 91);">2.项目演示</font></h4>
-<h5 id="e8417e7d"><font style="color:rgb(64, 72, 91);">2.1 用户端小程序</font></h5>
+#### <font style="color:rgb(64, 72, 91);">2.项目演示</font>
+##### <font style="color:rgb(64, 72, 91);">2.1 用户端小程序</font>
 <font style="color:rgb(64, 72, 91);">演示案例为正式版并已上线运营的真实项目，日活3w+</font>
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/25855601/1736089409201-8f1d86c7-10f2-4be2-a0a8-8ed5a04ebf20.png)
 
 也可本地快速搭建项目后体验，详见安装教程
 
-<h5 id="rh9F8"><font style="color:rgb(64, 72, 91);">2.2 管理端后台</font></h5>
+##### <font style="color:rgb(64, 72, 91);">2.2 管理端后台</font>
 [<font style="background-color:rgb(254, 254, 254);">体验地址</font>](http://121.40.93.179/ruoyi-test)<font style="color:rgb(36, 41, 46);background-color:rgb(254, 254, 254);"> （测试服务器配置较低，若打不开请稍后再试，或联系客服获取）</font>
 
 <font style="color:rgb(36, 41, 46);background-color:rgb(254, 254, 254);">超管账号：admin 超管密码：admin123</font>
 
 [查看开源版与正式版功能清单](https://www.yuque.com/kemingxinxi/eeu3o3/wkw99ybqh01a2szg?singleDoc#%20《版本区别》)
 
-<h5 id="5a397b95"><font style="color:rgb(64, 72, 91);">2.3 用户端效果截图</font></h5>
+##### <font style="color:rgb(64, 72, 91);">2.3 用户端效果截图</font>
 ![](https://cdn.nlark.com/yuque/0/2025/png/25855601/1736090760890-4fa71aff-f2fe-45d5-bdd4-ad9d27153c63.png)
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/25855601/1736091588613-2c0201da-725d-423c-87bf-2f9a2246cb65.png)
 
-<h5 id="18098a95"><font style="color:rgb(64, 72, 91);">2.4 管理端效果截图</font></h5>
+##### <font style="color:rgb(64, 72, 91);">2.4 管理端效果截图</font>
 ![](https://cdn.nlark.com/yuque/0/2025/png/25855601/1736090939863-129e28e5-d3dd-4224-82aa-42913e0a5259.png)![](https://cdn.nlark.com/yuque/0/2025/png/25855601/1736091029189-f25f25d0-0530-49c3-9b27-6078a8750c47.png)
 
 ![](https://cdn.nlark.com/yuque/0/2025/png/25855601/1736091248592-fde37565-e380-4f61-8e10-983dcb907dd5.png)
 
-<h4 id="gMpeI"><font style="color:rgb(64, 72, 91);">3.安装教程</font></h4>
+#### <font style="color:rgb(64, 72, 91);">3.安装教程</font>
 <font style="color:#DF2A3F;">已为开源版提供了远程测试地址，可以无需搭建后端环境直接体验功能！</font>
 
 1. [前端安装文档](https://www.yuque.com/kemingxinxi/eeu3o3/fggugcx20ma7u327?singleDoc#%20《前端》)
@@ -46,13 +46,13 @@
 
 ![](https://cdn.nlark.com/yuque/0/2025/jpeg/25855601/1736167712484-72db67df-af2c-49d0-94a9-e8517eeea9ef.jpeg)
 
-<h4 id="98c4fce5"><font style="color:rgb(64, 72, 91);">4.补充说明</font></h4>
+#### <font style="color:rgb(64, 72, 91);">4.补充说明</font>
 1. <font style="color:rgb(64, 72, 91);">代码前后端均发布了开源版，已涵盖论坛系统所需的绝大多数功能，演示案例为标准版；</font>
 2. <font style="color:rgb(64, 72, 91);">开源版本不适合直接商用（c端项目更注重服务器运维、网络安全、性能优化等），有相关需求建议使用正式版。我们还提供了论坛小程序的完整技术支持以及服务器全托管服务，能够大大降低项目在技术方面的投入成本。</font>
 
 [<font style="color:rgb(64, 72, 91);">查看开源版与正式版功能清单</font>](https://gitee.com/link?target=https%3A%2F%2Fnet.linfeng.tech%2Fversion%2Fversion.html)
 
-<h4 id="7e87c22c"><font style="color:rgb(64, 72, 91);">5.开源须知</font></h4>
+#### <font style="color:rgb(64, 72, 91);">5.开源须知</font>
 + <font style="color:rgb(64, 72, 91);">基于Apache License 2.0开源协议，前后端代码开源无加密，支持二次开发，支持商用；</font>
 + <font style="color:rgb(64, 72, 91);">支持企业/个人免费商业使用，但必须保留谈校间的版权信息；</font>
 + <font style="color:rgb(64, 72, 91);">不允许对程序代码以任何形式、任何目的进行再发行或出售，否则将追究侵权者法律责任；</font>

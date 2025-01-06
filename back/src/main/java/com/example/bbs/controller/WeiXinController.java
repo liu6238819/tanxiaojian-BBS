@@ -80,11 +80,11 @@ public class WeiXinController {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("APPID", APPID);
 
-        if (APPID.equals("wx53ca9ca3a3bc4f65")) {//综合社区
-            jsonObject.put("APPSECRET", "7d63eb6305aec18a67f603e9efca4364");
-            jsonObject.put("testOpenId", "onQqV5KgOLUOjPXm3Bl6EU-CiVN8");
-            jsonObject.put("replaceText", "#小程序://谈校间pro/");
-            jsonObject.put("schoolId", 3);
+        //替换为自己的小程序id和APPSECRET
+        if (APPID.equals("")) {//综合社区
+            jsonObject.put("APPSECRET", "");
+            jsonObject.put("testOpenId", "");
+            jsonObject.put("schoolId", 1);
         }
         return jsonObject;
     }

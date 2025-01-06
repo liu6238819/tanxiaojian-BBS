@@ -18,12 +18,12 @@ export default {
 	loacalAppId:'',
 	newNickName:'圈友_',  //新用户昵称
 	newHeadimgUrl:'/static/headImg/ngc.png', //新用户头像
-	cloud_shared: new wx.cloud.Cloud({
-		// 资源方 AppID
-		resourceAppid: '',
-		// 资源方环境 ID
-		resourceEnv: '',
-	}),
+	// cloud_shared: new wx.cloud.Cloud({
+	// 	// 资源方 AppID
+	// 	resourceAppid: '',
+	// 	// 资源方环境 ID
+	// 	resourceEnv: '',
+	// }),
 	UIColor:'blue',
 
 

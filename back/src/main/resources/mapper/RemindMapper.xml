@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bbs.mapper.RemindMapper">
+    <select id="getRemindsPage" resultType="com.example.bbs.pojo.vo.RemindVO">
+        select
+        a.id ,
+        a.type ,
+        a.state ,
+        a.fromUserId ,
+        a.relateId,
+        a.createTime,
+        b.contentId
+        from bbs_remind a left join bbs_comment b
+        on a.relateId = b.commentId
+        where
+        a.userId = #{userId}
+        <if test="queryType != 'all' and queryType == 'admire' ">and (a.type = 0 or a.type = 1)</if>
+        <if test="queryType != 'all' and queryType == 'follow' ">and (a.type = 2)</if>
+        <if test="queryType != 'all' and queryType == 'chat' ">and (a.type = 3)</if>
+        <if test="queryType != 'all' and queryType == 'reply' ">and (a.type = 4 or a.type = 5)</if>
+        order by a.state,a.createTime  desc
+        limit #{pageNum},#{pageSize}
+    </select>
+
+    <select id="selectNums" resultType="java.lang.Integer">
+        select count(1) from  bbs_remind a
+        where
+        a.userId = #{userId}
+        <if test="queryType != 'all' and queryType == 'admire' ">and (a.type = 0 or a.type = 1)</if>
+        <if test="queryType != 'all' and queryType == 'follow' ">and (a.type = 2)</if>
+        <if test="queryType != 'all' and queryType == 'chat' ">and (a.type = 3)</if>
+        <if test="queryType != 'all' and queryType == 'reply' ">and (a.type = 4 or a.type = 5)</if>
+        and
+        a.state = 0
+    </select>
+
+    <insert id="saveBatchOfRemind">
+        insert into bbs_remind(userId,type,state,fromUserId,relateId,createTime,id)
+        values
+        <foreach collection="list" separator="," item="item">
+            (#{item.userId},#{item.type},#{item.state},#{item.fromUserId},#{item.relateId},#{item.createTime},#{item.id})
+        </foreach>
+    </insert>
+
+    <select id="getRemindsPageDistinguishSchoolId" resultType="com.example.bbs.pojo.vo.RemindVO">
+        select
+        a.id ,
+        a.type ,
+        a.state ,
+        a.fromUserId ,
+        a.relateId,
+        a.createTime,
+        b.contentId,
+        c.schoolId
+        from bbs_remind a
+        left join bbs_comment b on a.relateId = b.commentId
+        join bbs_content c on b.contentId=c.contentId
+        where
+        a.userId = #{userId}
+        <if test="queryType != 'all' and queryType == 'admire' ">and (a.type = 0 or a.type = 1)</if>
+        <if test="queryType != 'all' and queryType == 'follow' ">and (a.type = 2)</if>
+        <if test="queryType != 'all' and queryType == 'chat' ">and (a.type = 3)</if>
+        <if test="queryType != 'all' and queryType == 'reply' ">and (a.type = 4 or a.type = 5)</if>
+        order by a.state,a.createTime  desc
+        limit #{pageNum},#{pageSize}
+    </select>
+
+    <select id="getRemindsPageDistinguishSchoolId0715" resultType="com.example.bbs.pojo.vo.RemindVO">
+        SELECT
+        a.id,
+        a.type,
+        a.state,
+        a.fromUserId,
+        a.relateId,
+        a.createTime,
+        COALESCE(b.contentId, d.contentId) AS contentId,
+        COALESCE(c.schoolId, d.schoolId) AS schoolId
+        FROM bbs_remind a
+        LEFT JOIN bbs_comment b ON a.relateId = b.commentId
+        LEFT JOIN bbs_content c ON b.contentId = c.contentId
+        LEFT JOIN bbs_content d ON a.relateId = d.contentId
+        where
+        a.userId = #{userId}
+        <if test="queryType != 'all' and queryType == 'admire' ">and (a.type = 0 or a.type = 1)</if>
+        <if test="queryType != 'all' and queryType == 'follow' ">and (a.type = 2)</if>
+        <if test="queryType != 'all' and queryType == 'chat' ">and (a.type = 3)</if>
+        <if test="queryType != 'all' and queryType == 'reply' ">and (a.type = 4 or a.type = 5)</if>
+        order by a.state,a.createTime  desc
+        limit #{pageNum},#{pageSize}
+    </select>
+
+    <select id="getRemindsPageDistinguishSchoolId0102" resultType="com.example.bbs.pojo.vo.RemindVO">
+        SELECT
+        a.id,
+        a.type,
+        a.state,
+        a.fromUserId,
+        a.relateId,
+        a.createTime
+        FROM bbs_remind a
+        where
+        a.userId = #{userId}
+        <if test="queryType != 'all' and queryType == 'admire' ">and (a.type = 0 or a.type = 1)</if>
+        <if test="queryType != 'all' and queryType == 'follow' ">and (a.type = 2)</if>
+        <if test="queryType != 'all' and queryType == 'chat' ">and (a.type = 3)</if>
+        <if test="queryType != 'all' and queryType == 'reply' ">and (a.type = 4 or a.type = 5)</if>
+        order by a.state,a.createTime  desc
+        limit #{pageNum},#{pageSize}
+    </select>
+
+
+</mapper>

@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bbs.mapper.ContentMapper">
+    <select id="getContentsPageByTime" resultType="com.example.bbs.pojo.vo.HomeContentVO">
+        select
+        c.contentId contentId,
+        c.title title,
+        u.userId userId,
+        u.nickName nickName,
+        u.headimgUrl headimgUrl,
+        u.introduction introduction,
+        c.createTime createTime,
+        c.contentText contentText,
+        c.contentUrl contentUrl,
+        c.contentType contentType,
+        c.contentState contentState,
+        c.noComment noComment,
+        c.alumniOnly alumniOnly,
+        c.upNum upNum,
+        c.downNum downNum,
+        c.commentNum commentNum,
+        c.readNum readNum,
+        c.realReadNum realReadNum,
+        c.plateId plateId,
+        c.schoolId schoolId,
+        c.isSpecial isSpecial,
+        c.place place,
+        u.userState userIdentify
+        from
+        bbs_content c join bbs_user u on c.userId=u.userId
+        where
+        <if test="searchUserId != null and searchUserId != ''">
+            c.userId = #{searchUserId} and
+        </if>
+        <if test="plateId != null and plateId != ''">
+            c.plateId = #{plateId} and
+        </if>
+        <if test="plateId == null or plateId == ''">
+            (c.visibleRange = 0 or c.visibleRange = 2) and
+        </if>
+        <if test="schoolId != null and schoolId != 0">
+            c.schoolId = #{schoolId} and
+        </if>
+        <if test="contentType != -1 and contentType != 5">
+            c.contentType = #{contentType} and
+        </if>
+        <if test="contentType != -1 and contentType == 5">
+            (c.contentType = 0 or c.contentType = 2 or c.contentType = 3 or c.contentType = 4 or c.contentType = 5) and
+        </if>
+        (c.contentState = 0 or c.contentState = 1 or c.contentState = 9 or c.contentState = 10)
+        order by c.createTime desc
+        limit #{pageNum},#{pageSize}
+    </select>
+    <select id="getContentsPageByHot" resultType="com.example.bbs.pojo.vo.HomeContentVO">
+        select
+        c.contentId contentId,
+        c.title title,
+        u.userId userId,
+        u.nickName nickName,
+        u.headimgUrl headimgUrl,
+        u.introduction introduction,
+        c.createTime createTime,
+        c.contentText contentText,
+        c.contentUrl contentUrl,
+        c.contentType contentType,
+        c.contentState contentState,
+        c.noComment noComment,
+        c.alumniOnly alumniOnly,
+        c.upNum upNum,
+        c.downNum downNum,
+        c.commentNum commentNum,
+        c.readNum readNum,
+        c.realReadNum realReadNum,
+        c.plateId plateId,
+        c.schoolId schoolId,
+        c.isSpecial isSpecial,
+        c.place place,
+        u.userState userIdentify
+        from
+        bbs_content c join bbs_user u on c.userId=u.userId
+        where
+        <if test="searchUserId != null and searchUserId != ''">
+            c.userId = #{searchUserId} and
+        </if>
+        <if test="plateId != null and plateId != ''">
+            c.plateId = #{plateId} and
+        </if>
+        <if test="plateId == null or plateId == ''">
+            (c.visibleRange = 0 or c.visibleRange = 2) and
+        </if>
+        <if test="schoolId != null and schoolId != 0">
+            c.schoolId = #{schoolId} and
+        </if>
+        <if test="duration != null and duration != 0">
+            TIMESTAMPDIFF(SECOND , c.createTime, NOW()) > 0 and TIMESTAMPDIFF(SECOND ,date_sub(now(),interval
+            #{duration}
+            day) , c.createTime) > 0 and
+        </if>
+        (c.contentState = 0 or c.contentState = 1 or c.contentState = 9 or c.contentState = 10)
+        order by c.realReadNum*3+c.upNum*5+c.commentNum*5 desc
+        limit #{pageNum},#{pageSize}
+    </select>
+    <select id="getContentsPageByFollow" resultType="com.example.bbs.pojo.vo.HomeContentVO">
+        select c.contentId    contentId,
+               c.title        title,
+               u.userId       userId,
+               u.nickName     nickName,
+               u.headimgUrl   headimgUrl,
+               u.introduction introduction,
+               c.createTime   createTime,
+               c.contentText  contentText,
+               c.contentUrl   contentUrl,
+               c.contentType  contentType,
+               c.contentState contentState,
+               c.noComment noComment,
+               c.alumniOnly alumniOnly,
+               c.upNum        upNum,
+               c.downNum downNum,
+               c.commentNum   commentNum,
+               c.readNum readNum,
+               c.realReadNum realReadNum,
+               c.plateId      plateId,
+               c.schoolId     schoolId,
+               c.isSpecial    isSpecial,
+               c.place        place,
+               u.userState     userIdentify
+        from bbs_content c
+                 join bbs_user u on c.userId = u.userId
+        where c.plateId in (
+            select up.plateId
+            from user_plate up
+            where up.userId = #{userId}
+        )
+          and (c.contentState = 0 or c.contentState = 1 or c.contentState = 9 or c.contentState = 10)
+          and c.schoolId = #{schoolId}
+        order by c.createTime desc
+            limit #{pageNum}, #{pageSize}
+    </select>
+    <select id="getTopContents" resultType="com.example.bbs.pojo.vo.HomeContentVO">
+        select
+        c.contentId contentId,
+        c.title title,
+        u.userId userId,
+        u.nickName nickName,
+        u.headimgUrl headimgUrl,
+        u.introduction introduction,
+        c.createTime createTime,
+        c.contentText contentText,
+        c.contentUrl contentUrl,
+        c.contentType contentType,
+        c.contentState contentState,
+        c.noComment noComment,
+        c.alumniOnly alumniOnly,
+        c.upNum upNum,
+        c.downNum downNum,
+        c.commentNum commentNum,
+        c.readNum readNum,
+        c.realReadNum realReadNum,
+        c.plateId plateId,
+        c.schoolId schoolId,
+        c.isSpecial isSpecial,
+        c.place place,
+        u.userState userIdentify
+        from
+        bbs_content c join bbs_user u on c.userId=u.userId
+        where
+        (c.contentState = 8 or c.contentState = 2) and
+        -- 只获取板块内的置顶帖
+<!--        <if test="plateId != null and plateId != ''">-->
+<!--            plateId = #{plateId} and c.contentState = 3 and-->
+<!--        </if>-->
+        -- 只获取校内的置顶帖
+        <if test="plateId == null or plateId == ''">
+            (c.visibleRange = 0 or c.visibleRange = 2) and
+        </if>
+        <if test="schoolId != null and schoolId != 0">
+            c.schoolId = #{schoolId}
+        </if>
+        order by c.createTime desc
+        limit #{pageNum},#{pageSize}
+    </select>
+
+    <select id="getContentById" resultType="com.example.bbs.pojo.vo.HomeContentVO">
+        select c.contentId    contentId,
+               c.title        title,
+               u.userId       userId,
+               u.nickName     nickName,
+               u.headimgUrl   headimgUrl,
+               u.introduction introduction,
+               c.createTime   createTime,
+               c.contentText  contentText,
+               c.contentUrl   contentUrl,
+               c.contentType  contentType,
+               c.contentState contentState,
+               c.noComment noComment,
+               c.alumniOnly alumniOnly,
+               c.visibleRange visibleRange,
+               c.upNum        upNum,
+               c.downNum downNum,
+               c.commentNum   commentNum,
+               c.readNum readNum,
+               c.realReadNum realReadNum,
+               c.plateId      plateId,
+               c.schoolId     schoolId,
+               c.isSpecial    isSpecial,
+               c.place        place,
+               u.userState userIdentify
+        from bbs_content c
+                 join bbs_user u on c.userId = u.userId
+        where c.contentId = #{contentId}
+    </select>
+
+    <select id="getContentsPageBeforeTime" resultType="com.example.bbs.pojo.vo.HomeContentVO">
+        select
+        c.contentId contentId,
+        c.title title,
+        u.userId userId,
+        u.nickName nickName,
+        u.headimgUrl headimgUrl,
+        u.introduction introduction,
+        c.createTime createTime,
+        c.contentText contentText,
+        c.contentUrl contentUrl,
+        c.contentType contentType,
+        c.contentState contentState,
+        c.noComment noComment,
+        c.alumniOnly alumniOnly,
+        c.upNum upNum,
+        c.downNum downNum,
+        c.commentNum commentNum,
+        c.readNum readNum,
+        c.realReadNum realReadNum,
+        c.plateId plateId,
+        c.schoolId schoolId,
+        c.isSpecial isSpecial,
+        c.place place,
+        u.userState userIdentify
+        from
+        bbs_content c join bbs_user u on c.userId=u.userId
+        where
+        <if test="schoolId != null and schoolId != 0">
+            c.schoolId = #{schoolId} and
+        </if>
+        <if test="contentType != -1 and contentType != 5">
+            c.contentType = #{contentType} and
+        </if>
+        <if test="contentType != -1 and contentType == 5">
+            (c.contentType = 0 or c.contentType = 2 or c.contentType = 3 or c.contentType = 4 or c.contentType = 5) and
+        </if>
+        <if test="duration != null and duration != 0">
+            TIMESTAMPDIFF(SECOND, c.createTime, DATE_SUB( CAST(NOW() AS DATE), INTERVAL #{duration} HOUR) ) > 0 and
+        </if>
+        (c.contentState = 0 or c.contentState = 1 or c.contentState = 9 or c.contentState = 10)
+        order by c.createTime desc
+        limit #{pageNum},#{pageSize}
+    </select>
+
+    <select id="getContentsPageHistoryHot" resultType="com.example.bbs.pojo.vo.HomeContentVO">
+        select
+        c.contentId contentId,
+        c.title title,
+        u.userId userId,
+        u.nickName nickName,
+        u.headimgUrl headimgUrl,
+        u.introduction introduction,
+        c.createTime createTime,
+        c.contentText contentText,
+        c.contentUrl contentUrl,
+        c.contentType contentType,
+        c.contentState contentState,
+        c.noComment noComment,
+        c.alumniOnly alumniOnly,
+        c.upNum upNum,
+        c.downNum downNum,
+        c.commentNum commentNum,
+        c.readNum readNum,
+        c.realReadNum realReadNum,
+        c.plateId plateId,
+        c.schoolId schoolId,
+        c.isSpecial isSpecial,
+        c.place place,
+        u.userState userIdentify
+        from
+        bbs_content c join bbs_user u on c.userId=u.userId
+        where
+        <if test="schoolId != null and schoolId != 0">
+            c.schoolId = #{schoolId} and
+        </if>
+        <if test="duration != null and duration != 0">
+            TIMESTAMPDIFF(SECOND, c.createTime, DATE_SUB( CAST(NOW() AS DATE), INTERVAL #{duration} HOUR) ) > 0 and
+        </if>
+        <if test="hotStandardNum != null and hotStandardNum != 0">
+            c.realReadNum + c.upNum + c.commentNum > #{hotStandardNum}  and
+        </if>
+        (c.contentState = 0 or c.contentState = 1 or c.contentState = 9 or c.contentState = 10)
+        order by c.createTime desc
+        limit #{pageNum},#{pageSize}
+    </select>
+<!--    带有请求时间参数的获取帖子列表-->
+    <select id="getContentsPageWithQueryTime" resultType="com.example.bbs.pojo.vo.HomeContentVO">
+        select
+        c.contentId contentId,
+        c.title title,
+        u.userId userId,
+        u.nickName nickName,
+        u.headimgUrl headimgUrl,
+        u.introduction introduction,
+        c.createTime createTime,
+        c.contentText contentText,
+        c.contentUrl contentUrl,
+        c.contentType contentType,
+        c.contentState contentState,
+        c.noComment noComment,
+        c.alumniOnly alumniOnly,
+        c.upNum upNum,
+        c.downNum downNum,
+        c.commentNum commentNum,
+        c.readNum readNum,
+        c.realReadNum realReadNum,
+        c.plateId plateId,
+        c.schoolId schoolId,
+        c.isSpecial isSpecial,
+        c.place place,
+        u.userState userIdentify
+        from
+        bbs_content c join bbs_user u on c.userId=u.userId
+        where
+        <if test="searchUserId != null and searchUserId != ''">
+            c.userId = #{searchUserId} and
+        </if>
+        <if test="plateId != null and plateId != ''">
+            c.plateId = #{plateId} and
+        </if>
+        <if test="plateId == null or plateId == ''">
+                (c.visibleRange = 0 or c.visibleRange = 2) and
+        </if>
+        <if test="schoolId != null and schoolId != 0">
+            c.schoolId = #{schoolId} and
+        </if>
+        <if test="contentType != -1 and contentType != 5">
+            c.contentType = #{contentType} and
+        </if>
+        <if test="contentType != -1 and contentType == 5">
+            (c.contentType = 0 or c.contentType = 2 or c.contentType = 3 or c.contentType = 4 or c.contentType = 5) and
+        </if>
+        unix_timestamp(#{queryTime}) > unix_timestamp(c.createTime) and
+        (c.contentState = 0 or c.contentState = 1 or c.contentState = 9 or c.contentState = 10)
+        order by c.createTime desc
+        limit 0,#{pageSize}
+    </select>
+
+    <!--    带有请求时间参数的获取帖子列表-->
+    <select id="getContentsPageWithQueryTimeNew" resultType="com.example.bbs.pojo.vo.HomeContentVO">
+        select
+        c.contentId contentId,
+        c.title title,
+        u.userId userId,
+        u.nickName nickName,
+        u.headimgUrl headimgUrl,
+        u.introduction introduction,
+        c.createTime createTime,
+        c.contentText contentText,
+        c.contentUrl contentUrl,
+        c.contentType contentType,
+        c.contentState contentState,
+        c.noComment noComment,
+        c.alumniOnly alumniOnly,
+        c.upNum upNum,
+        c.downNum downNum,
+        c.commentNum commentNum,
+        c.readNum readNum,
+        c.realReadNum realReadNum,
+        c.plateId plateId,
+        c.schoolId schoolId,
+        c.isSpecial isSpecial,
+        c.place place,
+        u.userState userIdentify,
+        s.userState userState,
+        p.name plateName
+        from
+        bbs_content c
+        join bbs_user u on c.userId=u.userId
+        join bbs_user_school s on u.userId=s.userId and c.schoolId =s.schoolId
+        join bbs_plate p on c.plateId=p.plateId
+        where
+        <if test="searchUserId != null and searchUserId != ''">
+            c.userId = #{searchUserId} and
+        </if>
+        <if test="plateId != null and plateId != ''">
+            c.plateId = #{plateId} and
+        </if>
+        <if test="plateId == null or plateId == ''">
+                (c.visibleRange = 0 or c.visibleRange = 2) and
+        </if>
+        <if test="schoolId != null and schoolId != 0">
+            c.schoolId = #{schoolId} and
+        </if>
+        <if test="contentType != -1 and contentType != 5">
+            c.contentType = #{contentType} and
+        </if>
+        <if test="contentType != -1 and contentType == 5">
+            (c.contentType = 0 or c.contentType = 2 or c.contentType = 3 or c.contentType = 4 or c.contentType = 5) and
+        </if>
+        unix_timestamp(#{queryTime}) > unix_timestamp(c.createTime) and
+        (c.contentState = 0 or c.contentState = 1 or c.contentState = 9 or c.contentState = 10)
+        order by c.createTime desc
+        limit 0,#{pageSize}
+    </select>
+
+    <!-- 2024.2.21 获取帖子列表,非联表，过滤冻结-->
+    <select id="getContentsPageFilterFreeze" resultType="com.example.bbs.pojo.vo.HomeContentVO">
+        select
+        c.contentId contentId,
+        c.title title,
+        u.userId userId,
+        u.nickName nickName,
+        u.headimgUrl headimgUrl,
+        u.introduction introduction,
+        c.createTime createTime,
+        c.contentText contentText,
+        c.contentUrl contentUrl,
+        c.contentType contentType,
+        c.contentState contentState,
+        c.noComment noComment,
+        c.alumniOnly alumniOnly,
+        c.upNum upNum,
+        c.downNum downNum,
+        c.commentNum commentNum,
+        c.readNum readNum,
+        c.realReadNum realReadNum,
+        c.plateId plateId,
+        c.schoolId schoolId,
+        c.isSpecial isSpecial,
+        c.place place,
+        u.userState userIdentify
+        from
+        bbs_content c join bbs_user u on c.userId=u.userId
+        where
+        <if test="searchUserId != null and searchUserId != ''">
+            ((c.userId = #{searchUserId} and c.contentState = 12) or c.contentState != 12) and
+            ((c.userId = #{searchUserId} and c.contentState = 4) or c.contentState != 4 ) and
+        </if>
+        <if test="plateId != null and plateId != ''">
+            c.plateId = #{plateId} and
+        </if>
+        <if test="plateId == null or plateId == ''">
+                (c.visibleRange = 0 or c.visibleRange = 2) and
+        </if>
+        <if test="schoolId != null and schoolId != 0">
+            c.schoolId = #{schoolId} and
+        </if>
+        <if test="contentType != -1 and contentType != 5">
+            c.contentType = #{contentType} and
+        </if>
+        <if test="contentType != -1 and contentType == 5">
+            (c.contentType = 0 or c.contentType = 2 or c.contentType = 3 or c.contentType = 4 or c.contentType = 5) and
+        </if>
+        unix_timestamp(#{queryTime}) > unix_timestamp(c.createTime) and
+        (c.contentState = 0 or c.contentState = 1 or c.contentState = 9 or c.contentState = 10 or c.contentState = 12 or c.contentState = 13 or c.contentState = 4)
+        order by c.createTime desc
+        limit 0,#{pageSize}
+    </select>
+
+    <!-- 2024.2.27 按帖子类型搜索帖子列表-->
+    <select id="searchContentsPageByContentType" resultType="com.example.bbs.pojo.vo.HomeContentVO">
+        select
+        c.contentId contentId,
+        c.title title,
+        u.userId userId,
+        u.nickName nickName,
+        u.headimgUrl headimgUrl,
+        u.introduction introduction,
+        c.createTime createTime,
+        c.contentText contentText,
+        c.contentUrl contentUrl,
+        c.contentType contentType,
+        c.contentState contentState,
+        c.noComment noComment,
+        c.alumniOnly alumniOnly,
+        c.upNum upNum,
+        c.downNum downNum,
+        c.commentNum commentNum,
+        c.readNum readNum,
+        c.realReadNum realReadNum,
+        c.plateId plateId,
+        c.schoolId schoolId,
+        c.isSpecial isSpecial,
+        c.place place,
+        u.userState userIdentify
+        from
+        bbs_content c join bbs_user u on c.userId=u.userId
+        where
+        <if test="searchUserId != null and searchUserId != ''">
+            ((c.userId = #{searchUserId} and c.contentState = 12) or c.contentState != 12) and
+            ((c.userId = #{searchUserId} and c.contentState = 4) or c.contentState != 4 ) and
+        </if>
+        <if test="keywords != null and keywords != ''">
+            (c.title LIKE concat('%', #{keywords}, '%') or c.contentText LIKE concat('%', #{keywords}, '%'))and
+        </if>
+        <if test="schoolId != null and schoolId != 0">
+            c.schoolId = #{schoolId} and
+        </if>
+        <if test="contentType != -1 and contentType != 5">
+            c.contentType = #{contentType} and
+        </if>
+        <if test="contentType != -1 and contentType == 5">
+            (c.contentType = 0 or c.contentType = 2 or c.contentType = 3 or c.contentType = 4 or c.contentType = 5) and
+        </if>
+        unix_timestamp(#{queryTime}) > unix_timestamp(c.createTime) and
+        (c.contentState = 0 or c.contentState = 1 or c.contentState = 9 or c.contentState = 10 or c.contentState = 12 or c.contentState = 13 or c.contentState = 4)
+        order by c.createTime desc
+        limit 0,#{pageSize}
+    </select>
+
+    <!-- 2024.2.29 获取帖子列表,非联表，过滤冻结,过滤type为8的帖子-->
+    <select id="getContentsPageFilterFAndS" resultType="com.example.bbs.pojo.vo.HomeContentVO">
+        select
+        c.contentId contentId,
+        c.title title,
+        u.userId userId,
+        u.nickName nickName,
+        u.headimgUrl headimgUrl,
+        u.introduction introduction,
+        c.createTime createTime,
+        c.contentText contentText,
+        c.contentUrl contentUrl,
+        c.contentType contentType,
+        c.contentState contentState,
+        c.noComment noComment,
+        c.alumniOnly alumniOnly,
+        c.upNum upNum,
+        c.downNum downNum,
+        c.commentNum commentNum,
+        c.readNum readNum,
+        c.realReadNum realReadNum,
+        c.plateId plateId,
+        c.schoolId schoolId,
+        c.isSpecial isSpecial,
+        c.place place,
+        u.userState userIdentify
+        from
+        bbs_content c join bbs_user u on c.userId=u.userId
+        where
+        <if test="searchUserId != null and searchUserId != ''">
+            ((c.userId = #{searchUserId} and c.contentState = 12) or c.contentState != 12 ) and
+            ((c.userId = #{searchUserId} and c.contentState = 4) or c.contentState != 4 ) and
+        </if>
+        <if test="plateId != null and plateId != ''">
+            c.plateId = #{plateId} and
+        </if>
+        <if test="plateId == null or plateId == ''">
+                (c.visibleRange = 0 or c.visibleRange = 2) and
+        </if>
+        <if test="schoolId != null and schoolId != 0">
+            c.schoolId = #{schoolId} and
+        </if>
+        <if test="contentType != -1 and contentType != 5">
+            c.contentType = #{contentType}  and
+
+        </if>
+        <if test="contentType != -1 and contentType == 5">
+            (c.contentType = 0 or c.contentType = 2 or c.contentType = 3 or c.contentType = 4 or c.contentType = 5) and
+        </if>
+        unix_timestamp(#{queryTime}) > unix_timestamp(c.createTime) and
+        (c.contentState = 0 or c.contentState = 1 or c.contentState = 9 or c.contentState = 10 or c.contentState = 12 or c.contentState = 13 or c.contentState = 4) and c.contentType !=8
+        order by c.createTime desc
+        limit 0,#{pageSize}
+    </select>
+
+    <select id="getSimilarContents" resultType="com.example.bbs.pojo.vo.HomeContentVO">
+        <if test="query != null and query.length() > 0">
+             ${query}
+        </if>
+    </select>
+
+    <update id="batchUpdateReadNumById">
+        <foreach collection="contentList" item="item" separator=";">
+            update
+            bbs_content
+            set
+            readNum = #{item.readNum},
+            realReadNum = #{item.realReadNum}
+            where
+            contentId = #{item.contentId}
+        </foreach>
+    </update>
+
+    <!--    带有请求时间参数的获取图片base64-->
+    <select id="getImageBase64WithQueryTime" resultType="com.example.bbs.pojo.Content">
+        select
+        contentId contentId,
+        contentUrl contentUrl,
+        contentType contentType,
+        contentState contentState,
+        plateId plateId,
+        schoolId schoolId
+        from
+        bbs_content
+        where
+        <if test="plateId != null and plateId != ''">
+            plateId = #{plateId} and
+        </if>
+        <if test="plateId == null or plateId == ''">
+                (visibleRange = 0 or visibleRange = 2) and
+        </if>
+        <if test="schoolId != null and schoolId != 0">
+            schoolId = #{schoolId} and
+        </if>
+        <if test="contentType != -1 and contentType != 5">
+            contentType = #{contentType} and
+        </if>
+        <if test="contentType != -1 and contentType == 5">
+            (contentType = 0 or contentType = 2 or contentType = 3 or contentType = 4 or contentType = 5) and
+        </if>
+        unix_timestamp(#{queryTime}) > unix_timestamp(createTime) and
+        (contentState = 0 or contentState = 1 or contentState = 9 or contentState = 10)
+        order by createTime desc
+        limit 0,#{pageSize}
+    </select>
+
+    <update id="batchUpdateContentReadNum">
+        UPDATE bbs_content
+        SET readNum = CASE contentId
+        <foreach collection="contentInfoList" item="item" separator=" " open=" " close=" ">
+            WHEN #{item.contentId} THEN readNum + #{item.readNum}
+        </foreach>
+        END,
+        realReadNum = CASE contentId
+        <foreach collection="contentInfoList" item="item" separator=" " open=" " close=" ">
+            WHEN #{item.contentId} THEN realReadNum + #{item.realReadNum}
+        </foreach>
+        END
+        WHERE contentId IN
+        <foreach collection="contentInfoList" item="item" index="index" separator="," open="(" close=")">
+            #{item.contentId}
+        </foreach>
+    </update>
+
+    <!--用户所有发帖-->
+    <select id="getAllContentsPage" resultType="com.example.bbs.pojo.vo.HomeContentVO">
+        select
+        c.contentId contentId,
+        c.title title,
+        u.userId userId,
+        u.nickName nickName,
+        u.headimgUrl headimgUrl,
+        u.introduction introduction,
+        c.createTime createTime,
+        c.contentText contentText,
+        c.contentUrl contentUrl,
+        c.contentType contentType,
+        c.contentState contentState,
+        c.noComment noComment,
+        c.alumniOnly alumniOnly,
+        c.upNum upNum,
+        c.downNum downNum,
+        c.commentNum commentNum,
+        c.readNum readNum,
+        c.realReadNum realReadNum,
+        c.plateId plateId,
+        c.schoolId schoolId,
+        c.isSpecial isSpecial,
+        c.place place,
+        u.userState userIdentify
+        from
+        bbs_content c join bbs_user u on c.userId=u.userId
+        where
+        <if test="schoolId != null and schoolId != 0">
+            c.schoolId = #{schoolId} and
+        </if>
+        c.userId = #{searchUserId}
+        order by c.createTime desc
+        limit #{pageNum},#{pageSize}
+    </select>
+
+    <update id="logOutContentByUserId">
+        UPDATE bbs_content
+        SET contentState = 7
+        WHERE userId = #{userId} AND #{userId} IS NOT NULL AND #{userId} != ''
+    </update>
+
+    <select id="selectFocusContentStatistics" resultType="map">
+        SELECT
+        COUNT(*) AS postCount,
+        MAX(createTime) AS latestPostTime
+        FROM
+        bbs_content
+        WHERE
+        userId IN
+        <foreach collection="targetIdList" item="userId" open="(" separator="," close=")">
+            #{userId}
+        </foreach>
+        AND schoolId = #{schoolId}
+        AND createTime > #{lastLoginTime}
+        AND NOW() >= createTime
+        AND (contentState = 0 or contentState = 1 or contentState = 9 or contentState = 10)
+    </select>
+
+    <select id="getFocusContentPage" resultType="com.example.bbs.pojo.vo.HomeContentVO">
+        select
+        c.contentId contentId,
+        c.title title,
+        u.userId userId,
+        u.nickName nickName,
+        u.headimgUrl headimgUrl,
+        u.introduction introduction,
+        c.createTime createTime,
+        c.contentText contentText,
+        c.contentUrl contentUrl,
+        c.contentType contentType,
+        c.contentState contentState,
+        c.noComment noComment,
+        c.alumniOnly alumniOnly,
+        c.upNum upNum,
+        c.downNum downNum,
+        c.commentNum commentNum,
+        c.readNum readNum,
+        c.realReadNum realReadNum,
+        c.plateId plateId,
+        c.schoolId schoolId,
+        c.isSpecial isSpecial,
+        c.place place,
+        u.userState userIdentify
+        from
+        bbs_content c join bbs_user u on c.userId=u.userId
+        where
+        c.userId IN
+        <foreach collection="focusUserIdList" item="userId" open="(" separator="," close=")">
+            #{userId}
+        </foreach>
+        and c.schoolId = #{schoolId}
+        and unix_timestamp(#{queryTime}) > unix_timestamp(c.createTime)
+        and (c.contentState = 0 or c.contentState = 1 or c.contentState = 9 or c.contentState = 10 )
+        and (c.isSpecial =0 or c.isSpecial=3)
+        order by c.createTime desc
+        limit 0,#{pageSize}
+    </select>
+
+</mapper>

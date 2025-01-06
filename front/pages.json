@@ -1,0 +1,312 @@
+{
+	"easycom": {
+		// 下载安装的方式需要前面的"@/"，npm安装的方式无需"@/"
+		// 下载安装方式
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+		// npm安装方式
+		//"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#2c2c2c",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/home-1.png",
+				"selectedIconPath": "static/tabbar/home.png",
+				"text": "主页"
+			},
+			// {
+			// 	"pagePath": "pages/index/index",
+			// 	"iconPath": "static/tabbar/quanzi-1.png",
+			// 	"selectedIconPath": "static/tabbar/quanzi.png",
+			// 	"text": "主页"
+			// },
+			{
+				"pagePath": "pages/message/message",
+				"iconPath": "static/tabbar/msg-1.png",
+				"selectedIconPath": "static/tabbar/msg.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/tabbar/my-1.png",
+				"selectedIconPath": "static/tabbar/my.png",
+				"text": "我的"
+			}
+		]
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "主页",
+				"backgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false,
+					"bounce": "none",
+					"pullToRefresh": {
+						"style": "circle",
+						"offset": "70px"
+					}
+				}
+			}
+		}, {
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"backgroundColor": "#0081FF"
+			}
+		},
+		
+		{
+			"path": "pages/post/detail",
+			"style": {
+				"navigationBarTitleText": "帖子详情",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"onReachBottomDistance": 120
+			
+
+			}
+
+		},
+		{
+			"path": "pages/post/add",
+			"style": {
+				"navigationBarTitleText": "发布帖子",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/post/history-post",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, 
+		
+		{
+			"path": "pages/message/message",
+			"style": {}
+		},
+		
+		{
+			"path": "pages/vote/vote",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+
+		, {
+			"path": "pages/post/choosePlate/choosePlate",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+
+	],
+	"subPackages": [{
+		"root": "package_task",
+		"pages": [
+			{
+				"path": "pages/sign-up/sign-up",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "pages/group-code/index",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+			},
+			
+			{
+				"path": "pages/second-hand-item/list",
+				"style": {
+					"navigationBarTitleText": "闲置交易",
+					"enablePullDownRefresh": true
+				}
+			},
+			{
+				"path": "pages/second-hand-item/search",
+				"style": {
+					"navigationBarTitleText": "搜索结果",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "pages/rule-page/rule-page",
+				"style": {
+					// "navigationBarTitleText": "搜索结果",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "pages/group-code/group-code",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "pages/bbs/topic/add/add",
+				"style": {}
+			},
+			{
+				"path": "pages/bbs/topic/add/shoose-class",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+			
+			},
+			{
+				"path": "pages/bbs/topic/class-list",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+			
+			},
+			{
+				"path": "pages/bbs/topic/detail",
+				"style": {
+					"navigationStyle": "custom",
+					"enablePullDownRefresh": true,
+					"navigationBarTextStyle": "white"
+				}
+			},
+			{
+				"path": "pages/bbs/topic/list",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+			
+			},
+			{
+				"path": "pages/bbs/message/list",
+				"style": {}
+			},
+			{
+				"path": "pages/bbs/mine/post",
+				"style": {}
+			}, {
+				"path": "pages/bbs/mine/fans",
+				"style": {}
+			}, {
+				"path": "pages/bbs/mine/follow",
+				"style": {}
+			},
+			{
+				"path": "pages/bbs/more/adv",
+				"style": {
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "pages/bbs/more/chang-school",
+				"style": {
+					"enablePullDownRefresh": false,
+					"navigationStyle": "custom"
+				}
+			
+			},
+			{
+				"path": "pages/bbs/more/web-view",
+				"style": {
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "pages/bbs/more/multi-business-adv",
+				"style": {
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "pages/bbs/user/login",
+				"style": {
+					"navigationBarTitleText": "登录"
+				}
+			},
+			{
+				"path": "pages/bbs/user/home",
+				"style": {
+					"navigationBarTitleText": "个人主页",
+					"navigationStyle": "custom",
+					"navigationBarTextStyle": "white"
+				}
+			},
+			{
+				"path": "pages/bbs/user/edit-info/edit",
+				"style": {}
+			}, {
+				"path": "pages/bbs/user/edit-info/submit",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+			
+			},
+			{
+				"path": "pages/bbs/user/user-examine",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+			
+			}, {
+				"path": "pages/bbs/user/answer-examine",
+				"style": {
+					"navigationBarTitleText": "答题认证",
+					"enablePullDownRefresh": false
+				}
+			
+			},
+			{
+				"path": "pages/bbs/more/maintenance",
+				"style": {
+					"navigationBarTitleText": "服务维护",
+					"enablePullDownRefresh": false,
+					"navigationStyle": "custom"
+				}
+			
+			}
+		]
+	}],
+	"preloadRule": {
+		"pages/index/index": {
+			"network": "all",
+			"packages": ["package_task"]
+		}
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#F8F8F8"
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bbs.mapper.LoginRecordMapper">
+
+    <insert id="batchInsertLoginRecord">
+        insert into bbs_login_record(id,user_id,school_id,login_path,login_time,create_time,update_time)
+        values
+        <foreach collection="loginRecordList" separator="," item="item">
+            (#{item.id},#{item.userId},#{item.schoolId},#{item.loginPath},#{item.loginTime},#{item.createTime},#{item.updateTime})
+        </foreach>
+    </insert>
+</mapper>

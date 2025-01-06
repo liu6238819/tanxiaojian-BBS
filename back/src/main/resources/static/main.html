@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(function(){
+            var webSocket;
+            var url = 'ws://localhost:8080/chat/';
+            //进入聊天室
+            $('#joinRoomBtn').click(function(){
+                var userId = $('#userId').val();
+                webSocket = new WebSocket(url+userId);//需要拼接上userId
+                webSocket.onopen = function (){
+                    console.log('webSocket连接创建。。。');
+                };
+                webSocket.onclose = function(){
+                    $('#messageArea').append('['+userId+']离开了聊天室\n');
+                };
+                webSocket.onmessage = function(event){//后端发送过来的消息，在这个方法里面
+
+                    $('#messageArea').append(event.data + '\n');
+                };
+                webSocket.onerror = function (event) {　　　　　　　　　　　　
+                    console.log('webSocket连接异常。。。');
+                }
+            });
+            //退出聊天室
+            $('#leaveRoomBtn').click(function(){
+                if(webSocket){
+                    //关闭连接
+                    webSocket.close();
+                }
+            });
+            //发送消息
+            $('#sendBtn').click(function(){
+                var msg = $('#sendMessage').val();
+                webSocket.send(msg);//向后端发送消息
+                $('#sendMessage').val('');
+            });
+        });
+    </script>
+</head>
+<body>
+<table>
+    <tr><td>
+        <label for="messageArea">聊天信息:</label><textarea id="messageArea" cols="50" rows="10"></textarea></br>
+    </td></tr>
+
+    <tr><td>
+        <label for="userId">用  户  名:</label><input type="text" id="userId"></br>
+    </td></tr>
+
+    <tr><td>
+        <input type="button" id="joinRoomBtn" value="进入聊天室" />
+        <input type="button" id="leaveRoomBtn" value="离开聊天室" /></br>
+    </td></tr>
+
+    <tr><td>
+        <label for="sendMessage">输入消息:</label><textarea id="sendMessage" cols="50" rows="3"></textarea></br>
+    </td></tr>
+
+    <tr><td>
+        <input type="button" id="sendBtn" value="发送消息" />
+    </td></tr>
+</table>
+
+</body>
+</html>

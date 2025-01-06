@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bbs.mapper.MarkMapper">
+
+    <!--    带有请求时间参数的获取帖子列表-->
+    <select id="getMarkMessageVOListByUser" resultType="com.example.bbs.pojo.vo.MarkMessageVO">
+        select
+        m.id id,
+        m.user_id userId,
+        m.content_id contentId,
+        m.is_read isRead,
+        m.is_mark isMark,
+        CONCAT(c.title, ' ', c.contentText) contentText,
+        c.contentUrl contentImage,
+        m.last_comment_time lastCommentTime,
+        m.create_time createTime,
+        m.update_time updateTime
+        from
+        bbs_mark m
+        join bbs_content c on m.content_id=c.contentId
+        where
+        <if test="userId != null and userId != ''">
+            m.user_id = #{userId} and
+        </if>
+        m.is_mark = 1
+        and c.contentState IN (0, 1, 9, 10,13)
+        order by m.last_comment_time desc
+        limit #{pageNum},#{pageSize}
+    </select>
+
+    <select id="getMarkMessageVOListByUser1231" resultType="com.example.bbs.pojo.vo.MarkMessageVO">
+        select
+        m.id id,
+        m.user_id userId,
+        m.content_id contentId,
+        m.is_read isRead,
+        m.is_mark isMark,
+        m.last_comment_time lastCommentTime,
+        m.create_time createTime,
+        m.update_time updateTime
+        from
+        bbs_mark m
+        where
+        <if test="userId != null and userId != ''">
+            m.user_id = #{userId} and
+        </if>
+        m.is_mark = 1
+        order by m.last_comment_time desc
+        limit #{pageNum},#{pageSize}
+    </select>
+
+</mapper>

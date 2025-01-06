@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bbs.mapper.ContentKeyWordMapper">
+    <select id="getSecondContentKeyWordList" resultType="com.example.bbs.pojo.ContentKeyWord">
+        select
+            k.id id,
+            k.userId userId,
+            k.contentId contentId,
+            k.contentKind contentKind,
+            k.schoolId schoolId,
+            k.keyWord keyWord,
+            k.contentCreateTime contentCreateTime,
+            k.createTime createTime,
+            k.updateTime updateTime
+        from
+            bbs_content_key_word k
+        left join bbs_content c on k.contentId=c.contentId
+        where
+          k.contentKind = 8
+        <if test="schoolId != null and schoolId != 0">
+          and c.schoolId = #{schoolId}
+        </if>
+          and k.contentCreateTime >= DATE_SUB(CURRENT_DATE, INTERVAL #{duration} DAY)
+          and (c.contentState = 0 or c.contentState = 1 or c.contentState = 9 or c.contentState = 10)
+        order by
+        k.contentCreateTime desc;
+    </select>
+</mapper>

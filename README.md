@@ -52,7 +52,7 @@
 1. <font style="color:rgb(64, 72, 91);">代码前后端均发布了开源版，已涵盖论坛系统所需的绝大多数功能，演示案例为标准版；</font>
 2. <font style="color:rgb(64, 72, 91);">开源版本不适合直接商用（c端项目更注重服务器运维、网络安全、性能优化等），有相关需求建议使用正式版。我们还提供了论坛小程序的完整技术支持以及服务器全托管服务，能够大大降低项目在技术方面的投入成本。</font>
 
-[<font style="color:rgb(64, 72, 91);">查看开源版与正式版功能清单</font>](https://gitee.com/link?target=https%3A%2F%2Fnet.linfeng.tech%2Fversion%2Fversion.html)
+[<font style="color:rgb(64, 72, 91);">查看开源版与正式版功能清单</font>](https://www.yuque.com/kemingxinxi/eeu3o3/wkw99ybqh01a2szg?singleDoc#%20《版本区别》)
 
 #### <font style="color:rgb(64, 72, 91);">5.开源须知</font>
 + <font style="color:rgb(64, 72, 91);">基于Apache License 2.0开源协议，前后端代码开源无加密，支持二次开发，支持商用；</font>

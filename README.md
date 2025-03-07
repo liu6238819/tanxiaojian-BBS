@@ -13,7 +13,7 @@
 
 #### <font style="color:rgb(64, 72, 91);">2.项目演示</font>
 ##### <font style="color:rgb(64, 72, 91);">2.1 用户端小程序</font>
-<font style="color:rgb(64, 72, 91);">演示案例为正式版并已上线运营的真实项目，日活3w+</font>
+<font style="color:rgb(64, 72, 91);">演示案例为正式版并已上线运营的真实项目，单校日活1w+</font>
 
 ![输入图片说明](images/01.png)
 
